@@ -1,0 +1,54 @@
+{
+  "PowerNukkitX": "PowerNukkitX.html",
+  "Get Started": "Get_Started.html",
+  "Config": {
+    "server.properties": "config/server.properties.html",
+    "nukkit.yml": "config/nukkit.yml.html",
+    "pnx-cli-config.ini": "config/pnx-cli-config.ini.html",
+    "Anti-xray": "config/anti-xray.html",
+    "Resource Encryption": "config/resource-encryption.html",
+    "Compression Acceleration": "config/compression-acceleration.html",
+    "PNX with WaterDogPE": "config/waterdog.html",
+    "Flat World": "config/flat_world.html"
+  },
+  "FAQ": {
+    "To Newcomers": "faq/to_newcomers.html",
+    "How to use PNX-CLI": "faq/PNX-CLI.html",
+    "Common Questions": "faq/common.html",
+    "Terra Questions": "faq/terra.html",
+    "Spawn-point Questions": "faq/spawn-point.html",
+    "Convert Worlds": "faq/convert_world.html"
+  },
+  "For Devs": {
+    "Java": {
+      "Goto JavaDoc": "dev/java/javadoc.html",
+      "Mod API": {
+        "Custom Block": "dev/java/custom/custom_block.html",
+        "Custom Item": "dev/java/custom/custom_item.html",
+        "Custom Entity": "dev/java/custom/custom_entity.html",
+        "Custom Enchantment": "dev/java/custom/custom_ench.html"
+      },
+      "Entity AI": {
+        "Behavior": "dev/java/entity-ai/behavior.html",
+        "Memory": "dev/java/entity-ai/memory.html",
+        "Sensor": "dev/java/entity-ai/sensor.html",
+        "Motion Controller": "dev/java/entity-ai/motion_controller.html",
+        "Navigator": "dev/java/entity-ai/navigator.html",
+        "Behavior Group": "dev/java/entity-ai/behavior_group.html",
+        "Work Cycle": "dev/java/entity-ai/work_cycle.html"
+      }
+    },
+    "JavaScript": {
+      "setup dev env": "dev/js/setup_dev_env.html",
+      "Base LLSELib dev": "dev/js/setup_llse_dev_env.html",
+      "Hello World": "dev/js/hello_world.html",
+      "Basic knowledge": "dev/js/basic_knowledge.html",
+      "Event Listener": "dev/js/event_listener.html",
+      "FAQ": "dev/js/dev_faq.html"
+    },
+    "Resources": {
+      "Event List": "dev/res/event_list.html",
+      "IDs(block & item)": "dev/res/IDs.html"
+    }
+  }
+}
