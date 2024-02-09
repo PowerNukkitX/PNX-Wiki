@@ -1,25 +1,24 @@
-# 超平坦世界  
+# Flat World
 
-PNX内置可以高度自定义的超平坦世界生成器，您可以通过修改配置文件来生成您想要的世界。  
+PNX comes with a highly customizable flat world generator built-in, allowing you to generate the world you desire by modifying the configuration files.
 
-## 配置  
+## Configuration
 
-在nukkit.yml的worlds配置中，可以为每个世界单独设置生成器，例如这里为名为world的世界设置了超平坦生成器：  
+In the 'worlds' configuration of nukkit.yml, you can individually set the generator for each world. For example, here's how you can set the flat generator for a world named 'world':
 
 ```yaml
 worlds:
- world:
-  seed: 114514
-  generator: FLAT:2;7,59x1,3x3,2;1;decoration
+  world:
+    seed: 114514
+    generator: FLAT:2;7,59x1,3x3,2;1;decoration
 ```
 
-## 生成器参数  
+## Generator Parameters
 
-生成器参数由分号分隔的多个部分组成，每个部分由冒号分隔，例如：  
+The generator parameters consist of multiple parts separated by semicolons, with each part delimited by colons. For instance:
 
 ```yaml
 generator: FLAT:2;7,59x1,3x3,2;1;decoration
 ```
 
-以decoration结尾的生成器参数将会在地图上生成矿物。  
-
+Generator parameters ending with 'decoration' will generate minerals on the map.

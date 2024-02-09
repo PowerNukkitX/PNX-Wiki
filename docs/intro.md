@@ -7,43 +7,42 @@ sidebar_position: 1
 
 ![PNX Banner](./image/PNX_BANNER.png)  
 
-<h3>高性能、富原版特性、高拓展性的独立服务端核心</h3>  
+<h3>High-performance, feature-rich, highly extensible independent server core</h3>  
 
 [![Discord](https://img.shields.io/discord/944227466912870410?color=7289da&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/BcPhZCVJHJ)
 [![English](https://img.shields.io/badge/English-Click%20me-purple?style=flat-square)](https://www.powernukkitx.com/doc/en-us/PowerNukkitX.html)
-[![简体中文](https://img.shields.io/badge/简体中文-Click%20me-purple?style=flat-square)](https://powernukkitx.com/doc/zh-cn/PowerNukkitX.html)
+[![Simplified Chinese](https://img.shields.io/badge/Simplified%20Chinese-Click%20me-purple?style=flat-square)](https://powernukkitx.com/doc/zh-cn/PowerNukkitX.html)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](https://github.com/PowerNukkitX/PowerNukkitX/blob/master/LICENSE)
-[![ChangeLog](https://img.shields.io/badge/更新日志-blue?style=flat-square)](https://github.com/PowerNukkitX/PowerNukkitX/blob/master/blob/zh-hans/CHANGELOG.md)
+[![ChangeLog](https://img.shields.io/badge/Changelog-blue?style=flat-square)](https://github.com/PowerNukkitX/PowerNukkitX/blob/master/blob/zh-hans/CHANGELOG.md)
 [![FAQ](https://img.shields.io/badge/FAQ-blue?style=flat-square)](https://www.powernukkitx.com/doc/zh-cn/faq/common.html)
 
 -----  
 
-## 什么是PowerNukkitX？  
+## What is PowerNukkitX?  
 
-PowerNukkitX（简称PNX）是由包括BlocklyNukkit团队在内的中国Nukkit开发者们负责开发维护的Nukkit分支版本，修复了众多BUG，改善了性能，及时跟进新版本支持、支持1.18所有新方块和新物品、支持新版下界、支持史诗地形生成器(Terra)。在这些大更改的情况下，PNX仍然保持了良好的插件兼容性，Nukkit生态中的数千个插件仍然可以在PNX上运行。
-得益于完全开源的代码，您在遵守开源协议的情况下使用PowerNukkitX没有任何法律风险，内部的数十万API可以随意调用，您可以深入查看实现，通过JVM生态中的各种工具及其方便地进行开发、调试、注入、拦截。也正因如此，Nukkit生态丰富多彩，成百上千各种各样的插件供您选择，您可以用您喜欢的任意JVM语言编写插件，如Java,Kotlin,Scala,Python,Javascript,Lua……
+PowerNukkitX (PNX) is a branch version of Nukkit developed and maintained by Chinese Nukkit developers, including the BlocklyNukkit team. It fixes numerous bugs, improves performance, supports new versions promptly, supports all new blocks and items in 1.18, supports the new Nether in the latest version, and supports the Epic Terrain Generator (Terra). Despite these major changes, PNX still maintains good plugin compatibility, and thousands of plugins in the Nukkit ecosystem can still run on PNX.
 
-## 为什么我们要开发PNX？  
+Thanks to its completely open-source code, using PowerNukkitX poses no legal risks as long as you comply with the open-source license. With hundreds of thousands of APIs internally, you can freely call them, delve into implementations, and develop, debug, inject, and intercept conveniently through various tools in the JVM ecosystem. Consequently, the Nukkit ecosystem is rich and diverse, with hundreds of plugins available for you to choose from. You can write plugins in any JVM language you like, such as Java, Kotlin, Scala, Python, Javascript, Lua, etc.
 
-最直接的原因就是：只有核心强，生态才能强。  
-我们可以毫不掩饰地说，去重之后，Nukkit生态是基岩版作品最多的生态之一，也是基岩版最高技术力的圈子之一。但是，Nukkit核心在开发团队被CubeCraft买去开发Geyser
-项目之后，开发强度急剧下降，随着国外众多开发者进入JE圈子，国内BDS圈子向心力逐渐加强，Nukkit系核心渐渐地不再能跟上be社区发展的步伐。作为自由开源精神的践行者，
-作为Nukkit生态的主力，我们有必要接过Nukkit系服务端开发的任务，续写被EaseCation遗忘的的国人核心开发的篇章。
+## Why Do We Develop PNX?  
 
-## PNX的优势：  
+The most direct reason is: a strong core leads to a strong ecosystem. 
+We can openly say that, after deduplication, the Nukkit ecosystem is one of the largest among Bedrock Edition works and one of the highest-tech circles among Bedrock Edition communities. However, after the Nukkit core development team was bought by CubeCraft to develop the Geyser project, the development intensity sharply declined. With many foreign developers entering the Java Edition community and the domestic Bedrock Edition community gradually strengthening, the Nukkit core gradually failed to keep pace with the development of the Bedrock community. As practitioners of the free and open-source spirit and the main force of the Nukkit ecosystem, we feel it necessary to take over the task of Nukkit core development, continuing the chapter of core development by Chinese developers that was left behind by EaseCation.
 
-- 最新版mcbe协议支持
-- 1.19全物品方块及其功能支持
-- 384格世界支持
-- 新版下界生物群系支持
-- 史诗地形生成器
-- 修复众多bug
-- 自定义物品、方块、实体、世界、配方、UI
-- 全开源、全API开放、插件众多
-- 更高性能，多核优化（堆核而非堆cpu频率）
+## Advantages of PNX:  
 
-## 联系我们：  
+- Latest MCBE protocol support
+- Support for all items, blocks, and functionalities in 1.19
+- Support for 384-block worlds
+- Support for new Nether biomes in the latest version
+- Epic Terrain Generator
+- Fix numerous bugs
+- Customizable items, blocks, entities, worlds, recipes, UI
+- Fully open-source, fully open API, with numerous plugins
+- Higher performance, multi-core optimization (heap core rather than heap CPU frequency)
 
-- Discord：[https://discord.gg/BcPhZCVJHJ](https://discord.gg/BcPhZCVJHJ)
-- QQ群: [639808269](https://jq.qq.com/?_wv=1027&k=6rm3gbUI)
-- 官网：[https://www.powernukkitx.cn](https://www.powernukkitx.cn)
+## Contact Us:  
+
+- Discord: [https://discord.gg/BcPhZCVJHJ](https://discord.gg/BcPhZCVJHJ)
+- QQ Group: [639808269](https://jq.qq.com/?_wv=1027&k=6rm3gbUI)
+- Official Website: [https://www.powernukkitx.cn](https://www.powernukkitx.cn)

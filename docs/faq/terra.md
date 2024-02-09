@@ -1,78 +1,78 @@
-# Terra问题  
+# Terra related  
 
-## 什么是terra  
+## What's terra  
 
-Terra是一个第三方[开源](https://github.com/PolyhedralDev/Terra)地形生成器，pnx整合了Terra作为nk系服务器地形生成问题的一个解决方案，您可以在pnx中使用terra生成史诗般的地图。  
+Terra is an [open-source](https://github.com/PolyhedralDev/Terra) 3rd party terrain Generator, pnx included it in terra branch,
+You can use terra to generate epic worlds in pnx.
 
+## Enable Terra  
 
-## 启动Terra  
+To enable Terra and apply Terra to your world, the following two steps are required:  
 
-要将terra应用到您的世界中，需要如下两步：  
-
-在`server.properties`中，设置：
+In file `server.properties`:
 ```properties
 use-terra=on
 ```
 
-在`nukkit.yml`中，设置：  
+In file `nukkit.yml`:  
 ```yaml
 worlds:
-  世界名称:
-   seed: 世界种子
+  Name of the world:
+   seed: Seed of your world
    generator: terra:default:overworld
 ```
 
-然后，重新启动服务器，即可体验terra地形生成器。
+Then, restart the server, and now you can try the terra terrain generator.
 
-## 使用第三方Terra地形配置包
+## Use a third-party Terra terrain configuration package
 
-Terra允许你通过使用不同的配置包获得全新的地形，将配置包放入`./terra/packs`文件夹中，重启服务器即可完成安装。  
+Terra allows you to get completely new terrains by using different configuration packs. Simply put
+the pack into `./terra/packs` and restart your server to install it.  
 
-你可在此站点查看目前可用的配置包（不全）： [Community Packs](https://terra.polydev.org/config/community-packs.html)
+You can view the currently available configuration packages (incomplete) at this site: [Community Packs](https://terra.polydev.org/config/community-packs.html)
 
-接下来我们以[ReimagEND](https://github.com/justaureus/ReimagEND)配置包为例，其配置包文件名称为"ReimagEND.zip"
+Next, let's take [Reimag END](https:github.comjustaureus%20Reimag%20END) configuration package as an example, the configuration package file name is "Reimag END.zip"
 
-我们想要在末地(the_end)应用此配置包，需要在nukkit.yml中设置以下内容:
+We want to apply this config package in the end, we need to set the following in nukkit.yml:
 ```yaml
 worlds:
   the_end:
-   seed: 填写你想要的种子
+   seed: Seed You Want
    generator: terra:ReimagEND:end
 ```
 
-请注意在PNX中，配置包选中语法与原版terra不同，格式为：
+Please note that in PNX, the configuration package selection syntax is different from the original terra, the format is:
 
-`terra:配置包文件名称（不带后缀）:维度类型(overworld,nether,end)`
+`terra: configuration package file name (without suffix): dimension type (overworld, nether, end)`
 
-例如在此示例中，配置包文件名为ReimagEND.zip，于是我们需要将生成器设置为terra:ReimagEND:end才能选中此配置包
+For example, in this example, the configuration package file name is Reimag END.zip, so we need to set the generator to terra:Reimag END:end to select this configuration package
 
-请注意我们在结尾附加了一个"end"参数，此参数的作用是将世界类型设置为末地。
+Note that we append an "end" parameter at the end, which sets the world type to End.
 
-对于不同的世界类型，其y轴限高有所不同，具体如下：
+For different world types, the height limit of the y-axis is different, as follows:
 
 - overworld: -64 - 320
 - nether: 0 - 128
 - end: 0 - 256
 
-对于一些特定的配置包，有可能出现世界限高低于配置包所需高度的情况(例如Tartarus地狱包)，此时可将世界类型设置为主世界来避免此问题
+For some specific configuration packages, there may be cases where the world height limit is lower than the height required by the configuration package (such as the Tartarus hell package), at this time, the world type can be set to the main world to avoid this problem
 
-设置成功后，在末地中你应该能看到ReimagEND配置包带来的全新地形：
+After the setup is successful, you should be able to see the new terrain brought by the Reimag END configuration package in the end:
 
 ![REIMAGEND](../image/terra_faq/ReimagEND_min.png)
 
-## 为什么设置不生效  
+## Why terra doesn't work
 
-- 如果您的世界先前使用的不是terra生成器，那么设置不会生效，您需要使用一个新的地图。  
-- 请检查您是否正确配置了Terra，否则不会生效
+- If your world was previously using something other than the terra generator, terra won't work. Consider using a new world.  
+- Please check that you have configured Terra correctly, otherwise it won't work.
+## Too much memory used  
 
-## 占用的内存太多  
-
-很抱歉，由于terra算法复杂，自定义性极高，启动时使用大约300MB内存在所难免。我们已经尽力优化了。  
-如果您真的希望减少内存使用，可以尝试修改`./terra/config/yml`：
+Sorry for the excessive memory usage, but due to the complexity of the terra algorithm and the high level of customization, it is inevitable that about 300MB of memory is used at startup. We have done our best to optimize it.  
+If you really want to reduce memory usage, you can try modifying `./terra/config/yml`：
 ```yaml
 cache:
-  structure: 0 # 默认32
-  sampler: 0 # 默认128
-  biome-provider: 0 # 默认32
+  structure: 0 # default 32
+  sampler: 0 # default 128
+  biome-provider: 0 # default 32
 ```
-请注意，这样做会影响性能，加重CPU负担。  
+Please note that this will affect performance and increase CPU load.  

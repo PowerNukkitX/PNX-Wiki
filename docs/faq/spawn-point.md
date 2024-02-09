@@ -1,34 +1,27 @@
-# 玩家重生点相关的解释  
+## Explanation related to player respawn points
 
-## 关于玩家复活点优先级
+### About player respawn point priority
+World respawn points < Player respawn points = Block respawn points (e.g. bed Respawn anchor)
 
-世界复活点 < 玩家复活点 = 重生类方块复活点(例如床 重生锚)
+### About respawn point data storage
+World respawn point data is stored in each world, player respawn points and block respawn points are stored in each player itself
 
-## 关于复活点数据的存储
+### Describe the logic of player respawn selection of respawn points
+- When a player respawn, it looks for the existence of a player respawn point or a block respawn point. Since these two respawn points have the same priority, only one can exist, otherwise the world respawn point will be selected (to prevent conflicts)
+- When a player does not have both player respawn points and respawn cube respawn points, the world respawn point will be chosen to respawn
+- When a player has both a player respawn point and a respawn type cube respawn point, they will also choose the world respawn point to respawn
 
-世界复活点数据保存在每个世界中，玩家复活点和重生类方块复活点保存在每个玩家自身
+### Briefly explain the logic of all respawn point changes
+- When a player enters the server for the first time, the world respawn point for the corresponding world will be set
+- When the /setworldspawn command is used, the world respawn point will be set
+- When a player uses a respawn cube, the respawn cube respawn point will be set and the player respawn point will be removed
+- When the /spawnpoint command is used, the player respawn point will be set and the respawn point will be removed.
+- When using the /clearspawnpoint command, both the player revive point and the respawn point will be removed.
+- When a respawn cube is lost (e.g. bed is removed, respawn anchor loses power) both the player respawn point and the respawn cube respawn point will be removed and the player will be respawned to the world respawn point
 
-## 简述玩家重生选择复活点的逻辑
-- 当玩家重生时，会查找是否存在玩家复活点或者重生类方块复活点，由于这两个重生点的优先级相同，所以只能存在一个，否则会选择世界复活点(
-防止冲突)
-- 当玩家同时没有玩家复活点和重生类方块复活点，将会选择世界复活点重生
-- 当玩家既有玩家复活点和重生类方块复活点，也会选择世界复活点重生
+### Tips
+In previous versions of PNX, the player respawn point was set to be the same as the world respawn point when the player first joined the server, so if you want to use the world respawn point, you may need to use the /clearspawnpoint command to clear all players' player respawn points for it to take effect
 
-## 简述所有复活点改变的逻辑
-
-- 当玩家第一次进入服务器时，会设置对应世界的世界复活点
-- 当使用/setworldspawn 命令时，世界复活点将会被设置
-- 当玩家使用重生类方块时，重生类方块复活点将会被设置，同时会移除玩家复活点
-- 当使用/spawnpoint 命令时，玩家复活点将会被设置，同时会移除重生类方块复活点
-- 当使用/clearspawnpoint 命令时，玩家复活点和重生方块复活点都将会被移除
-- 当重生类方块丢失(例如床被拆除，重生锚失去能量) 玩家复活点和重生方块复活点都将被移除，此时玩家将会被重生到世界复活点
-
-## Tips
-
-在以前版本的PNX是会在玩家第一次加入服务器时，把玩家复活点设置为与世界复活点相同，故如果你想使用世界复活点，可能需要使用/clearspawnpoint
-命令清除所有玩家的玩家复活点，这样才会生效
-
-## 为什么要这样设计?
-
-你可能会疑问?为什么要这样设计，感觉非常愚蠢，事实的确是如此。  
-但是由于历史遗留原因，在保证插件兼容性的基础上，我们能做到的只能这样。
+### Why this design?
+You may wonder? It feels very dull to design it this way, and it is.
+But for legacy reasons, it's the best we can do to ensure plugin compatibility.

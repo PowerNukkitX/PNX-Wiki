@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/get-started">
+            to="/docs/get-started">
           <Translate
           id="homepage.visitMyBlog"
           description="The homepage message to ask the user to visit my blog"

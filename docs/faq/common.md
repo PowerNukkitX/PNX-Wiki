@@ -1,124 +1,71 @@
-# 常见开服问题  
+# Server related 
 
 ## java.lang.reflect.InaccessibleObjectException  
-### 简易处理方式
-启动命令在`-jar`前面加上`--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED`  
-例如：
+### Simple solution
+Prepend `-jar` before `--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED` in your start command.  
+For example：
 ```
-Java17目录\bin\java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED -jar powernukkitx-1.6.0.0-PNX-SNAPSHOT-shaded.jar
+Java17\bin\java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED -jar powernukkitx-1.6.0.0-PNX-SNAPSHOT-shaded.jar
 ```
-### 完美解决
-查看报错内容中如下部分：
+### Full solution
+Check the following parts of the error stacktrace：
 ```
 module A does not "opens B" to unnamed module @C
 ```
-在启动命令`-jar`前加上`--add-opens A/B=ALL-UNNAMED`（A/B中的内容为相关模块名称，可看以下示例）即可，每个不同报错都要这么做  
+Add `-add-opens A/B=ALL-UNNAMED` (the content in A/B is the name of the module in question, see the following example) before the start command `-jar`, and do this for each different error report  
 
-示例：
+Example.
 
-如果报错内容为：module `java.base` does not "opens `java.lang`" to unnamed module @?????? 那参数配置则为
+If the error is reported as: module `java.base` does not "opens `java.lang`" to unnamed module @?????? then the parameter configuration would be
 ```
 --add-opens java.base/java.lang=ALL-UNNAMED
 ```
 
 ## java.lang.UnsupportedClassVersionError
-请更换java到java17，[下载链接](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jre/x64/windows/OpenJDK17U-jre_x64_windows_hotspot_17.0.3_7.zip)
-
-## 登陆服务器提示“无法连接:过期的服务器!”
-这种情况发生有两种可能性  
-一:服务端协议更新导致服务器过期,等待服务端更新协议  
-二:本机电脑的世界与服务端时间相差过大导致无法进入服务器,解决办法为同步本地时间或者在server.properties中设置check-login-time=off
-
-## 端口地址占用报错解决方案
-### 端口地址冲突报错:
-```
-ERROR - Throwing java.util.concurrent.CompletionException: java.net.BindException: Address already in use: bind
-```
-### 解决方案
-#### Windows解决方案:
-win+R键打开运行窗口，窗口中输入cmd打开Windows系统自带的命令窗口
+Install Java17. [Download](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jre/x64/windows/OpenJDK17U-jre_x64_windows_hotspot_17.0.3_7.zip)
+## java.net.BindException: Address already in use: bind
+### Solution
+#### Windows solution
+Win+R opens the Run window, type cmd in the window to open the command window that comes with Windows
 ```
 netstat -ano|findstr 19132
 ```
-输入以上指令查询端口是否被占用，数字19132代表端口
-例：
+Enter the above command to check if the port is occupied, the number 19132 represents the port
+Example:
 ```
 C:\Users\Administrator>netstat -ano|findstr 19132
   UDP    0.0.0.0:19132          *:*                                    12228
 ```
-查找到对应的端口后有对应的UDP号12228
-在Windows命令窗口中输入，即可解除19132的端口占用
+Find the corresponding UDP number for port 12228 and enter the following command in the Windows command window to unlock port 19132
 ```
 taskkill /f /t /im 12228
 ```
-#### Linux解决方案
-在命令框里输入以下命令
+#### Linux solution
+Enter the following command in the command box
 ```
 netstat -tln | grep 19132
 ```
-查看到对应的系统Pid号使用以下指令结束进程
+Check the corresponding system PID number to end the process using the following command
 ```
-kill -9 进程PID
+kill -9 PID
 ```
 
-## java.lang.NoClassDefFoundError
-如果使用的是pnx-cli,请使用以下命令更新依赖库
+## java.lang.NoClassDefFoundError: org/objectweb/asm/Type
+If you are using pnx-cli,please use the following command to update dependent libraries.
 ```
 pnx libs update
 ```
-如果使用的是shaded版本核心,请在action中下载更新最新核心.
+If you are using shaded core,please download the latest core in [github action](https://github.com/PowerNukkitX/PowerNukkitX/actions).
 
-## java.lang.RuntimeException  
+## All players are offline at the same time
 
-如果报错内容中带有  
-```
-java.io.IOException: Unable to acquire lock on '......players/LOCK'
-```
+This may be caused by the following reasons:  
 
-说明你在同一个路径上同时开启了不少于两个相同的PNX程序，请关闭先前启动的那个。  
-如果您甚至不知道如何进行上述操作，请重启您的服务器来解决此问题并系统学习如何正确使用您的操作系统。  
+- Some players join with cheat clients and broadcast broken data packets
+- There is a plug-in blocking on the main thread for a long time
+- Debugger, third-party launcher, antivirus software block PNX operation
+- You click the console (the title of the console window starts with "selected"), which leads to entering the debugging mode, and the operation of the server is suspended
+- Your server performance is poor, and other high occupancy programs are opened at the same time. The system suspends the operation of PNX to ensure the operation of other foreground programs
+- Your server or service provider has been attacked by network, such as DDOS
 
-## 玩家集体掉线  
-
-这可能是由以下原因造成的：  
-
-- 有玩家开挂进服，并广播了损坏的数据包
-- 有插件在主线程上长时间阻塞
-- 调试器、第三方启动器、杀毒软件阻塞PNX运行
-- 您点击了控制台（表现为控制台窗口标题以“选择”开头）导致进入调试模式，服务端运行暂停
-- 您的服务器性能不佳，并同时打开了其他高占用程序，系统暂缓PNX运行以保证其他前台程序运行
-- 您的服务器或服务商遭到了网络攻击，如DDOS等
-
-请您先自查以上原因，如果您实在无法解决，可以到QQ群或Discord服务器寻求帮助。  
-
-## DOS error/errno=1455  
-
-> 页面文件太小，无法完成操作  
-> DOS error/errno=1455
-
-这是JVM向操作系统申请内存的时候，操作系统给不出更多内存的报错。  
-PNX-CLI启动时默认配置可用内存会稍微小于当时的最大可用物理内存空间，如果超出的话会进行GC并抛出JVM内部错误而非向操作系统申请更多内存。
-只有最大可用物理内存空间数据与实际上真实的内存大小不符时才会出现这种情况。
-如果机子内存过小，或者使用某些保留空间过大的核显（常见与笔记本电脑），会导致硬件保留内存比例过大导致此问题。
-超开的机子也会导致此问题。
-
-可以通过以下方式尝试解决此问题：  
-
-- 配置PNX使用更少的内存
-- 添加操作系统的虚拟内存（可能会严重降低性能）
-- 扩展更大的物理内存
-
-## 如何让PNX在关服后不自动重启
-
-关服后等待10秒自动重启是PNX-CLI的默认功能，您可以在启动命令后面加上` start`来关闭此功能。  
-
-例如：
-
-```shell
-# 如果您使用exe文件在Windows上运行
-.\pnx start
-# 如果您使用elf文件在Linux上运行
-./pnx start
-# 如果您使用jar版本启动器
-java -jar PNX-CLI.jar start
-```
+Please check the above reasons first. If you really can't solve it, you can turn to QQ group or Discord server for help.  

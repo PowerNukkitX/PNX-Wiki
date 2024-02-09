@@ -21,13 +21,14 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
       src: 'images/PNX_LOGO_sm.png',
     },
     items: [
+      /*
       {
         type: 'docSidebar',
         sidebarId: 'pnx_wiki_content_sidebar',
         position: 'left',
         label: 'Docs',
       },
-      /*{to: '/blog', label: 'Blog', position: 'left'},
+      {to: '/blog', label: 'Blog', position: 'left'},
       {to: '/misc', label: 'Misc', position: 'left'},
       {
         type: 'docSidebar',

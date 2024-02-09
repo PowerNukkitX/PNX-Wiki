@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Config": {
-    "message": "Config",
+    "message": "配置文件项",
     "description": "The label for category Config in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Config.link.generated-index.title": {
-    "message": "⚙️ Config",
+    "message": "⚙️ 配置文件项",
     "description": "The generated-index page title for category Config in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Config.link.generated-index.description": {
@@ -16,11 +16,11 @@
     "description": "The generated-index page description for category Config in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.FAQ": {
-    "message": "FAQ",
+    "message": "常见问题",
     "description": "The label for category FAQ in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.FAQ.link.generated-index.title": {
-    "message": "💁 FAQ",
+    "message": "💁 常见问题",
     "description": "The generated-index page title for category FAQ in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.FAQ.link.generated-index.description": {
@@ -28,11 +28,11 @@
     "description": "The generated-index page description for category FAQ in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Development": {
-    "message": "Development",
+    "message": "开发者",
     "description": "The label for category Development in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Development.link.generated-index.title": {
-    "message": "🧰 For Devs",
+    "message": "🧰 开发者",
     "description": "The generated-index page title for category Development in sidebar pnx_wiki_content_sidebar"
   },
   "sidebar.pnx_wiki_content_sidebar.category.Development.link.generated-index.description": {

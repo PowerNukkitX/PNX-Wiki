@@ -9,6 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
+import type * as Preset from '@docusaurus/preset-classic';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -80,12 +81,12 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          routeBasePath: '/', // Serve the docs at the site's root
-          path: 'docs',
+          id: 'product',
           sidebarPath: './config/sidebar.pnx_wiki.ts',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/PowerNukkitX/PNX-Wiki/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -99,8 +100,7 @@ const config = {
         theme: {
           customCss: './src/css/custom.scss',
         },
-        
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 

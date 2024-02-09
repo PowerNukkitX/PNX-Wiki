@@ -1,88 +1,97 @@
-# 转换世界  
+# Convert world
 
-## 概述
+### Overview
 
-你是否在 BDS 开了n年的服，如今想转到 PowerNukkitX ？
-> 案例：[我该怎么将 BedrockSever1.18 的世界转到 Nukkit?](https://cloudburstmc.org/threads/how-could-i-convert-bedrocksever1-18-world-to-nukkit.1449/)
+Have you been running BDS for years and now want to switch to PowerNukkitX?
+> Example: [How could I convert BedrockSever1.18 world to Nukkit?](https://cloudburstmc.org/threads/how-could-i-convert-bedrocksever1-18-world-to-nukkit.1449/)
 
-你是否已经享受到JE的插件生态或将购买的JE地图转为 PowerNukkitX ？
+Have you already enjoyed the plugin ecosystem of JE or want to convert a purchased JE map to PowerNukkitX?
 
-虽然你已经看过 Terra 提供的壁纸级史诗地形，但是你更希望能使用自己已有的地图？
+Although you have already seen the epic terrain provided by Terra, do you want to use your own map?
 
-看完下面的教程你将不需要求助任何人或任何类似 WorldFixed 的工具！
+After reading the tutorial below, you will not need to ask for help from anyone or any tool like WorldFixed!
 
-## 选择我们的工具
+
+### Choose Our Tools
 
 - [AmuletMC](https://www.amuletmc.com/)
-- [PNXWorldConverter](https://github.com/PowerNukkitX/PNXWorldConverter/blob/patch/chs/README_CHS.md) - [前往下载](https://github.com/PowerNukkitX/PNXWorldConverter/releases/latest)
+- [PNXWorldConverter](https://github.com/PowerNukkitX/PNXWorldConverter) - [Go to download](https://github.com/PowerNukkitX/PNXWorldConverter/releases/latest)
 
-## 进行转换的思路
 
-容我浅浅的介绍一下这两个工具。
+### The Idea of Conversion
 
-AmuletMC 是 **Amulet-Team** 开发的一款可以将JE/BE任意版本进行转换的工具，我们可以用它将 PNXWorldConverter 所不能完美胜任的地图转到可以完美胜任的`JE 1.15-1.19`地图版本 
+Allow me to briefly introduce these two tools.
 
-之后我们使用 PNXWorldConverter 将地图转换为PNX可以加载的地图。
+AmuletMC is a tool developed by **Amulet-Team** that can convert JE/BE maps of any version. We can use it to convert maps that PNXWorldConverter cannot perfectly handle to `JE 1.15-1.19` map versions that PNXWorldConverter can handle perfectly.
 
-## 实践一下
+Then we use PNXWorldConverter to convert the map to a format that PNX can load.
 
-著名意大利艺术家曾说：
 
-> 理论脱离实践是最大的不幸。
-> <p align="right">- 达·芬奇</p>
+### Practice
 
-实践步骤分为三步，你只需要约2分钟便能学习、掌握这门技能。
+The famous Italian artist once said:
 
-在此之前，我们需要准备下面这两个文件：
+> Theoretical detachment from practice is the greatest misfortune.
+> <p align="right">- Leonardo da Vinci</p>
+
+The steps for practicing this skill are divided into three steps, and you can master it in about 2 minutes.
+
+Before we begin, we need to prepare the following two files:
 
 1. [丛林神庙origin.zip](https://res.nullatom.com/res/pnx/docs-world-converter/%E4%B8%9B%E6%9E%97%E7%A5%9E%E5%BA%99origin.zip)
-这是由 **六月Aurora** 创建的地图。[了解更多？](https://space.bilibili.com/23620015 "了解更多？")
-在此仅供学习使用，禁止用于商业行为。
+This is a map created by **June Aurora**. [Learn more?](https://space.bilibili.com/23620015 "Learn more?")
+For learning purposes only, not for commercial use.
 2. [pnxworldconvert-1.0.2.jar](https://res.nullatom.com/res/pnx/docs-world-converter/pnxworldconvert-1.0.2.jar)
 
-准备好后目录结构应该类似：
+When you are ready, the directory structure should look something like this:
 > - 丛林神庙
 >   - region
 >   - level.dat
 >   - ...
 > - pnxworldconvert-1.0.2.jar
 
-### Step 1
-接下来我们使用命令行工具，先将运行目录转移到当前文件夹中：
+#### Step 1
+Next, we will use a command line tool to switch the execution directory to the current folder:
 
-本教程中的路径是`C:\Users\Administrator\Desktop\demo`，所以命令如下，而你需要更改为你的执行路径：
+In this tutorial, the path is `C:\Users\Administrator\Desktop\demo`, so the command is as follows. You need to change it to your execution path:
+
 ```shell
 cd C:\Users\Administrator\Desktop\demo
 ```
+Then execute the following command:
 
-再执行下面的命令：
 ```shell
 java -jar pnxworldconvert-1.0.2.jar -t ./丛林神庙 -d OVERWORLD
 ```
 ![pSin7p6.png](https://s1.ax1x.com/2023/01/03/pSin7p6.png)
-> 图中遇到了一个错误，是因为输入了错误的文件名导致jar文件没有找到。
+> In the image, an error occurred because the jar file was not found due to an incorrect file name being entered.
 
-### Step 2
+#### Step 2
 
-由于`PNXWorldConverter`是java17项目，导致如果您 `java` 的PATH不是java17时可能会报错，提示过低的Java版本，如图：
+Because PNXWorldConverter is a Java17 project, if your Java PATH is not Java17, you may get an error saying that the Java version is too low, as shown in the image below:
+
 ![pSinH1K.md.png](https://s1.ax1x.com/2023/01/03/pSinH1K.md.png)
 
-我们可以使用 java17 可执行文件(在windows中它是`java.exe`) 的绝对路径来替代命令中的`java`命令，如下：
+We can use the absolute path to the Java17 executable file (in Windows this is `java.exe`) to replace the `java` command in the command, as follows:
+
 ![pSin5kR.md.png](https://s1.ax1x.com/2023/01/03/pSin5kR.md.png)
+
 ```shell
 "C:\Program Files\Java\jdk-17.0.2+8\bin\java.exe" -jar pnxworldconvert-1.0.2.jar -t ./丛林神庙 -d OVERWORLD
 ```
-由于这个办法不够优雅，所以常常受到大佬们的唏嘘声。
+However, this method is often not elegant enough and is often lamented by some.
 
-### Step 3
+#### Step 3
 
-现在我们应该正常开始转换了，如图：
+Now we should be able to start the conversion normally, as shown in the image below:
+
 ![pSinOne.md.png](https://s1.ax1x.com/2023/01/03/pSinOne.md.png)
 
-等待转换完毕后，我们会发现在当前目录下，多了一个`output`文件夹，其中便是我们等候多时的结果。
+After the conversion is complete, we will find that there is an `output` folder in the current directory, which contains the result we have been waiting for.
 
-## 寄语
 
-非常高兴你能看到这里，本篇教程已经结束了。
+### Greetings!
 
-愿你能在 PowerNukkitX 的沃土上发展的更好。
+It is a pleasure that you have arrived here. This tutorial has come to an end.
+
+We hope that you can thrive in the world of PowerNukkitX.

@@ -1,6 +1,6 @@
 ---
 slug: "./get-started"
-title: "⚒️ Get Started"
+title: "⚒️ 快速入门"
 sidebar_position: 2
 ---
 # 快速入门

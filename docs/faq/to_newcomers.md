@@ -1,107 +1,105 @@
-# 新人必看  
+# To newcomers 
 
-此页面将解答您关于PNX内容和能力的一些疑惑。  
+This page will answer some of your questions about PNX content and capabilities.  
 
-## PNX开源吗？  
+## Is PNX open source?  
 
-是的，PNX完全开源，您可以通过 [Github存储库](https://github.com/PowerNukkitX/PowerNukkitX) 来获取全部的源代码。  
+Yes, PNX is completely open source. You can [Githubmemory pool](https://github.com/PowerNukkitX/PowerNukkitX) To get all the source code.  
 
-## PNX免费吗？  
+## Is PNX free?  
 
-您下载和使用PNX开设MCBE服务器是完全免费的。第三方服务者可以在明确告知被服务者本页面内容后可以无偿使用PNX进行收费服务。  
-中华人民共和国法律另有规定的除外。与开发组、开发组成员或第三方签订了不违反本项目开源协议的合同内容除外。  
+It is completely free for you to download and use PNX to set up mcbe server. The third-party service provider can use PNX for charging services free of charge after clearly informing the service recipient of the content of this page.  
+Unless otherwise provided by the laws of the people's Republic of China. Except for the contract signed with the development team, members of the development team or a third party that does not violate the open source agreement of the project.  
 
-开发组或开发组成员可能就包括但不限于提供定制化服务、提供定制化插件、相关资讯及其他增值服务等向您收取费用。  
+The development team or members of the development team may charge you for providing customized services, customized plugin, relevant information and other value-added services, including but not limited to.  
 
-## PNX支持什么版本？  
+## What versions does PNX support?  
 
-Minecraft: Bedrock Edition v1.20.10 (Protocol 594)  
+Minecraft: Bedrock Edition v1.19.50 (Protocol 560)  
 
-## PNX原版特性支持如何？  
+## How about PNX original feature support?  
 
-### PNX有多世界吗？  
+### How world does PNX have?  
 
-是的，PNX支持单端任意数量的世界，您可以同时拥有多个主世界、下界和末地。  
-PNX支持384格高的新版世界。  
+Yes, PNX supports any number of worlds at a single end. You can have multiple primary worlds, lower bound and destination at the same time.  
+PNX supports the new version of the world with 384 grid height.  
 
-### PNX有下界和末地吗？ 
+### Does PNX have lower bound and terminal? 
 
-是的，PNX有下界和末地。  
+Yes, PNX has lower bound and terminal.  
 
-### PNX有所有原版方块和物品吗？  
+### Does PNX have all original block and item?  
 
-PNX支持当前MC版本的所有原版方块和物品，包括命令方块和红石相关方块等。  
+PNX supports all original block and item of the current MC version, including command block and red stone related block.  
 
-### PNX有红石吗？  
+### Does PNX have red stone?  
 
-PNX完全支持原版红石，具有与原版几乎一模一样的红石行为，但在活塞虫和生电相关内容上与原版略有出入。  
+PNX fully supports the original Redstone, with almost the same Redstone behavior as the original, but slightly different from the original in terms of piston worm and electricity generation.  
 
-### PNX有命令吗？  
+### Does PNX have orders?  
 
-PNX完全支持命令，支持 [几乎所有原版命令](https://github.com/PowerNukkitX/PowerNukkitX/issues/250) ，也支持通过插件注册自定义（真）命令。  
+PNX fully supports commands and supports [Almost all original commands](https://github.com/PowerNukkitX/PowerNukkitX/issues/250) , also supports the registration of custom (true) commands through the plugin.  
 
-### PNX有命令方块吗？  
+### Does PNX have a command block?  
 
-PNX完全支持命令方块，具有与原版相同的行为，可以接受与原版相同的红石控制，支持链锁和循环命令方块。PNX中命令方块性能比原版和BDS更好。  
+PNX fully supports command block, has the same behavior as the original, can accept the same red stone control as the original, and supports chain and circular command block. The performance of the command block in PNX is better than that of the original and BDS.  
 
-### PNX有生物吗？  
+### Is PNX alive?  
 
-PNX目前仅对生物完成了初步支持，如果要进一步的生物AI，您可以通过安装 [MobPlugin插件](https://ci.lt-name.com/job/MobPlugin/job/PNX/) 来使PNX服务器具有类原版的生物行为。   
+PNX has only completed preliminary support for biology. If you want to further biological AI, you can install [MobPluginPlugin](https://ci.lt-name.com/job/MobPlugin/job/PNX/) Make PNX server have biological behavior similar to the original.   
 
-### PNX有Addons吗？  
+### Does PNX have addons?  
 
-不，PNX不支持Addons。相反，PNX向Java插件和JS插件提供类似于Java版的Forge那样的API，可以使用插件完成Addons能做到的一切，而且比Addons功能多得多，性能更好。  
+No, PNX does not support addons. On the contrary, PNX provides Java plugin and JS plugin with APIs similar to forge in Java. You can use plugin to accomplish everything addons can do. Moreover, PNX has much more functions and better performance than addons.  
 
-### PNX有原版世界/地形吗？  
+### PNX has the original world/Terrain?  
 
-PNX默认的生成器是仿1.14的一个高性能地形生成器，与原版地形有一定出入。  
+The default generator of PNX is a high-performance terrain generator imitating 1.14, which is different from the original terrain.  
 
-因此，PNX还提供了其他的生成器：  
-- [Terra生成器](terra.html) ，可以生成史诗级的世界，适于建筑服，也适于生存服等服务器。  
-- [纯原版生成器](https://github.com/KCodeYT/VanillaGenerator) ，可以生成与支持的最新版本原版完全一致的世界，相同种子可以生成完全相同的原版世界，消耗服务器性能巨大。  
+Therefore, PNX also provides other generators：  
+- [Terragenerator ](TerraQuestion HTML), which can generate an epic world, and is suitable for servers such as architectural clothing and survival clothing.  
+- [Pure original generator](https://github.com/KCodeYT/VanillaGenerator) , which can generate a world completely consistent with the original version of the latest supported version, and the same seed can generate the same original world, which consumes huge server performance.  
 
-## PNX的性能如何？  
+## What is the performance of PNX?  
 
-### PNX能带动多少人？  
+### How many people can PNX drive?  
 
-这个问题很难准确回答，这受限于您的服务端硬件和网络状况。  
+It is difficult to answer this question accurately, which is limited by your server hardware and network conditions.  
 
-我们可以为您提供一些实测数据作为参考：  
+We can provide you with some measured data for reference：  
 
-- 官方测试服，硬件为五郎云赞助的i9CPU服务器，在5人开鞘翅飞行跑图测试及其他原版特性测试中，每项测试整体平均CPU利用率低于5%，单核最高利用率低于30%。  
-- 某生存服，硬件为腾讯云轻量云服务器，配置为1核CPU(2.4Ghz)，2GB内存，5Mbps带宽，内容较为完善，安装了几十个插件，具有大厅、地皮、生存区、商店区等十几个世界，20名玩家同时在线生存，服务器tps在13左右稳定运行
-- 某群组服，硬件为自建服务器，配置为64核心CPU(~2Ghz)，100+GB内存，家用带宽，开展生存实验，60名玩家同世界展开生存竞赛，服务器tps一直保持20，稳定运行。
-- XX科技面板服，硬件未知，配置为4核心，8GB内存，在2个玩家，3000个实体（羊、牛、鸡等）在玩家可视范围的情况下，服务器tps在19左右稳定运行。
+- The official test clothes and hardware are i9cpu servers sponsored by Wulang cloud. In the five person flight chart test and other original feature tests, the overall average CPU utilization of each test is less than 5%, the maximum utilization rate of a single core is less than 30%。  
+- The hardware of a survival service is Tencent cloud lightweight cloud server, which is configured with a 1-core CPU (2.4GHz), 2GB of memory, 5mbps of bandwidth. The content is relatively complete. Dozens of plugin are installed. There are more than a dozen worlds such as halls, plots, survival areas, and store areas. 20 player live online at the same time, and the server TPS is running stably at about 13
+- The hardware of a group server is a self built server configured with 64 core CPU（~2Ghz)，100+GBMemory, home bandwidth, survival experiment, 60 player compete with the world for survival, and the server TPS has been maintained at 20, stable operation.
+- XXThe hardware of the technology panel service is unknown. It is configured with 4 cores and 8GB memory. When 2 player and 3000 entity (sheep, cattle, chicken, etc.) are within the visual range of player, the server TPS runs stably at about 19.
 
-这些实测数据不一定完全适用于您的服务器，但我们通常会给出一些简单的建议，这些建议可能对您有所帮助：  
+These measured data may not be completely applicable to your server, but we usually give some simple suggestions, which may be helpful to you：  
 
-- 大内存有助于PNX大幅提升性能，PNX通过占用更多内存缓存二进制机器码，进行运行期间的代码动态优化核缓存计算结构来使得其性能远高于BDS。  
-- 更多的CPU核心数量有助于提升性能，如8核心E5v3性能比4核心i9-9900K在某些情况下高出近30%。  
-- 使用Linux系统有助于提升PNX性能，一些运行时优化无法在Windows上进行。如果你要使用纯原版生成器的话，强烈建议使用Windows系统。  
-- 很多情况制约您服务器流畅度的是网络带宽，通常而言，1Mbps的带宽仅能供3-4名玩家流畅游玩。  
-- 内存读写速度、内存在主板上的安装位置及内存通信速率也会对PNX性能造成些许影响。
+- Large memory helps PNX greatly improve its performance. PNX uses more memory to cache binary machine codes, and dynamically optimizes the core cache computing structure during operation to make its performance much higher than that of BDS.  
+- More CPU cores help to improve performance. For example, the performance of 8-core e5v3 is nearly 30% higher than that of 4-core i9-9900k in some cases%。  
+- Using Linux system helps to improve PNX performance. Some runtime optimizations cannot be performed on windows. If you want to use the pure original generator, it is strongly recommended to use the windows system.  
+- In many cases, the network bandwidth restricts the smoothness of your server. Generally speaking, 1Mbps bandwidth can only be used for 3-4 player to play smoothly.  
+- Memory read-write speed, memory installation location on the motherboard and memory communication rate will also have some impact on PNX performance.
 
-### PNX支持多核吗？  
+### Does PNX support multi-core?  
 
-是的，PNX有较好的多核支持，可以较为充分利用多个服务器核心。您不必一味追求高主频，适当增加服务器核心数量可以大幅提升服务端性能。  
+Yes, PNX has good multi-core support and can make full use of multiple server cores. You don't have to pursue high frequency. Properly increasing the number of server cores can greatly improve the performance of the server.  
 
-PNX在处理地形生成、生物AI、实体运动等等众多地方都多核并行处理，但为了保证与已有插件兼容性和与原版特性的一致性，并非所有任务都会多核处理。
-即便如此，PNX单核处理速度也比同类服务端，如BDS、PocketMine等要更快。  
+PNX processes terrain generation, biological AI, entity motion and many other places in multi-core parallel processing. However, in order to ensure compatibility with existing plugin and consistency with the original features, not all tasks will be multi-core processing.
+Even so, the processing speed of PNX single core is faster than that of similar server, such as BDS and pocketmine.  
 
-### PNX性能是不是不好？  
+### Is PNX performance bad?  
 
-#### Java真的比C++慢吗？  
+#### JavaReally better than C++Slow?  
 
-很多人认为Java是所谓的“解释型”语言，性能就会比C++慢，一定程度上这有道理，但并非完全适用。
-在很多应用场景测试中，Java17的性能打败了C++，这主要得益于Java能够将代码在运行时动态优化和动态编译为机器码。
-我们知道，C++会将源代码编译为机器码，让操作系统直接运行，但这样的劣势是编译的时候并不知道运行机器码的CPU到底是什么，支持什么特殊的加速功能等等。
-而且编译器不知道代码运行的时候哪里占用内存多要优化内存，哪里占用CPU多要用内存换取CPU性能，哪里优化了根本用不到，哪里怎么优化最快，等等。  
-而Java则不然，我们引入了世界领先的Graal即时编译器，它会在程序运行的时候具体问题具体分析，根据服务器的运行状况决定哪里要执行什么样的优化，它还可以
-通过编译出最适合当前机器的CPU的机器码，使用这个CPU独有的加速功能，尽量避免使用CPU执行慢的指令等方式编译出比C++编译器更高性能的代码，从而大幅提升执行速度。  
+Many people think that Java is a so-called "interpreted" language, and its performance will be better than that of C++Slow, which makes sense to some extent, but it is not entirely applicable.
+In many application scenario tests, java17 outperforms C++This is mainly due to the fact that Java can dynamically optimize and compile code into machine code at runtime.
+We know, C++It compiles the source code into machine code and allows the operating system to run directly. However, this disadvantage is that it does not know what the CPU running the machine code is, what special acceleration functions it supports, and so on.
+Moreover, the compiler does not know where to optimize the memory when the code is running, where to use the CPU in exchange for the CPU performance, where the optimization is not used at all, where to optimize the fastest, and so on.  
+Java is not the case. We have introduced the world's leading grail instant compiler, which will analyze specific problems when the program is running. It can determine what optimization to perform according to the running status of the server. It can also
+Compile the machine code that is most suitable for the CPU of the current machine, use the unique acceleration function of the CPU, and try to avoid using the CPU to execute instructions slower than C++Compilers provide more high-performance code, which greatly improves execution speed.  
 
-#### 语言决定性能吗？  
+#### Does language determine performance?  
 
-并不完全如此，真正决定性能的是代码质量。PNX是全开源的，我们可以针对各个场景进行代码优化，通过多核并行来加速，这使得PNX性能高于一些其他服务端。  
-但请注意，加载过多插件可能严重降低性能，因为插件代码质量层次不齐，我们无法做出任何保证。  
-
-
+Not exactly. What really determines performance is code quality. PNX is fully open source. We can optimize the code for each scenario and accelerate it through multi-core parallelism, which makes PNX performance higher than some other server.  
+However, please note that loading too many plugin may seriously reduce performance, because the plugin code quality level is uneven, and we cannot make any guarantee.  
