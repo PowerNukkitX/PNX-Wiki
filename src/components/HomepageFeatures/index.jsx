@@ -1,41 +1,92 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: <Translate
+      id="homepage.feature.high"
+      description="high performance"
+      values={{}}>
+      {"High Performance"}
+    </Translate>,
+    Svg: require('@site/static/img/icon/high-performance.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <Translate
+        id="homepage.feature.desc.high"
+        values={{}}>
+        {"High Performance!!!"}
+      </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: <Translate
+      id="homepage.feature.moreFeature"
+      description="More vanilla features"
+      values={{}}>
+      {"More features"}
+    </Translate>,
+    Svg: require('@site/static/img/icon/more-feature.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <Translate
+        id="homepage.feature.desc.moreFeature"
+        values={{}}>
+        {"More vanilla features!!!"}
+      </Translate>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: <Translate
+      id="homepage.feature.morePlugins"
+      description="More plugins"
+      values={{}}>
+      {"More plugins"}
+    </Translate>,
+    Svg: require('@site/static/img/icon/plugin.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <Translate
+        id="homepage.feature.desc.morePlugins"
+        values={{}}>
+        {"More plugins!!!"}
+      </Translate>
+    ),
+  },
+  {
+    title: <Translate
+      id="homepage.feature.vanillaCommand"
+      description="All Vanilla Commands"
+      values={{}}>
+      {"All Vanilla Commands"}
+    </Translate>,
+    Svg: require('@site/static/img/icon/command.svg').default,
+    description: (
+      <Translate
+        id="homepage.feature.desc.vanillaCommand"
+        values={{}}>
+        {"All Vanilla Commands!!!"}
+      </Translate>
+    ),
+  },
+  {
+    title: <Translate
+      id="homepage.feature.plugin"
+      description="More programming languages"
+      values={{}}>
+      {"More programming languages"}
+    </Translate>,
+    Svg: require('@site/static/img/icon/plugin.svg').default,
+    description: (
+      <Translate
+        id="homepage.feature.desc.plugin"
+        values={{}}>
+        {"More programming languages!!!"}
+      </Translate>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

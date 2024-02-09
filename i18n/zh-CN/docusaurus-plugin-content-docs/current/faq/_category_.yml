@@ -1,0 +1,6 @@
+label: "FAQ"
+position: 4
+link:
+  type: generated-index
+  title: "💁 常见问题"
+  description: "您在使用PowerNukkitX时遇到的常见问题的疑难解惑"

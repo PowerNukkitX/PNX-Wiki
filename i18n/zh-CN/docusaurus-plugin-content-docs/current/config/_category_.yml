@@ -1,0 +1,6 @@
+label: "Config"
+position: 3
+link:
+  type: generated-index
+  title: "⚙️ 配置"
+  description: "PowerNukkitX服务端配置文件说明和相关介绍"

@@ -23,9 +23,20 @@ Join US:
 
 Node.js Version >= 18.x
 Yarn
+
 ```bash
+npm install yarn -g
+yarn install
 ```
 
+```bash
+yarn run start
+```
+## Dev
+
+### add support languag
+
+See: https://docusaurus.io/zh-CN/docs/i18n/git
 
 ## License
 

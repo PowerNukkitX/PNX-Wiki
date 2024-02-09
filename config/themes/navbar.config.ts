@@ -27,19 +27,19 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
         position: 'left',
         label: 'Docs',
       },
-      {to: '/blog', label: 'Blog', position: 'left'},
+      /*{to: '/blog', label: 'Blog', position: 'left'},
       {to: '/misc', label: 'Misc', position: 'left'},
-      /*{
+      {
         type: 'docSidebar',
         sidebarId: 'community_misc_sidebar',
         position: 'left',
         label: 'Misc',
-      },*/
+      },
       {
         type: 'docsVersionDropdown',
         position: 'right',
         docsPluginID: 'PowerNukkitX'
-      },
+      },*/
       {
         type: 'localeDropdown',
         position: 'right',

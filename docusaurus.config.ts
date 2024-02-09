@@ -13,7 +13,7 @@ import docs_config from "./config/themes/docs.config";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PowerNukkitX Wiki',
-  tagline: 'Stay Cool',
+  tagline: 'Make Great Nukkit Agent',
   favicon: 'images/favicon.ico',
 
   // Set the production url of your site here
@@ -35,7 +35,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','zh-Hans'],
+    locales: ['en','zh-CN'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US'
@@ -54,21 +54,17 @@ const config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
-        docsRouteBasePath: ["docs", "community"],
-        docsDir: ["docs", "community"],
+        docsRouteBasePath: ["docs"],
+        docsDir: ["docs"],
         docsPluginIdForPreferredVersion: "product",
         searchContextByPaths: [
           {
-            label: "Tutorial",
-            path: "docs",
-          },
-          {
             label: {
-              en: "Community",
-              zh: "社区",
+              en: "PNX2.0 Document",
+              zh: "PNX2.0 文档",
             },
-            path: "community",
-          },
+            path: "docs",
+          }
         ],
         hideSearchBarWithNoSearchContext: true,
       }),
