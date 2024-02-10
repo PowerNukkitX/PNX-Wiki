@@ -12,7 +12,7 @@ import docs_config from "./config/themes/docs.config";
 import type * as Preset from '@docusaurus/preset-classic';
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   title: 'PowerNukkitX Wiki',
   tagline: 'Make Great Nukkit Agent',
   favicon: 'images/favicon.ico',
@@ -37,10 +37,15 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en','zh-CN'],
+    path: 'i18n',
     localeConfigs: {
       en: {
         htmlLang: 'en-US'
       },
+      'zh-CN': {
+        label: '中文简体',
+        htmlLang: 'zh-CN'
+      }
     }
   },
 
@@ -131,5 +136,3 @@ const config = {
       },
     }),
 };
-
-export default config;

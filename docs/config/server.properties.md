@@ -52,7 +52,7 @@ Main World Map Seed
 ## level-type=DEFAULT
 - Main world map type　(DEFAULT　Default)
 - [Vanilla Generator](https://github.com/KCodeYT/VanillaGenerator)　(Vanilla　Pure original world type)
-- [Terra World Generator](../faq/Terra问题.html)
+- [Terra World Generator](../faq/terra)
 ## allow-nether=on
 Whether to open the lower world (off/on)
 ## allow-the_end=on

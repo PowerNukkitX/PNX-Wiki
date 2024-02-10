@@ -53,7 +53,7 @@
 ## level-type=DEFAULT
 - 主世界地图类型　(DEFAULT　默认)
 - [纯原版生成器](https://github.com/KCodeYT/VanillaGenerator)　(Vanilla　纯原版世界类型)
-- [Terra史诗世界生成器](../faq/Terra问题.html)
+- [Terra史诗世界生成器](../faq/terra)
 ## allow-nether=on
 是否开启下界世界(OFF关闭　ON开启)
 ## allow-the_end=on
