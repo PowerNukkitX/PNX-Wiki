@@ -22,15 +22,15 @@ const footer: Footer = {
         items: [
           {
             label: 'Docs',
-            to: '/docs/intro',
+            to: '/docs',
           },
           {
             label: 'API',
-            to: '/docs/intro',
+            to: '/docs',
           },
           {
             label: 'FAQ',
-            to: '/docs/intro',
+            to: '/docs',
           },
         ],
       },
@@ -58,29 +58,29 @@ const footer: Footer = {
             label: 'Blog',
             to: '/blog',
           },
-          {
-            label: 'Changelog',
-            to: '/changelog',
-          },
+          // {
+          //   label: 'Changelog',
+          //   to: '/changelog',
+          // },
           {
             label: 'Javadoc',
             href: 'https://javadoc.io/doc/cn.powernukkitx/powernukkitx',
           },
         ],
       },
-      {
-        title: 'Legal',
-        items: [
-          {
-            label: 'OSC License',
-            to: '/misc/osc-license',
-          },
-          {
-            label: 'Terms',
-            to: '/misc/terms',
-          },
-        ],
-      },
+      // {
+      //   title: 'Legal',
+      //   items: [
+      //     {
+      //       label: 'OSC License',
+      //       to: '/misc/osc-license',
+      //     },
+      //     {
+      //       label: 'Terms',
+      //       to: '/misc/terms',
+      //     },
+      //   ],
+      // },
     ],
     copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX`,
   };

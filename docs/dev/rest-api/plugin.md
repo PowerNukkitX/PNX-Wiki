@@ -4,11 +4,11 @@
 
 ## 获取插件列表
 
-url:
+URL:
 
-- /plugin/list?from={from}&size={size}
-- /plugin/list/{sorter:recommend|lastUpdate|star}?from={from}&size={size}
-- /plugin/list/{sorter:recommend|lastUpdate|star}/{order:asc|desc}?from={from}&size={size}
+- `/plugin/list?from={from}&size={size}`
+- `/plugin/list/{sorter:recommend|lastUpdate|star}?from={from}&size={size}`
+- `/plugin/list/{sorter:recommend|lastUpdate|star}/{order:asc|desc}?from={from}&size={size}`
 
 参数:
 
@@ -84,7 +84,7 @@ url:
 
 url:
 
-- /plugin/get/{id}
+- `/plugin/get/{id}`
 
 参数:
 
@@ -136,8 +136,8 @@ url:
 
 url:
 
-- /plugin/search?keywords={keywords}&size={size}
-- /plugin/search/{order:asc|desc}?keywords={keywords}&size={size}
+- `/plugin/search?keywords={keywords}&size={size}`
+- `/plugin/search/{order:asc|desc}?keywords={keywords}&size={size}`
 
 参数:
 
@@ -231,7 +231,7 @@ url:
 **该API为延迟返回API。**
 
 url:
-- /plugin/dependency-graph/{name}
+- `/plugin/dependency-graph/{name}`
 
 参数:
 - name: 插件名称，如`LLSELib`
