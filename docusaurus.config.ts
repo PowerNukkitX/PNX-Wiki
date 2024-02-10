@@ -12,7 +12,7 @@ import docs_config from "./config/themes/docs.config";
 import type * as Preset from '@docusaurus/preset-classic';
 
 /** @type {import('@docusaurus/types').Config} */
-export default {
+const config = {
   title: 'PowerNukkitX Wiki',
   tagline: 'Make Great Nukkit Agent',
   favicon: 'images/favicon.ico',
@@ -37,15 +37,10 @@ export default {
   i18n: {
     defaultLocale: 'en',
     locales: ['en','zh-CN'],
-    path: 'i18n',
     localeConfigs: {
       en: {
         htmlLang: 'en-US'
       },
-      'zh-CN': {
-        label: '中文简体',
-        htmlLang: 'zh-CN'
-      }
     }
   },
 
@@ -88,19 +83,21 @@ export default {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Serve the docs at the site's root
+          path: 'docs',
           id: 'product',
           sidebarPath: './config/sidebar.pnx_wiki.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/PowerNukkitX/PNX-Wiki/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/PowerNukkitX/blob/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/PowerNukkitX/blob/master/',
         },
         theme: {
           customCss: './src/css/custom.scss',
@@ -136,3 +133,5 @@ export default {
       },
     }),
 };
+
+export default config;
