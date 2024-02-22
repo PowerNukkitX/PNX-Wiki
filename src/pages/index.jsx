@@ -1,8 +1,8 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Wave from '../components/common/wave';
-import HomepageMod_Hero from '@site/src/components/Homepage-modules/Hero';
-import HomepageMod_PNX_Features from '@site/src/components/Homepage-modules/PNX-Features';
+import HomepageMod_Hero from '../components/HomePage-modules/Hero';
+import HomepageMod_PNX_Features from '../components/HomePage-modules/PNX-Features';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
