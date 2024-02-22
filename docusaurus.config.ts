@@ -15,7 +15,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config = {
   title: 'PowerNukkitX Wiki',
   tagline: 'Make Great Nukkit Agent',
-  favicon: 'images/favicon.ico',
+  favicon: 'img/icon/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://wiki.powernukkitx.com',
@@ -86,7 +86,7 @@ const config = {
           routeBasePath: '/', // Serve the docs at the site's root
           path: 'docs',
           id: 'product',
-          sidebarPath: './config/sidebar.pnx_wiki.ts',
+          sidebarPath: './config/sidebar/pnx_wiki.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -110,7 +110,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // PowerNukkitX Wiki Social card
-      image: 'images/docusaurus-social-card.jpg',
+      image: 'img/misc/og-social-card.jpg',
       // Configuration files are located in the path /config/themes
       navbar: navbar,
       footer: footer,

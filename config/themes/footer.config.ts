@@ -30,7 +30,7 @@ const footer: Footer = {
           },
           {
             label: 'FAQ',
-            to: '/category/faq',
+            to: '/category/pnx-faq',
           },
           {
             label: 'Javadoc',

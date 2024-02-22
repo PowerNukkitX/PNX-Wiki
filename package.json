@@ -1,6 +1,6 @@
 {
   "name": "PNX-Wiki",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PowerNukkitX Wiki, Powered By docusaurus",
   "author": [
     {
@@ -27,13 +27,15 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "crowdin": "crowdin"
   },
   "dependencies": {
+    "@crowdin/cli": "3",
     "@docusaurus/core": "3.1.1",
     "@docusaurus/preset-classic": "3.1.1",
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
-    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/react": "^3.0.1",
     "clsx": "^2.0.0",
     "docusaurus-plugin-sass": "^0.2.5",
     "prism-react-renderer": "^2.3.0",

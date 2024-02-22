@@ -18,7 +18,7 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
     title: 'PNX Wiki',
     logo: {
       alt: 'PowerNukkitX Logo',
-      src: 'images/PNX_LOGO_sm.png',
+      src: 'img/logo/PNX_LOGO_sm.png',
     },
     items: [
       /*

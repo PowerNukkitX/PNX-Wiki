@@ -34,7 +34,7 @@ var content = `
 🏡 QQ Group: https://jq.qq.com/?_wv=1027&k=6rm3gbUI
 🏡 Wiki: https://wiki.powernukkitx.com
 🏡 Github: https://github.com/PowerNukkitX 
-🔧 Version：PNX Wiki-0.0.1
+🔧 Version：PNX Wiki-0.0.2
 
 Click to have a surprise / 点该链接有惊喜 https://rmc.ink/funny 
 `

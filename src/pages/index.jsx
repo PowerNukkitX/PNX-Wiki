@@ -1,39 +1,8 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import Translate, {translate} from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Wave from '../components/common/wave';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/pnx-doc">
-          <Translate
-          id="homepage.visitMyBlog"
-          description="The homepage message to ask the user to visit my blog"
-          values={{}}>
-          {"Let's Go"}
-        </Translate>
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import HomepageMod_Hero from '@site/src/components/Homepage-modules/Hero';
+import HomepageMod_PNX_Features from '@site/src/components/Homepage-modules/PNX-Features';
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
@@ -41,10 +10,10 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="PowerNukkitX Wiki">
-      <HomepageHeader />
+      <HomepageMod_Hero />
+      <Wave />
       <main>
-        <Wave />
-        <HomepageFeatures />
+        <HomepageMod_PNX_Features />
       </main>
     </Layout>
   );
