@@ -18,7 +18,7 @@
   align-items: center;
   padding: 4rem 3rem;
   width: 100%;
-  background-color: #171E2B;
+  background: linear-gradient(to bottom, #303846, #171E2B, #303846);
 }
 
 .featureItems {
