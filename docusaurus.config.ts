@@ -14,7 +14,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PowerNukkitX Wiki',
-  tagline: 'Make Great Nukkit Agent',
+  tagline: 'Make Nukkit Great Again',
   favicon: 'img/icon/favicon.ico',
 
   // Set the production url of your site here

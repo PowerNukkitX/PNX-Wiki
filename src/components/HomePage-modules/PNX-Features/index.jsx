@@ -88,7 +88,7 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4',styles.featureItem)}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -104,7 +104,7 @@ export default function HomepageMod_PNX_Features() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className={clsx('row',styles.featureItems)}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
