@@ -11,12 +11,12 @@ const FeatureList = [
       values={{}}>
       {"High Performance"}
     </Translate>,
-    Svg: require('@site/static/img/icon/high-performance.svg').default,
+    Svg: require('@site/static/img/icon/cloud-acceleration.svg').default,
     description: (
       <Translate
         id="homepage.feature.desc.high"
         values={{}}>
-        {"High Performance!!!"}
+        {"Experience superior performance with PowerNukkitX. Optimized for efficiency, it ensures smooth gameplay experiences for all players."}
       </Translate>
     ),
   },
@@ -27,12 +27,12 @@ const FeatureList = [
       values={{}}>
       {"More features"}
     </Translate>,
-    Svg: require('@site/static/img/icon/more-feature.svg').default,
+    Svg: require('@site/static/img/icon/multiple-defenses.svg').default,
     description: (
       <Translate
         id="homepage.feature.desc.moreFeature"
         values={{}}>
-        {"More vanilla features!!!"}
+        {"PowerNukkitX supports CustomItem, CustomBlock, and CustomEnchantment features for unlimited scalability."}
       </Translate>
     ),
   },
@@ -41,30 +41,30 @@ const FeatureList = [
       id="homepage.feature.morePlugins"
       description="More plugins"
       values={{}}>
-      {"More plugins"}
+      {"Extensive Plugin Support"}
     </Translate>,
-    Svg: require('@site/static/img/icon/plugin.svg').default,
+    Svg: require('@site/static/img/icon/flexible-access.svg').default,
     description: (
       <Translate
         id="homepage.feature.desc.morePlugins"
         values={{}}>
-        {"More plugins!!!"}
+        {"Customize and expand your server functionalities with a wide range of plugins supported by PowerNukkitX, providing endless possibilities."}
       </Translate>
     ),
   },
   {
     title: <Translate
       id="homepage.feature.vanillaCommand"
-      description="All Vanilla Commands"
+      description="Vanilla Commands"
       values={{}}>
-      {"All Vanilla Commands"}
+      {"Vanilla Commands"}
     </Translate>,
-    Svg: require('@site/static/img/icon/command.svg').default,
+    Svg: require('@site/static/img/icon/availability.svg').default,
     description: (
       <Translate
         id="homepage.feature.desc.vanillaCommand"
         values={{}}>
-        {"All Vanilla Commands!!!"}
+        {"PowerNukkitX supports most vanilla commands and command block, as well as mcfunction files."}
       </Translate>
     ),
   },
@@ -75,12 +75,12 @@ const FeatureList = [
       values={{}}>
       {"More programming languages"}
     </Translate>,
-    Svg: require('@site/static/img/icon/plugin.svg').default,
+    Svg: require('@site/static/img/icon/api-interface.svg').default,
     description: (
       <Translate
         id="homepage.feature.desc.plugin"
         values={{}}>
-        {"More programming languages!!!"}
+        {"PowerNukkitX supports plug-ins written in several programming languages, see our WIKI for details!"}
       </Translate>
     ),
   },
@@ -90,7 +90,7 @@ function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4',styles.featureItem)}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureItem_Img} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

@@ -39,7 +39,7 @@
   --ifm-col-width: calc(3.7 / 12 * 100%);
 }
 
-.featureSvg {
+.featureItem_Img {
   height: 200px;
   width: 200px;
 }

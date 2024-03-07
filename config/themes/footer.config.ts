@@ -76,6 +76,16 @@ const footer: Footer = {
           },
         ],
       },
+      /** 
+      {
+        title: 'More',
+        items: [
+          {
+            label: 'Blog',
+            to: '/blog',
+          },
+        ],
+      },*/
     ],
     copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX`,
   };
