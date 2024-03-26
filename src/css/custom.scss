@@ -99,9 +99,9 @@ a {
 }
 
 /* Resolution equals 996PX */
-@media screen and (max-width: 996px) and (min-width: 715px) {
-  .footer__links {
-    .footer__col {
+@media screen and (max-width: 996px) and (min-width: 715px){ 
+  .footer__links{
+    .footer__col{
       padding-left: 5vh;
     }
   }
@@ -113,9 +113,9 @@ a {
   }
 }
 
-@media screen and (max-width: 715px) and (min-width: 0px) {
-  .footer__links {
-    .footer__col {
+@media screen and (max-width: 715px) and (min-width: 0px) { 
+  .footer__links{
+    .footer__col{
       padding-left: 5vh;
     }
   }
@@ -127,21 +127,20 @@ a {
   }
 }
 
-div.main-wrapper{
-  max-height: 4320px;//4K
-  height: 100vh;
-}
-
-header.hero {
-  max-height: 4320px;//4K
-  height: 100vh;
+header.hero{
+  min-height: 100vh;
   .container {
     padding-bottom: 10vh;
   }
 }
 
-.footer__links {
-  .footer__col:first-child {
+div.main-wrapper{
+  min-height: 100vh;//Fill the view when the page is not enough for the view
+  height: 100%;
+}
+
+.footer__links{
+  .footer__col:first-child{
     padding-left: 5vh;
   }
   .footer__col {
@@ -156,5 +155,5 @@ header.hero {
   display: flex;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 10px;
+  padding-top: 50px;
 }
