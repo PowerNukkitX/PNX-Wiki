@@ -25,14 +25,6 @@ const footer: Footer = {
             to: '/docs',
           },
           {
-            label: 'REST API',
-            to: '/docs/dev/rest-api/',
-          },
-          {
-            label: 'FAQ',
-            to: '/docs/category/pnx-faq',
-          },
-          {
             label: 'Javadoc',
             href: 'https://javadoc.io/doc/cn.powernukkitx/powernukkitx',
           },
@@ -62,22 +54,8 @@ const footer: Footer = {
             label: 'Blog',
             to: '/blog',
           },
-          {
-            label: 'Changelog',
-            href: 'https://github.com/PowerNukkitX/PowerNukkitX/blob/master/CHANGELOG.md',
-          }
         ],
-      },
-      /** 
-      {
-        title: 'More',
-        items: [
-          {
-            label: 'Blog',
-            to: '/blog',
-          },
-        ],
-      },*/
+      }
     ],
     copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX`,
   };
