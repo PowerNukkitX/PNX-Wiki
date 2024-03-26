@@ -27,7 +27,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "PowerNukkitX", // Usually your GitHub org/user name.
   projectName: "PNX-Wiki", // Usually your repo name.
-
+  staticDirectories: ['static'],
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 

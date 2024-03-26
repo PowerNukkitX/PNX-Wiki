@@ -9,7 +9,7 @@ sidebar_position: 1
 2. [选择你想使用的PNX版本](https://github.com/PowerNukkitX/PowerNukkitX/actions?query=branch%3Amaster+is%3Asuccess)
 3. 登陆你的github账号，如果没有则[创建](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)!
 4. 点击进入你想使用的PNX版本，下滑找到`PowerNukkitX-Run`
-5. 点击下载 `PowerNukkitX-Run.zip`![download.png](image/download.png)
+5. 点击下载 `PowerNukkitX-Run.zip`![download.png](/docs/download.png)
 6. 解压 `PowerNukkitX-Run.zip` 到你想要的目录.
 
 ## 用法
