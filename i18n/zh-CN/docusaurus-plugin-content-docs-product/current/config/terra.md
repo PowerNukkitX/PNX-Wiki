@@ -1,0 +1,88 @@
+# terra配置 
+
+## 什么是terra  
+
+Terra是一个第三方[开源](https://github.com/PolyhedralDev/Terra)地形生成器，pnx内置了Terra作为服务器地形生成问题的一个解决方案，您可以在pnx中使用terra生成史诗般的地图。  
+
+
+## 启动Terra  
+要将terra应用到您的世界中，需要如下两步：  
+在`server.properties`中，设置：
+```properties
+use-terra=on
+```
+在worlds目录下创建一个世界文件夹，例如`world/`,创建如下配置文件夹`config.json`
+```json
+{
+  "format": "leveldb",
+  "generators": {
+    "0": {
+      "name": "terra",
+      "seed": 0,
+      "dimensionData": {
+        "dimensionName": "minecraft:overworld",
+        "dimensionId": 0,
+        "minHeight": -64,
+        "maxHeight": 319,
+        "height": 384,
+        "chunkSectionCount": 24
+      },
+      "preset": {
+        "pack": "overworld"
+      }
+    }
+  }
+}
+```
+其中`preset/pack`为这个配置包的包名，你可以在配置包里的`pack.yml`文件中的id项找到它，大小写都被允许。
+然后，重新启动服务器，即可体验terra地形生成器。
+
+## 使用第三方Terra地形配置包
+Terra允许你通过使用不同的配置包获得全新的地形，将配置包放入`./terra/packs`文件夹中，重启服务器即可完成安装。  
+你可在此站点查看目前可用的配置包： [Community Packs](https://terra.polydev.org/config/community-packs.html)
+接下来我们以[ReimagEND](https://github.com/justaureus/ReimagEND)配置包为例，其配置包文件名称为"ReimagEND.zip"
+我们想要在末地(the_end)应用此配置包，创建一个`config.json`:
+```json
+{
+  "format": "leveldb",
+  "generators": {
+    "2": {
+      "name": "terra",
+      "seed": 0,
+      "dimensionData": {
+        "dimensionName": "minecraft:end",
+        "dimensionId": 0,
+        "minHeight": 0,
+        "maxHeight": 255,
+        "height": 256,
+        "chunkSectionCount": 16
+      },
+      "preset": {
+        "pack": "REIMAGEND"
+      }
+    }
+  }
+}
+```
+例如在此示例中，配置包文件名为ReimagEND.zip，我们可以在`pack.yml`找到配置包的名称，于是我们将`preset/pack`设置为`REIMAGEND`,这样才能选中此配置包
+对于不同的世界类型，其y轴限高有所不同，具体如下：
+- `minecraft:overworld`:    -64 to 319      (chunkSectionCount: 24)
+- `minecraft:nether`:         0 to 127      (chunkSectionCount: 8)
+- `minecraft:end`:            0 to 255      (chunkSectionCount: 16)
+对于一些特定的配置包，有可能出现世界限高低于配置包所需高度的情况(例如Tartarus地狱包)，此时可将世界类型设置为主世界来避免此问题
+设置成功后，在末地中你应该能看到ReimagEND配置包带来的全新地形：
+![REIMAGEND](../image/terra_faq/ReimagEND_min.png)
+
+## 为什么设置不生效  
+- 如果您的世界先前使用的不是terra生成器，那么设置不会生效，您需要使用一个新的地图。  
+- 请检查您是否正确配置了Terra，否则不会生效
+
+## 占用的内存太多  
+如果你想减少内存使用，可以尝试修改`./terra/config/yml`：
+```yaml
+cache:
+  structure: 0 # 默认32
+  sampler: 0 # 默认128
+  biome-provider: 0 # 默认32
+```
+这样做会减少内存使用，但会加重CPU负担。  

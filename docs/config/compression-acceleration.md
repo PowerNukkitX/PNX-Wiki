@@ -1,4 +1,4 @@
-# Hardware compression acceleration
+# hardware compression acceleration
 
 Hardware compression acceleration is an optional function provided by PNX, which can accelerate data compression by using hardware SIMD on modern CPUs.
 

@@ -1,4 +1,4 @@
-# Resource package encryption
+# resource package encryption
 
 The resource package encryption here only means that PowerNukkitX supports you to use the resource package encrypted by you. You only need to configure a 32-key for your resource package according to the following tutorial to enable the player client to load normally.
 
