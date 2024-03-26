@@ -127,8 +127,13 @@ a {
   }
 }
 
+div.main-wrapper{
+  max-height: 4320px;//4K
+  height: 100vh;
+}
+
 header.hero {
-  max-height: 1080px;
+  max-height: 4320px;//4K
   height: 100vh;
   .container {
     padding-bottom: 10vh;
