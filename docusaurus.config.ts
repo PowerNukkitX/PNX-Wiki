@@ -14,7 +14,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "PowerNukkitX Wiki",
-  tagline: "Make Nukkit Great Again",
+  tagline: "Feature-rich, highly customizable third-party server software for Minecraft: Bedrock Edition.",
   favicon: "img/icon/favicon.ico",
 
   // Set the production url of your site here
