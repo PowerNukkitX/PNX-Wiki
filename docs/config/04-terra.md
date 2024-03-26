@@ -67,8 +67,8 @@ For different world types, the y limits vary as follows:
 - `minecraft:overworld`:    -64 to 319      (chunkSectionCount: 24)
 - `minecraft:nether`:         0 to 127      (chunkSectionCount: 8)
 - `minecraft:end`:            0 to 255      (chunkSectionCount: 16)
-For certain config packs, it's possible that the world height limit is lower than what the config pack requires (e.g., Tartarus Nether Pack).It needs to be applied to the overworld not nether. Because nether is limited to a maximum of 128.
-![REIMAGEND](../image/terra_faq/ReimagEND_min.png)
+For certain config packs, it's possible that the world height limit is lower than what the config pack requires (e.g., Tartarus Nether Pack).It needs to be applied to the overworld not nether. Because nether is limited to a maximum of 128.  
+<img alt="REIMAGEND" height="347" src="../image/terra_faq/ReimagEND_min.png" width="640"/>
 
 ## Not yet effective
 - If your world was previously using a different generator than Terra, the setting won't take effect, and you'll need to start with a new level.
