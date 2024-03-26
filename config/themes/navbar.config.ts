@@ -29,7 +29,6 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
         label: 'Docs',
       },*/
       {to: '/blog', label: 'Blog', position: 'left'},
-      {to: '/misc', label: 'Misc', position: 'left'},
       /*
       {
         type: 'docSidebar',
@@ -47,13 +46,13 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
         position: 'right',
         dropdownItemsAfter: [
           {
-            to: 'https://github.com/PowerNukkitX/PNX-Wiki',
+            to: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/i18n',
             label: '💖 Help us translate',
           },
         ],
       },
       {
-        href: 'https://github.com/PowerNukkitX',
+        href: 'https://github.com/PowerNukkitX/PNX-Wiki',
         position: 'right',
         className: 'header-github-link',
         'aria-label': 'GitHub repository',

@@ -22,15 +22,15 @@ const footer: Footer = {
         items: [
           {
             label: 'Docs',
-            to: '/pnx-doc/',
+            to: '/docs',
           },
           {
             label: 'REST API',
-            to: '/pnx-doc/dev/rest-api/',
+            to: '/docs/dev/rest-api/',
           },
           {
             label: 'FAQ',
-            to: '/category/pnx-faq',
+            to: '/docs/category/pnx-faq',
           },
           {
             label: 'Javadoc',
@@ -65,15 +65,7 @@ const footer: Footer = {
           {
             label: 'Changelog',
             href: 'https://github.com/PowerNukkitX/PowerNukkitX/blob/master/CHANGELOG.md',
-          },
-          {
-            label: 'OSC License',
-            to: '/misc/osc-license',
-          },
-          {
-            label: 'Terms',
-            to: '/misc/terms',
-          },
+          }
         ],
       },
       /** 

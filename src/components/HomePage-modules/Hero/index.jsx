@@ -17,7 +17,7 @@ function HomepageHeader() {
           <div className={styles.hero_Buttons}>
             <Link
               className={clsx('button', 'button--secondary', styles.hero_Button)}
-              to="/pnx-doc">
+              to="/docs">
             <Translate
             id="homepage.hero.button#1"
             description="Homepage Hero Button"
