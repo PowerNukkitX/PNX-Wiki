@@ -5,7 +5,6 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-// Themes Config
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
@@ -13,23 +12,17 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PowerNukkitX Wiki",
-  tagline: "Feature-rich, highly customizable third-party server software for Minecraft: Bedrock Edition.",
+  title: "PowerNukkitX Documentation",
+  tagline: "Official Docs for PowerNukkitX",
   favicon: "img/icon/favicon.ico",
-
-  // Set the production url of your site here
   url: "https://wiki.powernukkitx.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "PowerNukkitX", // Usually your GitHub org/user name.
-  projectName: "PNX-Wiki", // Usually your repo name.
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  organizationName: "PowerNukkitX",
+  projectName: "Docs",
+  trailingSlash: false,
   staticDirectories: ['static'],
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -78,34 +71,33 @@ const config = {
 
   presets: [
     [
-      "classic",
-      {
+      '@docusaurus/preset-classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          id: "product",
-          sidebarPath: "./config/sidebar/pnx_wiki.ts",
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebar.ts'),
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/PowerNukkitX/PNX-Wiki/tree/master/",
+          editUrl: 'https://github.com/mcserversoft/documentation/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/PowerNukkitX/PNX-Wiki/tree/master/",
-        },
+        blog: false,
         theme: {
-          customCss: "./src/css/custom.scss",
+          customCss: require.resolve('./src/css/custom.scss'),
         },
-      } satisfies Preset.Options,
+      }),
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
-      // PowerNukkitX Wiki Social card
+      metadata: [{ name: 'keywords', content: 'powernukkitx, documentation, pnx, docs, minecraft, server, servers, software, bedrock, pe' }],
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       image: "img/misc/og-social-card.jpg",
-      // Configuration files are located in the path /config/themes
       navbar: navbar,
       footer: footer,
       docs: docs_config,

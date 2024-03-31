@@ -15,32 +15,32 @@
 import type { Navbar } from "@docusaurus/theme-common";
 
 const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
-    title: 'PNX Wiki',
+    title: 'PowerNukkitX Documentation',
     logo: {
       alt: 'PowerNukkitX Logo',
       src: 'img/logo/PNX_LOGO_sm.png',
     },
     items: [
-      /*
-      {
-        type: 'docSidebar',
-        sidebarId: 'product',
-        position: 'left',
-        label: 'Docs',
-      },*/
-      {to: '/blog', label: 'Blog', position: 'left'},
-      /*
-      {
-        type: 'docSidebar',
-        sidebarId: 'community_misc_sidebar',
-        position: 'left',
-        label: 'Misc',
-      },
-      {
-        type: 'docsVersionDropdown',
-        position: 'right',
-        docsPluginID: 'PowerNukkitX'
-      },*/
+        {
+            label: 'Docs',
+            position: 'left',
+            to: '/',
+            activeBasePath: 'to',
+        },
+        {
+            label: 'API version',
+            position: 'left',
+            items: [
+                {
+                    label: '2.0.0',
+                    to: '/v2',
+                },
+                {
+                    label: '1.0.0 - legacy',
+                    to: '/v1',
+                },
+            ],
+        },
       {
         type: 'localeDropdown',
         position: 'right',

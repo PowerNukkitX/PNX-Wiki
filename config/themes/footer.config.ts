@@ -1,24 +1,10 @@
-/*
-* PowerNukkitX Wiki Project
-* Config File - Themes config (Footer)
-*
-* This source code is licensed under the AGPL-3.0 license found in the
-* LICENSE file in the root directory of this source tree.
-* If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
-*
-* Website: https://www.powernukkitx.com
-* Github: https://github.com/PowerNukkitX
-*
-* 2024 © PowerNukkitX
-*/
-
 import type { Footer } from "@docusaurus/theme-common";
 
 const footer: Footer = {
-    style: 'dark',
+    style: 'light',
     links: [
       {
-        title: 'Discover',
+        title: 'Getting started',
         items: [
           {
             label: 'Docs',
@@ -31,8 +17,46 @@ const footer: Footer = {
         ],
       },
       {
+        title: 'Contribute',
+        items: [
+          {
+            label: 'Donate',
+            to: '/',
+          },
+          {
+            label: 'Documentation',
+            href: '/',
+          },
+        ],
+      },
+      {
+        title: 'Resources',
+        items: [
+          {
+            label: 'Changelogs',
+            to: '/',
+          },
+          {
+            label: 'Documentation',
+            href: '/',
+          },
+          {
+            label: 'Developer API',
+            href: '/',
+          },
+          {
+            label: 'API web',
+            href: '/',
+          },
+        ],
+      },
+      {
         title: 'Community',
         items: [
+          {
+            label: 'Website',
+            href: 'https://v2.powerNukkitX.com',
+          },
           {
             label: 'Github',
             href: 'https://github.com/PowerNukkitX',
@@ -46,18 +70,9 @@ const footer: Footer = {
             href: 'https://jq.qq.com/?_wv=1027&k=6rm3gbUI',
           },
         ],
-      },
-      {
-        title: 'More',
-        items: [
-          {
-            label: 'Blog',
-            to: '/blog',
-          },
-        ],
       }
     ],
-    copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX`,
+    copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX and contributors.`,
   };
 
 export default footer;
