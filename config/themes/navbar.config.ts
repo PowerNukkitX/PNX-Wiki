@@ -18,18 +18,18 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
     title: 'PNX Wiki',
     logo: {
       alt: 'PowerNukkitX Logo',
-      src: 'images/PNX_LOGO_sm.png',
+      src: 'img/logo/PNX_LOGO_sm.png',
     },
     items: [
       /*
       {
         type: 'docSidebar',
-        sidebarId: 'pnx_wiki_content_sidebar',
+        sidebarId: 'product',
         position: 'left',
         label: 'Docs',
-      },
+      },*/
       {to: '/blog', label: 'Blog', position: 'left'},
-      {to: '/misc', label: 'Misc', position: 'left'},
+      /*
       {
         type: 'docSidebar',
         sidebarId: 'community_misc_sidebar',
@@ -46,13 +46,13 @@ const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
         position: 'right',
         dropdownItemsAfter: [
           {
-            to: 'https://github.com/PowerNukkitX/PNX-Wiki',
+            to: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/i18n',
             label: '💖 Help us translate',
           },
         ],
       },
       {
-        href: 'https://github.com/PowerNukkitX',
+        href: 'https://github.com/PowerNukkitX/PNX-Wiki',
         position: 'right',
         className: 'header-github-link',
         'aria-label': 'GitHub repository',

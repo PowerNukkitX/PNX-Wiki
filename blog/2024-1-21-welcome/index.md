@@ -1,22 +1,20 @@
 ---
 slug: welcome
 title: Welcome
-authors: [chencu]
+authors: [chencu,CoolLoong]
 tags: [PowerNukkitX, what's new]
 ---
+![PNX-BANNER](./banner.svg)
+Welcome to use the new version wiki of PowerNukkitX!
 
-欢迎使用新版PowerNukkitX Wiki！
+The project is base on [Docusaurus](https://docusaurus.io),if you are interested in this project,free feel contribute to ours [Github](https://github.com/PowerNukkitX/PNX-Wiki) repository!
 
-本项目基于[Docusaurus](https://docusaurus.io)开发，如果您对此项目感兴趣，欢迎前往我们的[Github](https://github.com/PowerNukkitX/PNX-Wiki)仓库贡献一份力量
+If you want to reprint our article,please strictly adhere to our [License](https://github.com/PowerNukkitX/PNX-Wiki/blob/master/LICENSE) Open Source License!
 
-如果您要使用本项目的代码和文章内容，请严格遵守我们的[License](/misc/License)开源许可
+- `AGPL-V3`(Wiki Code)
+- `CC-BY-NC-SA 4.0`(Wiki Article Content)
 
-- `AGPL-V3`（项目代码）
-- `CC-BY-NC-SA 4.0`（文章内容）
-
-官方社区
+Community
 
 - [Discord](https://discord.gg/BcPhZCVJHJ)
 - [QQ](https://jq.qq.com/?_wv=1027&k=6rm3gbUI)
-
-![PNX-BANNER](./PNX_BANNER.png)
