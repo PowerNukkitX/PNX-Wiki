@@ -2,10 +2,16 @@
   "name": "PNX-Wiki",
   "version": "0.0.2",
   "description": "PowerNukkitX Wiki, Powered By docusaurus",
-  "author": [
+  "author": {
+    "name": "PowerNukkitX Dev Team",
+    "url": "https://github.com/PowerNukkitX"
+  },
+  "license": "AGPL-3.0",
+  "contributors": [
     {
-      "name": "PowerNukkitX Dev Team",
-      "url": "https://github.com/PowerNukkitX"
+      "name": "AzaleeX",
+      "url": "https://github.com/AzaleeX",
+      "email": "azaleemcpe@gmail.com"
     },
     {
       "name": "chencu5958",
@@ -13,11 +19,9 @@
       "email": "xiaoll5958@outlook.com"
     }
   ],
-  "license": "AGPL-3.0",
   "bugs": "https://github.com/PowerNukkitX/PNX-Wiki/issues",
   "homepage": "https://github.com/PowerNukkitX/PNX-Wiki",
   "repository": "https://github.com/PowerNukkitX/PNX-Wiki.git",
-  "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -32,20 +36,27 @@
   },
   "dependencies": {
     "@crowdin/cli": "3",
-    "@docusaurus/core": "3.1.1",
-    "@docusaurus/preset-classic": "3.1.1",
+    "@docusaurus/core": "3.2.0",
+    "@docusaurus/preset-classic": "3.2.0",
     "@easyops-cn/docusaurus-search-local": "^0.40.1",
     "@mdx-js/react": "^3.0.1",
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.0",
     "docusaurus-plugin-sass": "^0.2.5",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "sass": "^1.70.1"
+    "prism-react-renderer": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.72.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.1",
-    "@docusaurus/types": "3.1.1"
+    "@algolia/client-search": "^4.23.2",
+    "@docusaurus/module-type-aliases": "3.2.0",
+    "@docusaurus/theme-common": "^3.2.0",
+    "@docusaurus/types": "3.2.0",
+    "@types/react": "^18.2.73",
+    "react-loadable": "^5.5.0",
+    "search-insights": "^2.13.0",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0"
   },
   "browserslist": {
     "production": [
@@ -54,9 +65,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   },
   "engines": {
