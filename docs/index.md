@@ -1,18 +1,27 @@
 ---
-title: "⚒️ Get Started"
+title: "Introduction"
 slug: ./
 sidebar_position: 1
 ---
-# Quick Start
-## Install
-1. Make sure you have `JDK17` installed and environment variables set, if not [download from](https://www.graalvm.org/downloads)
-2. [Select the version you want to use](https://github.com/PowerNukkitX/PowerNukkitX/actions?query=branch%3Amaster+is%3Asuccess)
-3. Make sure you have a github account, login it, if not [sign up](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)!
-4. Click to the version you want to use and scroll down to find artifacts.
-5. Download the `PowerNukkitX-Run.zip`![download.png](/docs/download.png)
-6. Unzip `PowerNukkitX-Run.zip` to the directory you want.
+# 🚀 PowerNukkitX Documentation
 
-## Usage
-```sh
-java -jar cli.jar
-```
+Welcome to the official documentation for PowerNukkitX, a feature-rich, highly customizable third-party server software for Minecraft: Bedrock Edition.
+
+## 📕 The Story of PowerNukkitX
+
+PowerNukkitX was born out of a desire to provide a more customizable and powerful server software for Minecraft: Bedrock Edition. Our team of dedicated developers and Minecraft enthusiasts saw the potential for a server software that could offer more than what was currently available.
+
+We started development in 2020, with the goal of creating a server software that was not only powerful and customizable, but also user-friendly and accessible to all. We wanted to create a tool that would allow server owners to truly make their Minecraft world their own.
+
+Since then, PowerNukkitX has grown and evolved, with new features and improvements being added regularly. We've been overwhelmed by the positive response from the Minecraft community, and we're excited to continue developing and improving PowerNukkitX.
+
+
+## 🏆 Features
+
+- Custom Item, Block, Entity
+- Built-in AI framework
+- Terra Generator
+- Full Vanilla Command Support
+- Other
+
+Explore the documentation to discover more features and learn how to use PowerNukkitX.

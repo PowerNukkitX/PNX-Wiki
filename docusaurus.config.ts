@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from "prism-react-renderer";
+import {themes, themes as oneDark} from "prism-react-renderer";
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
@@ -80,7 +80,10 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/mcserversoft/documentation/edit/main/',
         },
-        blog: false,
+        blog: {
+            showReadingTime: true,
+
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -102,8 +105,8 @@ const config = {
       footer: footer,
       docs: docs_config,
       prism: {
-        theme: prismThemes.vsDark,
-        darkTheme: prismThemes.vsDark,
+        theme: themes.oneDark,
+        darkTheme: themes.oneDark,
         additionalLanguages: [
           "batch",
           "bash",
