@@ -14,22 +14,25 @@
 
 import type { Navbar } from "@docusaurus/theme-common";
 
-const navbar: Omit<Navbar, "style" | "hideOnScroll"> = {
+const navbar: Omit<Navbar, "style"> = {
+    hideOnScroll: true,
     title: 'PowerNukkitX Documentation',
     logo: {
       alt: 'PowerNukkitX Logo',
       src: 'img/logo/PNX_LOGO_sm.png',
     },
     items: [
+        //left
         {
             label: 'Docs',
             position: 'left',
             to: '/',
             activeBasePath: 'to',
         },
+        //right
         {
             label: 'API version',
-            position: 'left',
+            position: 'right',
             items: [
                 {
                     label: '2.0.0',

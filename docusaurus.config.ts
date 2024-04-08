@@ -1,14 +1,8 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes, themes as oneDark} from "prism-react-renderer";
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
-import type * as Preset from "@docusaurus/preset-classic";
+
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,12 +11,13 @@ const config = {
   favicon: "img/icon/favicon.ico",
   url: "https://wiki.powernukkitx.com",
   baseUrl: "/",
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   organizationName: "PowerNukkitX",
   projectName: "Docs",
   trailingSlash: false,
   staticDirectories: ['static'],
+  themes: ['@docusaurus/theme-live-codeblock'],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -40,29 +35,6 @@ const config = {
   // Plugins
   plugins: ["docusaurus-plugin-sass"],
 
-  themes: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      {
-        hashed: true,
-        docsRouteBasePath: ["docs"],
-        docsDir: ["docs"],
-        docsPluginIdForPreferredVersion: "product",
-        searchContextByPaths: [
-          {
-            label: {
-              en: "PNX2.0 Document",
-              zh: "PNX2.0 文档",
-            },
-            path: "docs",
-          },
-        ],
-        hideSearchBarWithNoSearchContext: true,
-      },
-    ],
-  ],
-
   scripts: [
     {
       src: "/js/wiki-version.js",
@@ -75,14 +47,21 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebar.ts'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/mcserversoft/documentation/edit/main/',
+          editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
+          versions: {
+            current: {
+              label: 'current',
+            },
+          },
+          lastVersion: 'current',
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: true,
         },
         blog: {
             showReadingTime: true,
-
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -98,27 +77,14 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: false,
+        respectPrefersColorScheme: true,
       },
-      image: "img/misc/og-social-card.jpg",
       navbar: navbar,
       footer: footer,
       docs: docs_config,
       prism: {
-        theme: themes.oneDark,
-        darkTheme: themes.oneDark,
-        additionalLanguages: [
-          "batch",
-          "bash",
-          "git",
-          "java",
-          "javastacktrace",
-          "kotlin",
-          "groovy",
-          "log",
-          "toml",
-          "properties",
-        ],
+        theme: darkCodeTheme,
+        darkTheme: darkCodeTheme,
       },
     },
 };
