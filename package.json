@@ -48,7 +48,7 @@
     "sass": "^1.72.0"
   },
   "devDependencies": {
-    "@algolia/client-search": "^4.23.2",
+    "@algolia/client-search": "^4.23.3",
     "@docusaurus/module-type-aliases": "3.2.0",
     "@docusaurus/theme-common": "^3.2.0",
     "@docusaurus/types": "3.2.0",
