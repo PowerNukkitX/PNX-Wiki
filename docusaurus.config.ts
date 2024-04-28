@@ -29,6 +29,9 @@ const config = {
       en: {
         htmlLang: "en-US",
       },
+      "zh-CN": {
+        htmlLang: "zh-CN",
+      },
     },
   },
 
@@ -48,15 +51,9 @@ const config = {
       ({
         docs: {
           path: 'docs',
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebar.ts'),
           editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
-          versions: {
-            current: {
-              label: 'current',
-            },
-          },
-          lastVersion: 'current',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },

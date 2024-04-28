@@ -20,31 +20,20 @@ const navbar: Omit<Navbar, "style"> = {
     logo: {
       alt: 'PowerNukkitX Logo',
       src: 'img/logo/PNX_LOGO_sm.png',
+      href: '/docs'
     },
     items: [
-        //left
         {
-            label: 'Docs',
+            to: 'docs',
             position: 'left',
-            to: '/',
-            activeBasePath: 'to',
+            label: 'Docs',
         },
         //right
         {
-            label: 'API version',
+            type: 'docsVersionDropdown',
             position: 'right',
-            items: [
-                {
-                    label: '2.0.0',
-                    to: '/v2',
-                },
-                {
-                    label: '1.0.0 - legacy',
-                    to: '/v1',
-                },
-            ],
         },
-      {
+        {
         type: 'localeDropdown',
         position: 'right',
         dropdownItemsAfter: [

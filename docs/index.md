@@ -35,7 +35,7 @@ Since then, PowerNukkitX has grown and evolved, with new features and improvemen
 
 Before you download PowerNukkitX, make sure your computer meets these requirements listed below:
 * Windows 10/11, Windows Server, Linux or Debian
-* A release of Java 17 - [Link to a dedicated page](https://www.graalvm.org/downloads)
+* A release of Java 17 - [Oracle Java 17 download](https://www.oracle.com/fr/java/technologies/downloads/#jdk17-windows)
 * Stable internet connection, wired is highly preferred
 * Port forward capable modem/router (for online multiplayer)
 
