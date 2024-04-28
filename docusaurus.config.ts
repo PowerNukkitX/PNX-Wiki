@@ -56,6 +56,12 @@ const config = {
           editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
+          versions: {
+            current: {
+              label: '2.0.0',
+            },
+          },
+          lastVersion: 'current',
         },
         blog: {
             showReadingTime: true,
