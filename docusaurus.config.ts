@@ -11,7 +11,7 @@ const config = {
   favicon: "img/icon/favicon.ico",
   url: "https://wiki.powernukkitx.com",
   baseUrl: "/",
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'throw',
   organizationName: "PowerNukkitX",
   projectName: "Docs",
