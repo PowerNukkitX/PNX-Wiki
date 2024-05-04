@@ -17,26 +17,40 @@ const config = {
   projectName: "Docs",
   trailingSlash: false,
   staticDirectories: ['static'],
-  themes: ['@docusaurus/theme-live-codeblock'],
+  themes: ['@saucelabs/theme-github-codeblock'],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "zh-CN"],
+    locales: ["en", "fr", "zh-CN"],
     localeConfigs: {
       en: {
         htmlLang: "en-US",
+        label: 'English',
+        direction: 'ltr'
+      },
+      fr: {
+        htmlLang: "fr-FR",
+        label: 'Français',
+        direction: 'ltr'
       },
       "zh-CN": {
         htmlLang: "zh-CN",
+        label: '简体中文',
+        direction: 'ltr'
       },
     },
   },
 
   // Plugins
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        toExtensions: ['html']
+      }
+    ],
+    'docusaurus-plugin-sass',
+  ],
 
   scripts: [
     {
@@ -50,8 +64,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs',
-          routeBasePath: '/docs',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebar.ts'),
           editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
           showLastUpdateAuthor: false,

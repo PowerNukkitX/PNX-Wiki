@@ -22,6 +22,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-leading-desktop: 1.75;
+  --ifm-list-margin: 2rem;
+
   --ifm-color-primary: #4ade80;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
@@ -30,6 +33,15 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-footer-background-color: rgba(0, 0, 0, 0.3);
+  --ifm-heading-color: var(--ifm-color-emphasis-900);
+
+  --ifm-code-border-radius: .25rem;
+  --ifm-code-padding-vertical: 2px;
+  --ifm-code-padding-horizontal: 5px;
+
+  --ifm-blockquote-background-color: #f8f9fc;
+  --ifm-blockquote-border-color: #edeff4;
+
   --ifm-code-font-size: 95%;
 }
 
@@ -45,10 +57,106 @@
   --ifm-footer-background-color: rgba(0, 0, 0, 0.3);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-heading-color: var(--ifm-color-emphasis-900);
+
+  --ifm-code-border-radius: .25rem;
+  --ifm-code-padding-vertical: 2px;
+  --ifm-code-padding-horizontal: 5px;
+
+  --ifm-blockquote-background-color: #f8f9fc;
+  --ifm-blockquote-border-color: #edeff4;
+}
+
+.markdown {
+  --ifm-h2-vertical-rhythm-top: 1.5;
+}
+
+.admonition {
+  margin-bottom: 2em;
+}
+
+code {
+  color: var(--ifm-color-emphasis-900);
+}
+
+html[data-theme='dark'] .prism-code,
+html[data-theme='dark'] div[class^='codeBlockTitle'] {
+  background-color: #222 !important;
+  color: #9e9e9e !important;
+}
+
+.prism-code,
+div[class^='codeBlockTitle'] {
+  background-color: #f6f8fa !important;
+  color: #575757 !important;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Disable Language Icon */
+svg[class^='iconLanguage'] {
+  display: none;
+}
+
+/* Code line counter */
+.prism-code {
+  counter-reset: line-number;
+}
+
+.prism-code .token-line::marker {
+  color: var(--ifm-color-gray-700);
+  content: counter(line-number);
+}
+
+.prism-code .token-line {
+  counter-increment: line-number;
+  display: list-item;
+  padding-left: var(--ifm-pre-padding);
+  margin-left: var(--ifm-global-spacing);
 }
 
 [data-theme="light"] {
   --ifm-footer-background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main content */
+@media screen and (min-width: 1600px) {
+  /* Center page TODO: only fullscreen */
+  .navbar__inner, .main-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Tables */
+table {
+  margin-bottom: 2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-wrapper table {
+  width: 100%;
+  display: table;
+}
+
+/* Sidebar */
+.menu {
+  padding-top: 1rem !important;
+  padding-bottom: 5rem !important;
+  font-size: .978rem;
+}
+
+.tippy-box .theme-code-block {
+  margin: 0;
+}
+
+details,
+blockquote {
+  margin-bottom: 1.5rem !important;
 }
 
 html,
@@ -79,6 +187,12 @@ a {
   /* The overall style of the scroll bar (the height and width correspond to the size of the horizontal and vertical scroll bars respectively) */
   width: 8px;
   height: 8px;
+}
+
+/* Navbar */
+
+.navbar__items .react-toggle {
+  margin-left: 1rem;
 }
 
 /* Icon */

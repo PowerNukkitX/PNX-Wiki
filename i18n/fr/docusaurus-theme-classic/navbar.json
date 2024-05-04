@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "PNX Wiki",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "PowerNukkitX Logo",
+    "description": "The alt text of navbar logo"
+  }
+}

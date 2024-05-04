@@ -20,11 +20,11 @@ const navbar: Omit<Navbar, "style"> = {
     logo: {
       alt: 'PowerNukkitX Logo',
       src: 'img/logo/PNX_LOGO_sm.png',
-      href: '/docs'
+      href: '/'
     },
     items: [
         {
-            to: 'docs',
+            to: '/',
             position: 'left',
             label: 'Docs',
         },
