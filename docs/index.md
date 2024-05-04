@@ -13,7 +13,7 @@ keywords: [pnx, documentation, introduction, doc, powernukkitx]
 Welcome to the official documentation for **PowerNukkitX**, a feature-rich, highly customizable third-party server software for **Minecraft: Bedrock Edition**.
 
 :::info[**PowerNukkitX** 2.0 experimental version]
-Currently, version 2.0 of **PowerNukkitX** is very unstable, but the entire **PowerNukkitX** team is increasingly addressing the issues **[on github](https://github.com/PowerNukkitX/PowerNukkitX/issues/new/choose).**
+Currently, version 2.0 of **PowerNukkitX** is generally stable, but occasional bugs may still occur. The entire **PowerNukkitX** team is increasingly addressing these issues [on GitHub](https://github.com/PowerNukkitX/PowerNukkitX/issues/new/choose).
 :::
 
 ## 📕 The Story of **PowerNukkitX** {#-story}
@@ -38,8 +38,8 @@ In 2023, the project was taken over by **[CoolLoong](https://github.com/CoolLoon
 
 Before you download **PowerNukkitX**, make sure your computer meets these requirements:
 
-* Windows 10/11, Windows Server, Linux or Debian
-* A release of Java 21 - [Oracle Java 21 download](https://www.oracle.com/fr/java/technologies/downloads/#jdk21)
+* Windows 10/11, Windows Server, Linux
+* A release of Java 21 - [Java 21 download](https://sdkman.io/jdks)
 * Stable internet connection, wired is highly preferred
 * Port forward capable modem/router (for online multiplayer)
 
