@@ -47,6 +47,10 @@ Before you download **PowerNukkitX**, make sure your computer meets these requir
 For some people, accessing their server or connecting to their local server is nearly impossible. Running a command in the Windows terminal as a Windows administrator can resolve this issue [See the command](tutorials/fix-connection-issues).
 :::
 
+:::warning[Performance Data Unavailable]
+We regret to inform you that we currently do not have performance data for Debian and Linux. This is due to the fact that our team is still in the process of gathering and analyzing this data. We understand the importance of this information for our users and we are working diligently to provide it as soon as possible. We appreciate your patience and understanding.
+:::
+
 ## ✌️ Contributing to the docs {#-contribute}
 
 If you see a mistake or want to help improve the documentation, you can help us!<br/> Click on "Edit this page" and make your changes, we'll review them shortly.
