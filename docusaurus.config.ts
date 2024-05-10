@@ -67,11 +67,11 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebar.ts'),
           editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
-          showLastUpdateAuthor: false,
+          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           versions: {
             current: {
-              label: '2.0.0',
+              label: 'v2',
             },
           },
           lastVersion: 'current',
@@ -101,6 +101,12 @@ const config = {
       prism: {
         theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: [
+          'bash',
+          'json',
+          'java',
+          'kotlin',
+        ],
       },
     },
 };

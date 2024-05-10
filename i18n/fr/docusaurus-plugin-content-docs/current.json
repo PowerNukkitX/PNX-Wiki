@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "v2",
+    "description": "L'étiquette pour la version actuelle"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Getting Started": {
+    "message": "Pour Commencer",
+    "description": "L'étiquette pour la catégorie Pour Commencer dans la barre latérale pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Getting Started.link.generated-index.title": {
+    "message": "Pour Commencer",
+    "description": "Le titre de la page d'index générée pour la catégorie Pour Commencer dans la barre latérale pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Getting Started.link.generated-index.description": {
+    "message": "Concepts et fonctionnalités de base du framework.",
+    "description": "La description de la page d'index générée pour la catégorie Pour Commencer dans la barre latérale pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config": {
+    "message": "Configuration",
+    "description": "L'étiquette pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.title": {
+    "message": "⚙️ Configuration",
+    "description": "Le titre de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.description": {
+    "message": "Explication et introduction à la configuration du serveur PowerNukkitX",
+    "description": "La description de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+  }
+}
