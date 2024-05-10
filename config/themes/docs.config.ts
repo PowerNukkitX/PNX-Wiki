@@ -14,8 +14,8 @@
 
 const docs_config =  {
     sidebar: {
-      hideable: true,
-      autoCollapseCategories: true,
+      hideable: false,
+      autoCollapseCategories: false,
     },
   };
 
