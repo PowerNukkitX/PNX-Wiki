@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^4.23.2
     version: 4.23.3
   '@docusaurus/module-type-aliases':
-    specifier: 3.2.0
-    version: 3.2.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: 3.3.2
+    version: 3.3.2(react-dom@18.2.0)(react@18.2.0)
   '@docusaurus/theme-common':
     specifier: ^3.2.0
     version: 3.3.2(@docusaurus/types@3.2.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
@@ -2068,6 +2068,7 @@ packages:
       - supports-color
       - uglify-js
       - webpack-cli
+    dev: false
 
   /@docusaurus/module-type-aliases@3.3.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-b/XB0TBJah5yKb4LYuJT4buFvL0MGAb0+vJDrJtlYMguRtsEBkf2nWl5xP7h4Dlw6ol0hsHrCYzJ50kNIOEclw==}
@@ -2601,6 +2602,7 @@ packages:
       '@types/react': 18.3.2
       prop-types: 15.8.1
       react: 18.2.0
+    dev: false
 
   /@docusaurus/react-loadable@6.0.0(react@18.2.0):
     resolution: {integrity: sha512-YMMxTUQV/QFSnbgrP3tjDzLHRg7vsbMn8e9HAa8o/1iXoiomo48b7sk/kkmWEuWNDPJVlKSJRB6Y2fHqdJk+SQ==}
