@@ -1,4 +1,4 @@
-# server.properties Introduction
+# server.properties
 ## motd=PowerNukkitX Server
 Motd text displayed on client UI
 ## sub-motd=https://v2.powernukkitx.com

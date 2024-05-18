@@ -1,4 +1,5 @@
 # 📖 PowerNukkitX Wiki / WIP
+
 PowerNukkitX Wiki, based on docusaurus
 
 Join US:
@@ -8,24 +9,22 @@ Join US:
 
 ## Getting Started
 
-Node.js Version >= 18.x
-Yarn
+Node.js Version >= 18.x  
+[Install pnpm](https://pnpm.io/installation)
 
 ```bash
-npm install yarn -g
-yarn install
+pnpm install
 ```
 
 ```bash
-yarn run start
+pnpm run start
+pnpm run start --locale zh-CN
 ```
+
 ## Dev
-
-### add support languag
-
-See: https://docusaurus.io/zh-CN/docs/i18n/git
+See: https://docusaurus.io/docs
 
 ## License
 
- * [AGPL-V3](/LICENSE)
- * [CC-NC-BY-SA-4.0](/LICENSE-docs)
+* [AGPL-V3](/LICENSE)
+* [CC-NC-BY-SA-4.0](/LICENSE-docs)

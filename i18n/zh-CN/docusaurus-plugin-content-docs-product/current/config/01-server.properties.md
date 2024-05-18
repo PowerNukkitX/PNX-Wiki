@@ -1,4 +1,4 @@
-# server.properties配置介绍  
+# server.properties配置  
 
 ## motd=PowerNukkitX Server
 在服务器在线人数及延迟界面显示的 Motd 文字
