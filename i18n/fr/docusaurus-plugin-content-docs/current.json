@@ -1,11 +1,11 @@
 {
   "version.label": {
     "message": "v2",
-    "description": "L'étiquette pour la version actuelle"
+    "description": "The label for version current"
   },
   "sidebar.pnx_docs_content_sidebar.category.Getting Started": {
     "message": "Pour Commencer",
-    "description": "L'étiquette pour la catégorie Pour Commencer dans la barre latérale pnx_docs_content_sidebar"
+    "description": "The label for category Getting Started in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Getting Started.link.generated-index.title": {
     "message": "Pour Commencer",
@@ -17,14 +17,22 @@
   },
   "sidebar.pnx_docs_content_sidebar.category.Config": {
     "message": "Configuration",
-    "description": "L'étiquette pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "description": "The label for category Config in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.title": {
     "message": "⚙️ Configuration",
-    "description": "Le titre de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "description": "The generated-index page title for category Config in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.description": {
     "message": "Explication et introduction à la configuration du serveur PowerNukkitX",
-    "description": "La description de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "description": "The generated-index page description for category Config in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Automatic": {
+    "message": "Automatic",
+    "description": "The label for category Automatic in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Manuel": {
+    "message": "Manuel",
+    "description": "The label for category Manuel in sidebar pnx_docs_content_sidebar"
   }
 }
