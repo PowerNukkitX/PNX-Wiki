@@ -2,14 +2,16 @@ import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
 
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+import {themes} from "prism-react-renderer";
+
+const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "PowerNukkitX Documentation",
   tagline: "Official Docs for PowerNukkitX",
   favicon: "img/icon/favicon.ico",
-  url: "https://wiki.powernukkitx.com",
+  url: "https://docs.powernukkitx.com",
   baseUrl: "/",
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'throw',
@@ -64,7 +66,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: require.resolve('./sidebar.ts'),
           editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/edit/main/',
           showLastUpdateAuthor: true,

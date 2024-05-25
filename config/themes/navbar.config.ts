@@ -24,7 +24,7 @@ const navbar: Omit<Navbar, "style"> = {
     },
     items: [
         {
-            to: '/',
+            to: 'docs',
             position: 'left',
             label: 'Docs',
         },
