@@ -1,66 +1,66 @@
 {
-  "link.title.Discover": {
-    "message": "Discover",
-    "description": "The title of the footer links column with title=Discover in the footer"
+  "link.title.Getting started": {
+    "message": "入门指南",
+    "description": "页脚链接栏标题为 Getting started 的标题"
+  },
+  "link.title.Contribute": {
+    "message": "贡献",
+    "description": "页脚链接栏标题为 Contribute 的标题"
+  },
+  "link.title.Resources": {
+    "message": "资源",
+    "description": "页脚链接栏标题为 Resources 的标题"
   },
   "link.title.Community": {
-    "message": "Community",
-    "description": "The title of the footer links column with title=Community in the footer"
-  },
-  "link.title.More": {
-    "message": "More",
-    "description": "The title of the footer links column with title=More in the footer"
-  },
-  "link.title.Legal": {
-    "message": "Legal",
-    "description": "The title of the footer links column with title=Legal in the footer"
+    "message": "社区",
+    "description": "页脚链接栏标题为 Community 的标题"
   },
   "link.item.label.Docs": {
-    "message": "Docs",
-    "description": "The label of footer link with label=Docs linking to /docs/intro"
-  },
-  "link.item.label.API": {
-    "message": "API",
-    "description": "The label of footer link with label=API linking to /docs/intro"
-  },
-  "link.item.label.FAQ": {
-    "message": "FAQ",
-    "description": "The label of footer link with label=FAQ linking to /docs/intro"
-  },
-  "link.item.label.Github": {
-    "message": "Github",
-    "description": "The label of footer link with label=Github linking to https://github.com/PowerNukkitX"
-  },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.gg/BcPhZCVJHJ"
-  },
-  "link.item.label.QQ": {
-    "message": "QQ",
-    "description": "The label of footer link with label=QQ linking to https://jq.qq.com/?_wv=1027&k=6rm3gbUI"
-  },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
-  },
-  "link.item.label.Changelog": {
-    "message": "Changelog",
-    "description": "The label of footer link with label=Changelog linking to /changelog"
+    "message": "文档",
+    "description": "链接到 /docs 的页脚链接标签为 Docs"
   },
   "link.item.label.Javadoc": {
     "message": "Javadoc",
-    "description": "The label of footer link with label=Javadoc linking to https://javadoc.io/doc/cn.powernukkitx/powernukkitx"
+    "description": "链接到 https://javadoc.io/doc/cn.powernukkitx/powernukkitx 的页脚链接标签为 Javadoc"
   },
-  "link.item.label.OSC License": {
-    "message": "OSC License",
-    "description": "The label of footer link with label=OSC License linking to /misc/osc-license"
+  "link.item.label.Donate": {
+    "message": "捐赠",
+    "description": "链接到 / 的页脚链接标签为 Donate"
   },
-  "link.item.label.Terms": {
-    "message": "Terms",
-    "description": "The label of footer link with label=Terms linking to /misc/terms"
+  "link.item.label.Documentation": {
+    "message": "文档",
+    "description": "链接到 / 的页脚链接标签为 Documentation"
+  },
+  "link.item.label.Changelogs": {
+    "message": "更新日志",
+    "description": "链接到 / 的页脚链接标签为 Changelogs"
+  },
+  "link.item.label.Developer API": {
+    "message": "开发者 API",
+    "description": "链接到 / 的页脚链接标签为 Developer API"
+  },
+  "link.item.label.API web": {
+    "message": "API 网站",
+    "description": "链接到 / 的页脚链接标签为 API web"
+  },
+  "link.item.label.Website": {
+    "message": "官方网站",
+    "description": "链接到 https://v2.powerNukkitX.com 的页脚链接标签为 Website"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "链接到 https://github.com/PowerNukkitX 的页脚链接标签为 Github"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "链接到 https://discord.gg/BcPhZCVJHJ 的页脚链接标签为 Discord"
+  },
+  "link.item.label.QQ": {
+    "message": "QQ",
+    "description": "链接到 https://jq.qq.com/?_wv=1027&k=6rm3gbUI 的页脚链接标签为 QQ"
   },
   "copyright": {
-    "message": "2019 - 2024 © PowerNukkitX",
-    "description": "The footer copyright"
+    "message": "2019 - 2024 © PowerNukkitX 和贡献者.",
+    "description": "页脚版权声明"
   }
 }

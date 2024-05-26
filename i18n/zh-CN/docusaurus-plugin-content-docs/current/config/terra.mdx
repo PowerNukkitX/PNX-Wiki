@@ -1,0 +1,97 @@
+---
+sidebar_position: 4
+title: Terra配置
+description: 了解如何为您的PowerNukkitX服务器配置Terra
+keywords: [pnx, documentation, introduction, doc, powernukkitx, terra, configuration]
+---
+
+# Terra 配置
+
+## 什么是 Terra？
+Terra 是一个第三方开源地形生成器，可在 [GitHub](https://github.com/PolyhedralDev/Terra) 上获得。 PNX 将 Terra 集成为服务器的地形生成解决方案，使您能够在 PNX 中使用 Terra 来创建史诗般的地形。
+
+## 使用 Terra 起步
+要将 Terra 应用于您的世界，您需要完成以下两个步骤：
+在 `server.properties` 中设置：
+```properties
+use-terra=on
+```
+在 `worlds` 目录中创建一个文件夹，例如 `world/`，然后创建以下配置文件 `config.json`：
+```json
+{
+  "format": "leveldb",
+  "generators": {
+    "0": {
+      "name": "terra",
+      "seed": 0,
+      "dimensionData": {
+        "dimensionName": "minecraft:overworld",
+        "dimensionId": 0,
+        "minHeight": -64,
+        "maxHeight": 319,
+        "height": 384,
+        "chunkSectionCount": 24
+      },
+      "preset": {
+        "pack": "overworld"
+      }
+    }
+  }
+}
+```
+`preset/pack` 代表这个 Terra 配置的包名称，您可以在配置包内的 `pack.yml` 文件的 `id` 字段中找到它。大小写不敏感。
+然后，重新启动服务器以体验 Terra 地形生成器。
+
+## 使用 Terra 地形配置包
+Terra 允许您使用不同的配置包来发现新的地形。将配置包放置在 `./terra/packs` 文件夹中，然后重新启动服务器以完成安装。
+您可以在此网站上检查当前可用的配置包：[社区配置包](https://terra.polydev.org/config/community-packs.html)
+接下来，我们将以 [ReimagEND](https://github.com/justaureus/ReimagEND) 配置包为例，其中包含名为 "ReimagEND.zip" 的配置包文件。
+我们希望将此配置包应用于末地维度，因此创建一个名为 `config.json` 的文件：
+
+```json
+{
+  "format": "leveldb",
+  "generators": {
+    "2": {
+      "name": "terra",
+      "seed": 0,
+      "dimensionData": {
+        "dimensionName": "minecraft:end",
+        "dimensionId": 0,
+        "minHeight": 0,
+        "maxHeight": 255,
+        "height": 256,
+        "chunkSectionCount": 16
+      },
+      "preset": {
+        "pack": "REIMAGEND"
+      }
+    }
+  }
+}
+```
+例如，在这种情况下，配置包文件名为 ReimagEND.zip，我们可以检查 `pack.yml`，并将 `preset/pack` 设置为 `REIMAGEND` 以选择此配置包。
+对于不同类型的世界，它们的高度限制如下：
+- `minecraft:overworld`: -64 到 319（chunkSectionCount: 24）
+- `minecraft:nether`: 0 到 127（chunkSectionCount: 8）
+- `minecraft:end`: 0 到 255（chunkSectionCount: 16）
+
+对于某些配置包，世界的高度限制可能低于配置包所需的高度（例如，Tartarus Nether 配置包）。它必须应用于 overworld 而不是 nether，因为 nether 的最大高度为 128。
+
+<div style={{'text-align': 'center'}}>
+    <img alt="REIMAGEND" height="347" src="/docs/terra_faq/ReimagEND_min.png" width="640"/>
+</div>
+
+## Pas encore effectif
+- 如果您的世界之前使用的是 Terra 以外的地形生成器，则该参数将不会生效，并且您需要从头开始创建一个新的世界。
+- 请确保您已正确配置了 Terra；否则，该参数将不会生效。
+
+## 内存使用过量
+如果您想要减少内存使用量，可以尝试修改 `./terra/config/yml` 文件：
+
+```yaml
+cache:
+  structure: 0 # Default: 32
+  sampler: 0 # Default: 128
+  biome-provider: 0 # Default: 32
+```
