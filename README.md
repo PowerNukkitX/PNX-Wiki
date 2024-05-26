@@ -3,15 +3,15 @@
 # 📖 PowerNukkitX Docs
 
 <p align="center">
-[![Discord](https://img.shields.io/discord/944227466912870410?color=7289da&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/BcPhZCVJHJ)
-[![English](https://img.shields.io/badge/English-Click%20me-purple?style=flat-square)](/README.md)
-[![简体中文](https://img.shields.io/badge/简体中文-Click%20me-purple?style=flat-square)](/blob/zh-hans/README.md)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square)](/LICENSE)
-[![ChangeLog](https://img.shields.io/badge/ChangeLog-blue?style=flat-square)](/CHANGELOG.md)
-[![FAQ](https://img.shields.io/badge/FAQ-blue?style=flat-square)](https://www.powernukkitx.com/doc/en-us/faq/common.html)
-[![PNX-Wiki](https://img.shields.io/badge/PNX-DOC-blue?style=flat-square)](https://doc.powernukkitx.cn)
-[![Maven Central](https://img.shields.io/maven-central/v/cn.powernukkitx/powernukkitx.svg?label=Maven%20Central&style=flat-square)](https://search.maven.org/search?q=g:%22cn.powernukkitx%22%20AND%20a:%22powernukkitx%22)
-[![](https://www.jitpack.io/v/PowerNukkitX/PowerNukkitX.svg)](https://www.jitpack.io/#PowerNukkitX/PowerNukkitX)
+<a href="https://discord.gg/BcPhZCVJHJ"><img src="https://img.shields.io/discord/944227466912870410?color=7289da&logo=discord&logoColor=white&style=flat-square" alt="Discord"></a>
+<a href="/README.md"><img src="https://img.shields.io/badge/English-Click%20me-purple?style=flat-square" alt="English"></a>
+<a href="/blob/zh-hans/README.md"><img src="https://img.shields.io/badge/简体中文-Click%20me-purple?style=flat-square" alt="简体中文"></a>
+<a href="/LICENSE"><img src="https://img.shields.io/badge/License-AGPL%20v3-blue.svg?style=flat-square" alt="License: AGPL v3"></a>
+<a href="/CHANGELOG.md"><img src="https://img.shields.io/badge/ChangeLog-blue?style=flat-square" alt="ChangeLog"></a>
+<a href="https://www.powernukkitx.com/doc/en-us/faq/common.html"><img src="https://img.shields.io/badge/FAQ-blue?style=flat-square" alt="FAQ"></a>
+<a href="https://doc.powernukkitx.cn"><img src="https://img.shields.io/badge/PNX-DOC-blue?style=flat-square" alt="PNX-Wiki"></a>
+<a href="https://search.maven.org/search?q=g:%22cn.powernukkitx%22%20AND%20a:%22powernukkitx%22"><img src="https://img.shields.io/maven-central/v/cn.powernukkitx/powernukkitx.svg?label=Maven%20Central&style=flat-square" alt="Maven Central"></a>
+<a href="https://www.jitpack.io/#PowerNukkitX/PowerNukkitX"><img src="https://www.jitpack.io/v/PowerNukkitX/PowerNukkitX.svg" alt="JitPack"></a>
 </p>
 
 ### PowerNukkitX Wiki, based on docusaurus
