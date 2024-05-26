@@ -9,19 +9,14 @@ keywords: [pnx, documentation, server-properties, doc, powernukkitx, server, pro
 
 ## motd=PowerNukkitX Server
 Motd text displayed on client UI
-
-## sub-motd=https://powernukkitx.cn
+## sub-motd=https://v2.powernukkitx.com
 The name displayed at the top of the right menu when ESC is pressed
-
-:::warning[Sub-Motd and Motd]
-The `sub-motd` and `motd` fields are not supported in the latest versions of PowerNukkitX.
-:::
 ## server-port=19132
 Server port
 ## server-ip=0.0.0.0
 IP address used by the server (default 0.0.0.0)
-## view-distance=10
-Maximum viewing distance limited by the server (4 to 6 recommended)
+## view-distance=12
+Maximum viewing distance limited by the server
 ## white-list=off
 Enable server whitelist (off/on）
 ## achievements=on
@@ -56,20 +51,16 @@ World difficulty：
 - 1: simple
 - 2: ordinary
 - 3: difficulty
-## generator-settings=
-World generator settings
 ## level-name=world
 Name of main world map
 ## level-seed=
 Main World Map Seed
 ## allow-nether=on
-Whether to open the lower world (off/on)
+Whether to open the lower world (currently invalid) (off/on)
 ## allow-the_end=on
-Whether to open the end world (off/on)
+Whether to open the end world (currently invalid) (off/on)
 ## use-terra=on
 Whether Terra Epic World is enabled (off/on)
-## enable-custom-item=off
-Enable custom item (off/on)
 ## enable-query=on
 Whether to enable protocol server listener to display server information (off/on)
 ## enable-rcon=off
@@ -80,5 +71,17 @@ Remote Control Protocol Password
 Auto Save World (off/on）
 ## force-resources=off
 Force the use of the server's resource package (off/on）
+## force-resources-allow-client-packs=off
+When opening `force-resources`, allowing clients to use their own resource packs at the same time requires enabling `force-resources` for the feature to take effect.
 ## xbox-auth=on
 Enable Xbox online verification (this function can prevent unlisted player from entering the server) (off/on）
+## check-login-time=off
+Check the client's login time.This can reduce the likelihood of malicious attacks, but it may also prevent some players from connecting to the server. (off/on）
+## disable-auto-bug-report=off
+Disable automatic error report uploads to the Sentry platform. (off/on）
+## allow-shaded=off
+Whether allow the use of shaded packages to start the server (off/on)
+## server-authoritative-movement=server-auth
+Server move validation mode (client-auth/server-auth)
+## network-encryption=on
+Enable network encryption (off/on)

@@ -1,0 +1,94 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Config": {
+    "message": "配置文件项",
+    "description": "The label for category Config in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Config.link.generated-index.title": {
+    "message": "⚙️ 配置文件项",
+    "description": "The generated-index page title for category Config in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Config.link.generated-index.description": {
+    "message": "PowerNukkitX 服务端配置文件说明和相关介绍",
+    "description": "The generated-index page description for category Config in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.FAQ": {
+    "message": "常见问题",
+    "description": "The label for category FAQ in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.FAQ.link.generated-index.title": {
+    "message": "💁 常见问题",
+    "description": "The generated-index page title for category FAQ in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.FAQ.link.generated-index.description": {
+    "message": "您在使用PowerNukkitX时遇到的常见问题的疑难解惑",
+    "description": "The generated-index page description for category FAQ in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Development": {
+    "message": "开发者",
+    "description": "The label for category Development in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Development.link.generated-index.title": {
+    "message": "🧰 开发者",
+    "description": "The generated-index page title for category Development in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Development.link.generated-index.description": {
+    "message": "用于PowerNukkitX开发相关的文档资源",
+    "description": "The generated-index page description for category Development in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Java": {
+    "message": "Java",
+    "description": "The label for category Java in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Java.link.generated-index.description": {
+    "message": "用于开发使用的REST API文档资源",
+    "description": "The generated-index page description for category Java in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Mod-API": {
+    "message": "Mod-API",
+    "description": "The label for category Mod-API in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Mod-API.link.generated-index.description": {
+    "message": "用于自定义物品/实体的MOD API开发文档",
+    "description": "The generated-index page description for category Mod-API in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Entity-AI": {
+    "message": "Entity-AI",
+    "description": "The label for category Entity-AI in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Entity-AI.link.generated-index.description": {
+    "message": "实体AI相关的开发文档资源",
+    "description": "The generated-index page description for category Entity-AI in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.JavaScript.link.generated-index.description": {
+    "message": "用于开发使用的REST API文档资源",
+    "description": "The generated-index page description for category JavaScript in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Resources": {
+    "message": "Resources",
+    "description": "The label for category Resources in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.Resources.link.generated-index.description": {
+    "message": "用于开发使用的REST API文档资源",
+    "description": "The generated-index page description for category Resources in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.REST API.link.generated-index.title": {
+    "message": "🧰 REST API",
+    "description": "The generated-index page title for category REST API in sidebar pnx_wiki_content_sidebar"
+  },
+  "sidebar.pnx_wiki_content_sidebar.category.REST API.link.generated-index.description": {
+    "message": "用于开发使用的REST API文档资源",
+    "description": "The generated-index page description for category REST API in sidebar pnx_wiki_content_sidebar"
+  }
+}

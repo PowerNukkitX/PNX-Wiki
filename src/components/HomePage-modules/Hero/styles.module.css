@@ -1,0 +1,105 @@
+/*
+* PowerNukkitX Wiki Project
+* CSS File - CSS Modules (Components)
+*
+* This source code is licensed under the AGPL-3.0 license found in the
+* LICENSE file in the root directory of this source tree.
+* If you need to distribute relevant code, please strictly comply with the relevant regulations of the open source license.
+*
+* Website: https://www.powernukkitx.com
+* Github: https://github.com/PowerNukkitX
+*
+* 2024 © PowerNukkitX
+*/
+
+.heroBanner {
+  min-height: 700px;
+  max-height: 700px;
+  background-color: #303846;
+}
+
+.heroBanner_Main {
+  padding: 0 3rem;
+}
+
+.hero_Title{
+  font-size: 70px;
+  color: white;
+}
+
+.hero_SubTitle{
+  font-size: 25px;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+
+.hero_Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-size: calc(10px*var(--ifm-button-size-multiplier));
+}
+
+.hero_Button {
+  --ifm-button-size-multiplier: 1.35;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+
+/* Resolution below 640PX */
+@media screen and (max-width: 640px) {
+
+  .heroBanner {
+    min-height: 650px;
+    max-height: 700px;
+    background-color: #303846;
+  }
+
+  .heroBanner_Main {
+    padding: 0 1.5rem;
+  }
+
+  .hero_Title{
+    font-size: 50px;
+  }
+  
+  .hero_SubTitle{
+    font-size: 25px;
+  }
+
+  .hero_Button {
+    --ifm-button-size-multiplier: 1.1;
+  }
+}
+
+/* Resolution below 320PX */
+@media screen and (max-width: 320px) {
+
+  .heroBanner {
+    min-height: 650px;
+    max-height: 700px;
+    background-color: #303846;
+  }
+
+  .heroBanner_Main {
+    padding: 0 1.5rem;
+  }
+
+  .hero_Title{
+    font-size: 40px;
+  }
+  
+  .hero_SubTitle{
+    font-size: 20px;
+    padding-bottom: 1.2rem;
+  }
+
+  .hero_Button {
+    --ifm-button-size-multiplier: 0.95;
+  }
+}

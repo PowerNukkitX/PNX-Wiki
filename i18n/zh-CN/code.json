@@ -1,4 +1,11 @@
 {
+  "homepage.visitMyBlog": {
+    "message": "让我们开始吧！",
+    "description": "The homepage message to ask the user to visit my blog"
+  },
+  "homepage.tagline": {
+    "message": "一款富特性，高性能的第三方Minecraft基岩版服务端"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"

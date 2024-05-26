@@ -70,6 +70,15 @@ const footer: Footer = {
             href: 'https://jq.qq.com/?_wv=1027&k=6rm3gbUI',
           },
         ],
+      },
+      {
+        title: 'More',
+        items: [
+          {
+            label: 'Blog',
+            to: '/blog',
+          },
+        ],
       }
     ],
     copyright: `2019 - ${new Date().getFullYear()} © PowerNukkitX and contributors.`,

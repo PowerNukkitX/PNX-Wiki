@@ -1,3 +1,4 @@
+# hardware compression acceleration
 ---
 sidebar_position: 2
 title: Hardware Compression Acceleration

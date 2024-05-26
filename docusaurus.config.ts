@@ -1,6 +1,15 @@
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from "prism-react-renderer";
+// Themes Config
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
+import type * as Preset from "@docusaurus/preset-classic";
 
 import {themes} from "prism-react-renderer";
 
@@ -8,6 +17,15 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+    title: "PowerNukkitX Wiki",
+    tagline: "Feature-rich, highly customizable third-party server software for Minecraft: Bedrock Edition.",
+    favicon: "img/icon/favicon.ico",
+
+    // Set the production url of your site here
+    url: "https://wiki.powernukkitx.com",
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: "/",
   title: "PowerNukkitX Docs",
   tagline: "Official Docs for PowerNukkitX Server Software for Minecraft Bedrock Edition",
   favicon: "img/logo/PNX_LOGO_sm.png",
@@ -88,7 +106,7 @@ const config = {
     ],
   ],
 
-  themeConfig:
+    themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
       metadata: [{ name: 'keywords', content: 'powernukkitx, documentation, pnx, docs, minecraft, server, servers, software, bedrock, pe' }],
