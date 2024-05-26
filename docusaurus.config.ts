@@ -8,8 +8,8 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "PowerNukkitX Documentation",
-  tagline: "Official Docs for PowerNukkitX",
+  title: "PowerNukkitX Docs",
+  tagline: "Official Docs for PowerNukkitX Server Software for Minecraft Bedrock Edition",
   favicon: "img/logo/PNX_LOGO_sm.png",
   url: "https://docs.powernukkitx.com",
   baseUrl: "/",
