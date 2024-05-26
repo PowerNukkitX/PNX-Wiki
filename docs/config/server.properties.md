@@ -1,8 +1,21 @@
+---
+sidebar_position: 1
+title: server.properties
+description: PowerNukkitX server.properties configuration documentation
+keywords: [pnx, documentation, server-properties, doc, powernukkitx, server, properties, config, configuration, settings, motd, sub-motd, server-port, server-ip, view-distance, white-list, achievements, announce-player-achievements, spawn-protection, max-players, allow-flight, spawn-animals, spawn-mobs, gamemode, force-gamemode, hardcore, pvp, difficulty, generator-settings, level-name, level-seed, allow-nether, allow-the_end, use-terra, enable-custom-item, enable-query, enable-rcon, rcon.password, auto-save, force-resources, xbox-auth]
+---
+
 # server.properties Introduction
+
 ## motd=PowerNukkitX Server
 Motd text displayed on client UI
+
 ## sub-motd=https://powernukkitx.cn
 The name displayed at the top of the right menu when ESC is pressed
+
+:::warning[Sub-Motd and Motd]
+The `sub-motd` and `motd` fields are not supported in the latest versions of PowerNukkitX.
+:::
 ## server-port=19132
 Server port
 ## server-ip=0.0.0.0
