@@ -2,7 +2,7 @@
 
 # 📖 PowerNukkitX Docs
 
-<div align="center">
+<p align="center">
 [![Discord](https://img.shields.io/discord/944227466912870410?color=7289da&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/BcPhZCVJHJ)
 [![English](https://img.shields.io/badge/English-Click%20me-purple?style=flat-square)](/README.md)
 [![简体中文](https://img.shields.io/badge/简体中文-Click%20me-purple?style=flat-square)](/blob/zh-hans/README.md)
@@ -12,7 +12,7 @@
 [![PNX-Wiki](https://img.shields.io/badge/PNX-DOC-blue?style=flat-square)](https://doc.powernukkitx.cn)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.powernukkitx/powernukkitx.svg?label=Maven%20Central&style=flat-square)](https://search.maven.org/search?q=g:%22cn.powernukkitx%22%20AND%20a:%22powernukkitx%22)
 [![](https://www.jitpack.io/v/PowerNukkitX/PowerNukkitX.svg)](https://www.jitpack.io/#PowerNukkitX/PowerNukkitX)
-</div>
+</p>
 
 ### PowerNukkitX Wiki, based on docusaurus
 
