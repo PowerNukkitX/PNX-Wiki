@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
-title: Automatic creating a PowerNukkitX server
-description: Steps to create a new PowerNukkitX server, along with a video.
-keywords: [pnx, documentation, introduction, doc, powernukkitx]
+title: Créer un serveur automatiquement
+description: Créez un serveur PowerNukkitX automatiquement en utilisant le script CLI.
+keywords: [pnx, documentation, introduction, doc, powernukkitx, cli, script, automatic, create, server, automatically, setup, install, download, run, start]
 ---
 
 ```java

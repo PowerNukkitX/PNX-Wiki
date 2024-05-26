@@ -10,7 +10,7 @@ const darkCodeTheme = themes.dracula;
 const config = {
   title: "PowerNukkitX Documentation",
   tagline: "Official Docs for PowerNukkitX",
-  favicon: "img/icon/favicon.ico",
+  favicon: "img/logo/PNX_LOGO_sm.png",
   url: "https://docs.powernukkitx.com",
   baseUrl: "/",
   onBrokenLinks: 'ignore',

@@ -1,30 +1,30 @@
 {
   "version.label": {
     "message": "v2",
-    "description": "Le libellé pour la version actuelle"
+    "description": "The label for version current"
   },
   "sidebar.pnx_docs_content_sidebar.category.Getting Started": {
-    "message": "Commencer",
-    "description": "Le libellé pour la catégorie Commencer dans la barre latérale pnx_docs_content_sidebar"
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Automatic": {
-    "message": "Automatique",
-    "description": "Le libellé pour la catégorie Automatique dans la barre latérale pnx_docs_content_sidebar"
+    "message": "Automatic",
+    "description": "The label for category Automatic in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Manuel": {
     "message": "Manuel",
-    "description": "Le libellé pour la catégorie Manuel dans la barre latérale pnx_docs_content_sidebar"
+    "description": "The label for category Manuel in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Config": {
-    "message": "Configuration",
-    "description": "Le libellé pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "message": "Config",
+    "description": "The label for category Config in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.title": {
-    "message": "⚙️ Configuration",
-    "description": "Le titre de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "message": "⚙️ Config",
+    "description": "The generated-index page title for category Config in sidebar pnx_docs_content_sidebar"
   },
   "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.description": {
-    "message": "Explication et introduction à la configuration du serveur PowerNukkitX",
-    "description": "La description de la page d'index générée pour la catégorie Configuration dans la barre latérale pnx_docs_content_sidebar"
+    "message": "Explanation and Introduction to the PowerNukkitX Server Config",
+    "description": "The generated-index page description for category Config in sidebar pnx_docs_content_sidebar"
   }
 }
