@@ -1,6 +1,6 @@
 ![Header](/static/img/logo/PowerNukkitX.png)
 
-# 📖 PowerNukkitX Docs
+<h1 align="center">📖 PowerNukkitX Docs</h1>
 
 <p align="center">
 <a href="https://discord.gg/BcPhZCVJHJ"><img src="https://img.shields.io/discord/944227466912870410?color=7289da&logo=discord&logoColor=white&style=flat-square" alt="Discord"></a>
@@ -14,28 +14,57 @@
 <a href="https://www.jitpack.io/#PowerNukkitX/PowerNukkitX"><img src="https://www.jitpack.io/v/PowerNukkitX/PowerNukkitX.svg" alt="JitPack"></a>
 </p>
 
-### PowerNukkitX Wiki, based on docusaurus
+### This documentation was built with [Docusaurus 3](https://docusaurus.io/).
 
-Join US:
+This is a community maintained documentation for PowerNukkitX. If you see any errors or want to add something, please follow the contribution guide below.
 
-* [Discord](https://discord.gg/BcPhZCVJHJ)
-* [QQ](https://jq.qq.com/?_wv=1027&k=6rm3gbUI)
+If you have any questions that are not answered here, feel free to join the [PowerNukkitX Discord](https://discord.gg/BcPhZCVJHJ) or [PowerNukkitX QQ](https://jq.qq.com/?_wv=1027&k=6rm3gbUI) and ask them there!
 
-## Getting Started
+## Local Development
+
+To run a local development server, you first need to install the dependencies:
 
 - Node.js Version >= 18.x
-- PNPM
+- [pnpm](https://pnpm.io/)
 
+### Windows
+1. install Node.js from the official website: https://nodejs.org/en/download/
+2. install pnpm using PowerShell:
 ```bash
-npm install pnpm -g
-pnpm install
+iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
+
+3. install the dependencies:
+```bash
+   pnpm install
+   ```
+
+4. Start the development server:
 
 ```bash
 pnpm run start
 ```
 
-### Add support Language
+5. Open your browser and visit **http://localhost:3000**.
+
+### Linux
+1. install Node.js:
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+2. install pnpm:
+```bash
+npm install -g pnpm
+```
+
+3. install the dependencies:
+```bash
+   pnpm install
+```
+
+### 🏳️ Add support Language
 
 See: https://docusaurus.io/zh-CN/docs/i18n/git
 
