@@ -1,3 +1,4 @@
+---
 sidebar_position: 3
 title: 自动创建服务器
 description: 使用 CLI 脚本自动创建 PowerNukkitX 服务器。
