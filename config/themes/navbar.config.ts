@@ -12,11 +12,11 @@
 * 2024 © PowerNukkitX
 */ 
 
+// @ts-ignore
 import type { Navbar } from "@docusaurus/theme-common";
 
 const navbar: Omit<Navbar, "style"> = {
-    hideOnScroll: true,
-    title: 'PowerNukkitX Documentation',
+    title: 'PowerNukkitX',
     logo: {
       alt: 'PowerNukkitX Logo',
       src: 'img/logo/PNX_LOGO_sm.png',

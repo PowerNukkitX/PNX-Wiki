@@ -1,15 +1,46 @@
 ---
-title: "快速入门"
-description: 逐步指南，教你如何下载和配置 PowerNukkitX 服务器
 slug: ./
-keywords: [pnx, documentation, introduction, doc, powernukkitx, getting started, quick start, create server, automatic, manual]
 sidebar_position: 1
 ---
+# 启动PNX
+## 📚通过CLI方式
+1. 确保你已经安装了 `JDK21`,如果没有安装，从这里下载[Graalvm JDK21](https://www.graalvm.org/downloads)
+2. 下载[`PowerNukkitX-Run.zip`](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/nightly-build/powernukkitx-run.zip)
+3. 解压 `PowerNukkitX-Run.zip` 到你想要的目录.
+4. 将之前下载好的JDK设置到系统环境变量中, 或解压至与上一步操作相同的目录下.
+```sh
+java -jar cli.jar
+```
 
-# ⚒️ 快速入门
+## 📚 通过脚本方式
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
-创建 PowerNukkitX 服务器有两种选择：
-- [自动配置](getting-started/automatic/create-server-automatic.md)
-> 这个选项通过自动化大部分创建和配置服务器所需的步骤，大大简化了过程。适合寻求快速无忧解决方案的用户。
-- [手动配置](getting-started/manuel/create-server-manually.mdx)
-> 虽然这种方法需要更多的努力和技术知识，但它可以完全控制服务器的配置。这是有经验的用户的首选，他们希望自定义服务器。
+:::tip[]
+以下指南需要你通过手动执行启动.如果你使用翼龙面板,请寻找相关Pterodactyl egg **[Pterodactyl](/pterodactyl)**.
+:::
+
+1. Download the latest version of PowerNukkitX from the [official website](https://v2.powernukkitx.com/).
+2. Extract the downloaded file to a folder on your computer.
+<Tabs>
+    <TabItem value="Windows">
+        3.Open the folder where you extracted the files.
+        4.Download the `start.cmd` file from [here](https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.cmd) and place it in the same folder.
+        5.Run the `start.cmd` file by double-clicking on it.
+    </TabItem>
+    <TabItem value="Linux">
+        3.Open the folder where you extracted the files.
+        4.Download the `start.sh` file and place it in the same folder.
+        ```bash
+        wget https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.sh
+        ```
+        5.The `start.sh` file needs to be given permissions to run.
+        ```bash
+        chmod +x start.sh
+        ```
+        6. Run the `start.sh` file.
+        ```bash
+        ./start.sh
+        ```
+    </TabItem>
+</Tabs>

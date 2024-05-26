@@ -60,7 +60,7 @@
     "description": "The label of footer link with label=QQ linking to https://jq.qq.com/?_wv=1027&k=6rm3gbUI"
   },
   "copyright": {
-    "message": "2019 - 2024 © PowerNukkitX and contributors.",
+    "message": "2019 - 2024 © PowerNukkitX.",
     "description": "The footer copyright"
   }
 }

@@ -1,15 +1,49 @@
 ---
-title: "Démarrage Rapide"
-description: Guide étape par étape pour télécharger et configurer un serveur PowerNukkitX
+title: "⚒️ Get Started"
 slug: ./
-keywords: [pnx, documentation, introduction, doc, powernukkitx, getting started, quick start, create server, automatic, manual]
 sidebar_position: 1
 ---
+# Quick Start
+## 📚Cli Start
+1. Make sure you have `JDK21` installed, if not [download from here](https://www.graalvm.org/downloads)
+2. Download
+the [`PowerNukkitX-Run.zip`](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/nightly-build/powernukkitx-run.zip)
+3. Unzip `PowerNukkitX-Run.zip` to the directory you want.
+4. Set Java environment variables or unzip JDK to the same directory as the previous step.
+5. 
+```sh
+java -jar cli.jar
+```
 
-# ⚒️ Démarrage Rapide
+## 📚 Script Start
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
-Il existe deux options pour créer un serveur PowerNukkitX :
-- [Configuration Automatique](getting-started/automatic/create-server-automatic.md)
-> Cette option simplifie considérablement le processus en automatisant la plupart des étapes nécessaires à la création et à la configuration de votre serveur. Elle est idéale pour ceux qui recherchent une solution rapide et sans tracas.
-- [Configuration Manuelle](getting-started/manuel/create-server-manually.mdx)
-> Bien que cette méthode nécessite plus d'efforts et de connaissances techniques, elle offre un contrôle complet sur la configuration de votre serveur. C'est le choix privilégié des utilisateurs expérimentés qui souhaitent personna
+:::tip[]
+This guide is for those who want to set up a server manually. If you want to use a control panel, you can use **[Pterodactyl](/pterodactyl)**.
+:::
+
+1. Download the latest version of PowerNukkitX from the [official website](https://v2.powernukkitx.com/).
+2. Extract the downloaded file to a folder on your computer.
+<Tabs>
+    <TabItem value="Windows">
+        3. Open the folder where you extracted the files.
+        4. Download the `start.cmd` file from [here](https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.cmd) and place it in the same folder.
+        5. Run the `start.cmd` file by double-clicking on it.
+    </TabItem>
+    <TabItem value="Linux">
+        3. Open the folder where you extracted the files.
+        4. Download the `start.sh` file and place it in the same folder.
+        ```bash
+        wget https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.sh
+        ```
+        5. The `start.sh` file needs to be given permissions to run.
+        ```bash
+        chmod +x start.sh
+        ```
+        6. Run the `start.sh` file.
+        ```bash
+        ./start.sh
+        ```
+    </TabItem>
+</Tabs>

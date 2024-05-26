@@ -8,6 +8,11 @@
   },
   "contributors": [
     {
+      "name": "CoolLoong",
+      "url": "https://github.com/CoolLoong",
+      "email": "coolloong@gmail.com"
+    },
+    {
       "name": "AzaleeX",
       "url": "https://github.com/AzaleeX",
       "email": "azaleemcpe@gmail.com"
@@ -62,8 +67,8 @@
     "@docusaurus/module-type-aliases": "3.3.2",
     "@tsconfig/docusaurus": "^2.0.3",
     "@types/markdown-it": "^14.1.1",
+    "@types/node": "^20.12.12",
     "autoprefixer": "^10.4.19",
-    "docusaurus-tailwindcss-loader": "file:plugins/docusaurus-tailwindcss-loader",
     "typescript": "^5.4.5"
   },
   "browserslist": {
@@ -79,6 +84,6 @@
     ]
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18"
   }
 }

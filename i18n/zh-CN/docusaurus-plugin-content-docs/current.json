@@ -7,14 +7,6 @@
     "message": "入门指南",
     "description": "侧边栏 pnx_docs_content_sidebar 中类别入门指南的标签"
   },
-  "sidebar.pnx_docs_content_sidebar.category.Automatic": {
-    "message": "自动",
-    "description": "侧边栏 pnx_docs_content_sidebar 中类别自动的标签"
-  },
-  "sidebar.pnx_docs_content_sidebar.category.Manuel": {
-    "message": "手册",
-    "description": "侧边栏 pnx_docs_content_sidebar 中类别手册的标签"
-  },
   "sidebar.pnx_docs_content_sidebar.category.Config": {
     "message": "配置",
     "description": "侧边栏 pnx_docs_content_sidebar 中类别配置的标签"
