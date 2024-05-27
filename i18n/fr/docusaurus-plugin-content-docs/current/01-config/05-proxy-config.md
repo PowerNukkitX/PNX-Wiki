@@ -3,7 +3,7 @@ Use proxy, you can fast transfer player between multiple servers,
 which is especially important for setting a group of servers. In Bedrock Edition,
 the most popular proxy currently is [WaterdogPe](https://github.com/WaterdogPE/WaterdogPE).
 PNX has made a adaptation version for it: [WaterdogPe-PNX](https://github.com/PowerNukkitX/WaterdogPE-PNX).
-![waterdogpe](/docs/waterdogpe001.png)  
+![waterdogpe](/img/docs/05-proxy-config-waterdogpe.png)  
 Next, we introduce how to use WaterdogPE in PNX.
 ## Usage
 

@@ -5,9 +5,9 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 // Themes Config
-import navbar from "./config/themes/navbar.config";
-import footer from "./config/themes/footer.config";
-import docs_config from "./config/themes/docs.config";
+import navbar from "./src/config/navbar.config";
+import footer from "./src/config/footer.config";
+import docs_config from "./src/config/docs.config";
 import {themes} from "prism-react-renderer";
 
 const theme = themes.vsDark;
@@ -26,7 +26,28 @@ const config = {
     projectName: "Docs",
     trailingSlash: false,
     staticDirectories: ['static'],
-    themes: ['@saucelabs/theme-github-codeblock'],
+    themes: [
+        '@saucelabs/theme-github-codeblock',
+        [
+            require.resolve("@easyops-cn/docusaurus-search-local"),
+            /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+            {
+                hashed: true,
+                docsRouteBasePath: ["/docs"],
+                docsDir: ["docs"],
+                searchContextByPaths: [
+                    {
+                        label: {
+                            en: "PNX2.0 Document",
+                            zh: "PNX2.0 文档",
+                        },
+                        path: "docs",
+                    },
+                ],
+                hideSearchBarWithNoSearchContext: true,
+            },
+        ],
+    ],
     i18n: {
         defaultLocale: "en",
         locales: ["en", "fr", "zh-CN"],
@@ -45,7 +66,6 @@ const config = {
             },
         },
     },
-    // Plugins
     plugins: [
         [
             '@docusaurus/plugin-client-redirects',
@@ -54,6 +74,11 @@ const config = {
             }
         ],
         'docusaurus-plugin-sass',
+    ],
+    scripts: [
+        {
+            src: "./src/js/wiki-version.js",
+        },
     ],
     presets: [
         /** @type {import('@docusaurus/preset-classic').Options} */

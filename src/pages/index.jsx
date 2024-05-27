@@ -1,7 +1,7 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Wave from '../components/common/wave';
-import HomepageMod_Hero from '../components/Hero';
+import Index from '../components/wave';
+import HomepageMod_Hero from '../components/hero';
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
@@ -10,7 +10,7 @@ export default function Home() {
             title={`${siteConfig.title}`}
             description="PowerNukkitX Wiki">
             <HomepageMod_Hero/>
-            <Wave/>
+            <Index/>
         </Layout>
     );
 }

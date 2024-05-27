@@ -1,7 +1,7 @@
 # 代理配置
 通过代理，可以实现多个服务器之间的快速跨服，对群组服的搭建尤为重要.在基岩版中，目前最流行的代理是[WaterdogPe](https://github.com/WaterdogPE/WaterdogPE),
 PNX为其专门制作了一个适配版本[WaterdogPe-PNX](https://github.com/PowerNukkitX/WaterdogPE-PNX).  
-![waterdogpe](/docs/waterdogpe001.png)  
+![waterdogpe](/img/docs/05-proxy-config-waterdogpe.png)  
 接下来介绍如何在PNX中使用WaterDogPE.
 
 ## 使用教程

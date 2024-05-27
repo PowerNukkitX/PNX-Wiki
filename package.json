@@ -44,6 +44,7 @@
     "@docusaurus/plugin-content-docs": "^3.3.2",
     "@docusaurus/plugin-ideal-image": "^3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
+    "@easyops-cn/docusaurus-search-local": "^0.41.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mdx-js/react": "^3.0.1",
