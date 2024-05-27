@@ -12,8 +12,8 @@ Please note that resource package encryption cannot completely prevent people wi
 Just 3 steps, keep up and get started!
 
 ## 1. Encrypt my resource pack
-
-In some sites not managed by PowerNukkitX ([encryptmypack](https://encryptmypack.com)), you can easily encrypt your resource package.
+Encrypt Tool:
+- [EncryptMyPack](https://github.com/AllayMC/EncryptMyPack)
 
 Some precautions:
 - Resource package ends with `.mcpack`

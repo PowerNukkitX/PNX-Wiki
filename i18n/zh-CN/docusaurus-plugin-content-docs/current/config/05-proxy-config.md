@@ -1,14 +1,11 @@
-# Proxy Configuration
-With proxy, fast transfer player between multiple servers,
-which is especially important for setting a group of servers. In Bedrock Edition,
-the most popular proxy currently is [WaterdogPe](https://github.com/WaterdogPE/WaterdogPE).
-PNX has made a adaptation version for it: [WaterdogPe-PNX](https://github.com/PowerNukkitX/WaterdogPE-PNX).
+# 代理配置(Proxy)
+通过代理，可以实现多个服务器之间的快速跨服，对群组服的搭建尤为重要.在基岩版中，目前最流行的代理是[WaterdogPe](https://github.com/WaterdogPE/WaterdogPE),
+PNX为其专门制作了一个适配版本[WaterdogPe-PNX](https://github.com/PowerNukkitX/WaterdogPE-PNX).  
 ![waterdogpe](/docs/waterdogpe001.png)  
-Next, we introduce how to use WaterdogPE in PNX.
-## Usage Tutorial
+接下来介绍如何在PNX中使用WaterDogPE.
 
-You only need to adjust the `nukkit.yml` in each PNX sub-server by setting `waterdogpe=true` to use WaterdogPE.
+## 使用教程
+你只需要在每个PNX的子服中调整`nukkit.yml`配置中的`waterdogpe=true`,即可使用WaterdogPe.
 
-## Notice
-1. Before you prepare to transfer a player, you should use a plugin to close all inventories for the player.
-Otherwise, the player will not be able to open its inventory on another server.
+## 注意事项
+1. 当你执行跨服操作之前，你应当通过插件关闭所有玩家的inventory，否则玩家在另一个子服将无法打开inventory.

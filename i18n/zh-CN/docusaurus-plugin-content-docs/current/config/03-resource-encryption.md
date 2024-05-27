@@ -1,38 +1,45 @@
 ---
-sidebar_position: 3
-title: Resource Package Encryption
+title: Resourcepack encryption
 description: Resource package encryption is a feature that allows you to encrypt your resource pack and provide a key to the client to decrypt it.
 keywords: [pnx, documentation, introduction, doc, powernukkitx, resource, package, encryption, encrypt, key, manifest, mcpack, aes, symmetric, 32, 32-key, 32key]
 ---
-# resource package encryption
+# 资源包加密
 
-The resource package encryption here only means that PowerNukkitX supports you to use the resource package encrypted by you. You only need to configure a 32-key for your resource package according to the following tutorial to enable the player client to load normally.
+这里的资源包加密仅代表PowerNukkitX支持你使用经你加密的资源包，你只需要按照下面的教程为你的资源包配置32-key，便可以让玩家客户端正常加载.
 
-Please note that resource package encryption cannot completely prevent people with ulterior motives from stealing your resource package, because it is `AES` symmetric key encryption.
+请注意：资源包加密并不能完全阻止别有用心之人窃取你的资源包，因为这是`AES`对称密钥加密.
 
-Just 3 steps, keep up and get started!
+只需3步，跟上步伐，即刻开始！
 
-## 1. Encrypt my resource pack
+## 1. 加密我的资源包
 
-In some sites not managed by PowerNukkitX ([encryptmypack](https://encryptmypack.com)), you can easily encrypt your resource package.
+可用的加密工具:
+- [EncryptMyPack](https://github.com/AllayMC/EncryptMyPack)
 
-Some precautions:
-- Resource package ends with `.mcpack`
-- The root directory of the mcpack file cannot be nested with folders. The `manifest.json` file must be visible in the root directory of the resource package.
-- **PowerNukkitX itself does not contain any encryption and decryption logic, but only sends 32 keys to the client according to your configuration (this is very important)**
+一些注意事项：
+- 资源包以`.mcpack`结尾
+- mcpack文件根目录不能嵌套文件夹，必须点进去就能够看到`manifest.json`
+- **PowerNukkitX 本身不包含任何加密和解密逻辑，仅仅只是按照你的配置向客户端发送32-key （这点非常重要）**
 
 
-## 2. Configure your key
+## 2. 配置你的密钥
 
-The file with the same name as the resource package is named with a `.key` file extension name. The content is the 32-key corresponding to the resource package.
+与资源包相同的名字命名一个`.key`拓展名(后缀)的文件，内容是资源包对应的32-key.
 
-Example: There are two files in the `resource_packs` folder.  
+例子：在resource_packs文件夹中有这样两个文件
 
-| file name      | description  |
+| 文件名             | 说明            |
 |-----------------|---------------|
-| x1.mcpack         | A resource package named `x1`   |
-| x1.mcpack.key           | This is the key of `x1.mcpack` resource package  |
+| x1.mcpack         | 一个名字为x1的资源包       |
+| x1.mcpack.key           | 这是x1.mcpack资源包的密钥  |
 
-## 3. Restart the server to make it effective
+## 3. 重启服务端使其生效
 
-PowerNukkitX will only load the files in `resource_packs` when it starts, so you need to restart it to make it take effect.
+PowerNukkitX只有在启动时才会加载resource_packs中的文件，因此你需要重启以使它生效.
+
+## 其它疑惑
+
+| Q             | A            |
+|-----------------|---------------|
+| 加密后的资源包还能否被解密         | 可以.但相对于不加密，这已经提高了盗取者的门槛       |
+| 是否会影响性能           | 不会.  |
