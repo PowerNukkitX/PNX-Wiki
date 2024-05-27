@@ -1,10 +1,14 @@
 {
   "title": {
-    "message": "PNX Wiki",
-    "description": "The title in the navbar"
+    "message": "PowerNukkitX 文档",
+    "description": "导航栏中的标题"
   },
   "logo.alt": {
-    "message": "PowerNukkitX Logo",
-    "description": "The alt text of navbar logo"
+    "message": "PowerNukkitX 徽标",
+    "description": "导航栏徽标的 alt 文本"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "导航栏项目标签为 Docs"
   }
 }

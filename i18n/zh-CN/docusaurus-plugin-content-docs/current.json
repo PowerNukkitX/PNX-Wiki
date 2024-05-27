@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "v2",
+    "description": "标签用于当前版本"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Getting Started": {
+    "message": "入门指南",
+    "description": "侧边栏 pnx_docs_content_sidebar 中类别入门指南的标签"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config": {
+    "message": "配置",
+    "description": "侧边栏 pnx_docs_content_sidebar 中类别配置的标签"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.title": {
+    "message": "⚙️ 配置",
+    "description": "侧边栏 pnx_docs_content_sidebar 中类别配置的生成索引页标题"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.description": {
+    "message": "PowerNukkitX 服务器配置的解释和介绍",
+    "description": "侧边栏 pnx_docs_content_sidebar 中类别配置的生成索引页描述"
+  }
+}

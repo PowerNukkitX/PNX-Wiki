@@ -4,58 +4,36 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from "prism-react-renderer";
 // Themes Config
-import navbar from "./config/themes/navbar.config";
-import footer from "./config/themes/footer.config";
-import docs_config from "./config/themes/docs.config";
-import type * as Preset from "@docusaurus/preset-classic";
+import navbar from "./src/config/navbar.config";
+import footer from "./src/config/footer.config";
+import docs_config from "./src/config/docs.config";
+import {themes} from "prism-react-renderer";
+
+const theme = themes.vsDark;
+const darkTheme = themes.jettwaveDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "PowerNukkitX Wiki",
-    tagline: "Feature-rich, highly customizable third-party server software for Minecraft: Bedrock Edition.",
-    favicon: "img/icon/favicon.ico",
-
-    // Set the production url of your site here
-    url: "https://wiki.powernukkitx.com",
-    // Set the /<baseUrl>/ pathname under which your site is served
-    // For GitHub pages deployment, it is often '/<projectName>/'
+    title: "PowerNukkitX Docs",
+    tagline: "Official Docs for PowerNukkitX Server Software",
+    favicon: "img/icon/pnx_logo_001.png",
+    url: "https://docs.powernukkitx.com",
     baseUrl: "/",
-
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: "PowerNukkitX", // Usually your GitHub org/user name.
-    projectName: "PNX-Wiki", // Usually your repo name.
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    organizationName: "PowerNukkitX",
+    projectName: "Docs",
     staticDirectories: ['static'],
-    onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
-
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
-    i18n: {
-        defaultLocale: "en",
-        locales: ["en", "zh-CN"],
-        localeConfigs: {
-            en: {
-                htmlLang: "en-US",
-            },
-        },
-    },
-
-    // Plugins
-    plugins: ["docusaurus-plugin-sass"],
-
     themes: [
+        '@saucelabs/theme-github-codeblock',
         [
             require.resolve("@easyops-cn/docusaurus-search-local"),
             /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
             {
                 hashed: true,
-                docsRouteBasePath: ["docs"],
+                docsRouteBasePath: ["/docs"],
                 docsDir: ["docs"],
-                docsPluginIdForPreferredVersion: "product",
                 searchContextByPaths: [
                     {
                         label: {
@@ -69,63 +47,99 @@ const config = {
             },
         ],
     ],
-
+    i18n: {
+        defaultLocale: "en",
+        locales: ["en", "fr", "zh-CN"],
+        localeConfigs: {
+            en: {
+                htmlLang: "en-US",
+                label: 'English',
+            },
+            fr: {
+                htmlLang: "fr-FR",
+                label: 'Français',
+            },
+            "zh-CN": {
+                htmlLang: "zh-CN",
+                label: '简体中文',
+            },
+        },
+    },
+    plugins: [
+        [
+            '@docusaurus/plugin-client-redirects',
+            {
+                toExtensions: ['html']
+            }
+        ],
+        'docusaurus-plugin-sass',
+    ],
     scripts: [
         {
-            src: "/js/wiki-version.js",
+            src: "./src/js/wiki-version.js",
         },
     ],
-
     presets: [
+        /** @type {import('@docusaurus/preset-classic').Options} */
         [
-            "classic",
-            {
+            '@docusaurus/preset-classic',
+            ({
                 docs: {
-                    id: "product",
-                    sidebarPath: "./config/sidebar/pnx_wiki.ts",
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: "https://github.com/PowerNukkitX/PNX-Wiki/tree/master/",
+                    routeBasePath: '/docs',
+                    sidebarPath: require.resolve('./sidebar.ts'),
+                    editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/',
+                    showLastUpdateAuthor: true,
+                    showLastUpdateTime: true,
+                    editLocalizedFiles: true,
+                    editCurrentVersion: true,
+                    versions: {
+                        current: {
+                            label: 'v2',
+                        },
+                    },
+                    lastVersion: 'current',
                 },
                 blog: {
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: "https://github.com/PowerNukkitX/PNX-Wiki/tree/master/",
                 },
                 theme: {
-                    customCss: ['./src/css/custom.scss'],
+                    customCss: require.resolve('./src/css/custom.scss'),
                 },
-            } satisfies Preset.Options,
+            }),
         ],
     ],
-
-    themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-        {
-            // PowerNukkitX Wiki Social card
-            image: "img/misc/og-social-card.jpg",
-            // Configuration files are located in the path /config/themes
-            navbar: navbar,
-            footer: footer,
-            docs: docs_config,
-            prism: {
-                theme: prismThemes.vsDark,
-                darkTheme: prismThemes.vsDark,
-                additionalLanguages: [
-                    "batch",
-                    "bash",
-                    "git",
-                    "java",
-                    "javastacktrace",
-                    "kotlin",
-                    "groovy",
-                    "log",
-                    "toml",
-                    "properties",
-                ],
-            },
+    themeConfig: {
+        metadata: [{
+            name: 'keywords',
+            content: 'powernukkitx, documentation, pnx, docs, minecraft, server, software, bedrock, pe, be'
+        }],
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: false,
+            respectPrefersColorScheme: true,
         },
+        navbar: navbar,
+        footer: footer,
+        docs: docs_config,
+        prism: {
+            theme: theme,
+            darkTheme: darkTheme,
+            additionalLanguages: [
+                "batch",
+                "bash",
+                "git",
+                "java",
+                "javastacktrace",
+                "kotlin",
+                "groovy",
+                "log",
+                "toml",
+                "yaml",
+                "properties",
+            ],
+        },
+    },
 };
 
 export default config;

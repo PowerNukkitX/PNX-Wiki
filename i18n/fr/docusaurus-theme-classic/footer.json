@@ -1,0 +1,66 @@
+{
+  "link.title.Getting started": {
+    "message": "Getting started",
+    "description": "The title of the footer links column with title=Getting started in the footer"
+  },
+  "link.title.Contribute": {
+    "message": "Contribute",
+    "description": "The title of the footer links column with title=Contribute in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to /docs"
+  },
+  "link.item.label.Javadoc": {
+    "message": "Javadoc",
+    "description": "The label of footer link with label=Javadoc linking to https://javadoc.io/doc/cn.powernukkitx/powernukkitx"
+  },
+  "link.item.label.Donate": {
+    "message": "Donate",
+    "description": "The label of footer link with label=Donate linking to /"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentation",
+    "description": "The label of footer link with label=Documentation linking to /"
+  },
+  "link.item.label.Changelogs": {
+    "message": "Changelogs",
+    "description": "The label of footer link with label=Changelogs linking to /"
+  },
+  "link.item.label.Developer API": {
+    "message": "Developer API",
+    "description": "The label of footer link with label=Developer API linking to /"
+  },
+  "link.item.label.API web": {
+    "message": "API web",
+    "description": "The label of footer link with label=API web linking to /"
+  },
+  "link.item.label.Website": {
+    "message": "Website",
+    "description": "The label of footer link with label=Website linking to https://v2.powerNukkitX.com"
+  },
+  "link.item.label.Github": {
+    "message": "Github",
+    "description": "The label of footer link with label=Github linking to https://github.com/PowerNukkitX"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/BcPhZCVJHJ"
+  },
+  "link.item.label.QQ": {
+    "message": "QQ",
+    "description": "The label of footer link with label=QQ linking to https://jq.qq.com/?_wv=1027&k=6rm3gbUI"
+  },
+  "copyright": {
+    "message": "2019 - 2024 © PowerNukkitX.",
+    "description": "The footer copyright"
+  }
+}

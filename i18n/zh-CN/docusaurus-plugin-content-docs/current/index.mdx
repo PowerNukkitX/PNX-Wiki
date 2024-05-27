@@ -1,0 +1,46 @@
+---
+slug: ./
+sidebar_position: 1
+---
+# 启动PNX
+## 📚通过CLI方式
+1. 确保你已经安装了 `JDK21`,如果没有安装，从这里下载[Graalvm JDK21](https://www.graalvm.org/downloads)
+2. 下载[`PowerNukkitX-Run.zip`](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/nightly-build/powernukkitx-run.zip)
+3. 解压 `PowerNukkitX-Run.zip` 到你想要的目录.
+4. 将之前下载好的JDK设置到系统环境变量中, 或解压至与上一步操作相同的目录下.
+```sh
+java -jar cli.jar
+```
+
+## 📚 通过脚本方式
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::tip[]
+以下指南需要你通过手动执行启动.如果你使用翼龙面板,请寻找**Pterodactyl Egg**.
+:::
+
+1. 下载最新版版本的PNX从[official website](https://v2.powernukkitx.com/).
+2. 解压下载好的文件到你的电脑中.
+<Tabs>
+    <TabItem value="Windows">
+        3. 打开解压后的文件夹.
+        4. 下载[`start.cmd`](https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.cmd)并放入上述文件夹.
+        5. 运行`start.cmd`.
+    </TabItem>
+    <TabItem value="Linux">
+        3. 打开解压后的文件夹.
+        4. 下载`start.sh`并放入上述文件夹.
+        ```bash
+        wget https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.sh
+        ```
+        5. 为`start.sh`添加可执行权限.
+        ```bash
+        chmod +x start.sh
+        ```
+        6. 运行`start.sh`.
+        ```bash
+        ./start.sh
+        ```
+    </TabItem>
+</Tabs>

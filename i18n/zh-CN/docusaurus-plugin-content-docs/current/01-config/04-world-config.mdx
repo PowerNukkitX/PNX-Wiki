@@ -1,0 +1,152 @@
+# 世界配置
+PNX支持加载来自BDS的地图,你只需要将它放置到worlds下即可加载,在地图加载后,会生成一个`config.json`用于控制一些世界相关的配置.
+
+## 示例
+以下是一个配置实例,它用于启动PNX内置的Terra地形生成器,并使用它的默认配置包.
+在使用之前记得在`server.properties`中打开`use-terra=on`
+```json
+{
+  "format": "leveldb",
+  "enable": true,
+  "generators": {
+    "0": {
+      "name": "terra",
+      "seed": 0,
+      "enableAntiXray": false,
+      "antiXrayMode": "LOW",
+      "preDeobfuscate": true,
+      "dimensionData": {
+        "dimensionName": "minecraft:overworld",
+        "dimensionId": 0,
+        "minHeight": -64,
+        "maxHeight": 319,
+        "height": 384,
+        "chunkSectionCount": 24
+      },
+      "preset": {
+        "pack": "overworld"
+      }
+    }
+  }
+}
+```
+
+## 配置项
+这里解释上述示例中的一些配置项作用
+
+### `DimensionData`: <font color="1085c4">object</font>
+**OverWorld**
+```
+{
+    "dimensionName": "minecraft:overworld",
+    "dimensionId": 0,
+    "minHeight": -64,
+    "maxHeight": 319,
+    "height": 384,
+    "chunkSectionCount": 24
+}
+```
+**Nether**
+```
+{
+    "dimensionName": "minecraft:nether",
+    "dimensionId": 1,
+    "minHeight": 0,
+    "maxHeight": 127,
+    "height": 128,
+    "chunkSectionCount": 8
+}
+```
+**End**
+```
+{
+    "dimensionName": "minecraft:end",
+    "dimensionId": 2,
+    "minHeight": 0,
+    "maxHeight": 255,
+    "height": 256,
+    "chunkSectionCount": 16
+}
+```
+
+### `enable`: <font color="1085c4">boolean</font>
+Value: `true` `false`
+
+用于控制是否加载这个世界,默认true
+
+### `format`: <font color="1085c4">string</font>
+Value: `leveldb`
+
+用于控制加载世界的加载器,目前只支持leveldb加载
+
+### `generators`: object
+Key: <font color="1085c4">DimensionId</font> 代表加载的维度id [0,1,2]
+Value: <font color="1085c4">Generator</font>
+
+用于控制这个世界加载的维度
+
+### `Generator`: object
+- `name` 生成器的名称,用于控制该维度所使用的地形生成器,例如`terra`,具体的值由插件和核心决定
+- `seed` 种子，被用于生成随机数
+- `enableAntiXray` 是否开启anti Xray反作弊
+- `antiXrayMode` Anti Xray反作弊的检查等级,enableAntiXray开启该配置才会生效 [`LOW` `MEDIUM` `HIGH`]
+- `preDeobfuscate` 是否预先解除方块混淆,可以优化正常玩家的体验,enableAntiXray开启该配置才会生效 [`true` `false`]
+- `dimensionData`: [<font color="1085c4">DimensionData</font>](#dimensiondata-object)
+- `preset` 一个对象,其中的值都会被传递给generator,具体怎么使用需要查阅对应生成器的文档
+
+## 核心内置的地形生成器
+
+### flat
+一个超平坦生成器,和原版非常类似
+
+### terra
+- Terra是一个[开源地形生成器](https://github.com/PolyhedralDev/Terra),PNX内置了Terra,您可以在PNX中使用terra生成史诗般的地图
+- 在`server.properties`中设置`use-terra=on`来启用terra生成器
+- Terra通过配置包来控制地形生成,你可以使用不同的配置包来获得不一样的体验
+- Terra支持加载压缩包或者文件夹形式的配置包.要安装配置包,只需将它放入`./terra/packs`文件夹中,重启服务器即可
+- 一些可用的配置包,可以在这里找到[Community Packs](https://terra.polydev.org/config/community-packs.html)
+
+接下来我们以[ReimagEND](https://github.com/justaureus/ReimagEND)配置包为例,讲述如何使用其他配置包
+在worlds目录下创建一个世界文件夹,例如`end`,创建如下配置文件`config.json`
+```json
+{
+  "format": "leveldb",
+  "enable": true,
+  "generators": {
+    "2": {
+      "name": "terra",
+      "seed": 0,
+      "enableAntiXray": false,
+      "antiXrayMode": "LOW",
+      "preDeobfuscate": true,
+      "dimensionData": {
+        "dimensionName": "minecraft:end",
+        "dimensionId": 2,
+        "minHeight": 0,
+        "maxHeight": 255,
+        "height": 256,
+        "chunkSectionCount": 16
+      },
+      "preset": {
+        "pack": "REIMAGEND"
+      }
+    }
+  }
+}
+```
+其中`preset/pack`为这个配置包的包名,你可以在配置包里的`pack.yml`文件中的id项找到它,大小写都允许
+然后,重新启动服务器,输入`world tp end Dim2`前往end世界体验
+
+## 为什么设置不生效
+- 如果您的世界先前使用的不是terra生成器,那么设置不会生效,您需要使用一个新的地图
+- 请检查您是否正确配置了Terra,否则不会生效
+
+## 占用的内存太多
+如果你想减少内存使用,可以尝试修改`./terra/config/yml`
+```yaml
+cache:
+  structure: 0 # 默认32
+  sampler: 0 # 默认128
+  biome-provider: 0 # 默认32
+```
+这样做会减少内存使用,但会加重CPU负担

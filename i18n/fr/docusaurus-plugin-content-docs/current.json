@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "v2",
+    "description": "The label for version current"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Automatic": {
+    "message": "Automatic",
+    "description": "The label for category Automatic in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Manuel": {
+    "message": "Manuel",
+    "description": "The label for category Manuel in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config": {
+    "message": "Config",
+    "description": "The label for category Config in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.title": {
+    "message": "⚙️ Config",
+    "description": "The generated-index page title for category Config in sidebar pnx_docs_content_sidebar"
+  },
+  "sidebar.pnx_docs_content_sidebar.category.Config.link.generated-index.description": {
+    "message": "Explanation and Introduction to the PowerNukkitX Server Config",
+    "description": "The generated-index page description for category Config in sidebar pnx_docs_content_sidebar"
+  }
+}
