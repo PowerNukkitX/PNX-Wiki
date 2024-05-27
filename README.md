@@ -21,47 +21,19 @@ This is a community maintained documentation for PowerNukkitX. If you see any er
 If you have any questions that are not answered here, feel free to join the [PowerNukkitX Discord](https://discord.gg/BcPhZCVJHJ) or [PowerNukkitX QQ](https://jq.qq.com/?_wv=1027&k=6rm3gbUI) and ask them there!
 
 ## Local Development
-
 To run a local development server, you first need to install the dependencies:
 
 - Node.js Version >= 18.x
-- [pnpm](https://pnpm.io/)
+- [pnpm](https://pnpm.io/installation)
 
-### Windows
-1. install Node.js from the official website: https://nodejs.org/en/download/
-2. install pnpm using PowerShell:
 ```bash
-iwr https://get.pnpm.io/install.ps1 -useb | iex
+pnpm install
 ```
-
-3. install the dependencies:
-```bash
-   pnpm install
-   ```
-
-4. Start the development server:
 
 ```bash
 pnpm run start
-```
-
-5. Open your browser and visit **http://localhost:3000**.
-
-### Linux
-1. install Node.js:
-```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
-
-2. install pnpm:
-```bash
-npm install -g pnpm
-```
-
-3. install the dependencies:
-```bash
-   pnpm install
+#preview other language
+pnpm run start --locale zh-CN
 ```
 
 ### 🏳️ Add support Language

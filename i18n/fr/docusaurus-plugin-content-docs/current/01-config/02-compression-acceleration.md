@@ -1,7 +1,5 @@
-# hardware compression acceleration
 ---
-sidebar_position: 2
-title: Hardware Compression Acceleration
+title: Compression acceleration
 description: Hardware Compression Acceleration is an optional function provided by PNX, which can accelerate data compression by using hardware SIMD on modern CPUs.
 keywords: [pnx, documentation, introduction, doc, powernukkitx, compression, acceleration, hardware, simd, cpu, instruction set, avx512, avx2, avx, sse4.2, sse4.1, ssse3, sse3, sse2, sse, sve, neon]
 ---

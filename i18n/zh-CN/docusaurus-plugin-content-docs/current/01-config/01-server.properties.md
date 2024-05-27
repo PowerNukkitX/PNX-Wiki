@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
-title: server.properties配置
-description: PNXserver.properties配置文档
+title: Server.properties配置
+description: PNX server.properties配置文档
 keywords: [pnx, documentation, server-properties, doc, powernukkitx, server, properties, config, configuration, settings, motd, sub-motd, server-port, server-ip, view-distance, white-list, achievements, announce-player-achievements, spawn-protection, max-players, allow-flight, spawn-animals, spawn-mobs, gamemode, force-gamemode, hardcore, pvp, difficulty, generator-settings, level-name, level-seed, allow-nether, allow-the_end, use-terra, enable-custom-item, enable-query, enable-rcon, rcon.password, auto-save, force-resources, xbox-auth]
 ---
 
-# server.properties配置
+# Server.properties配置
 
 ## motd=PowerNukkitX Server
 在服务器在线人数及延迟界面显示的 Motd 文字

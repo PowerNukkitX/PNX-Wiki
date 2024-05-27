@@ -1,6 +1,6 @@
 ---
-title: Resourcepack encryption
-description: Resource package encryption is a feature that allows you to encrypt your resource pack and provide a key to the client to decrypt it.
+title: 资源包加密
+description: PowerNukkitX支持你使用加密后的资源包.
 keywords: [pnx, documentation, introduction, doc, powernukkitx, resource, package, encryption, encrypt, key, manifest, mcpack, aes, symmetric, 32, 32-key, 32key]
 ---
 # 资源包加密

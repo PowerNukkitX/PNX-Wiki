@@ -1,10 +1,9 @@
 ---
-sidebar_position: 3
-title: Resource Package Encryption
+title: Resourcepack encryption
 description: Resource package encryption is a feature that allows you to encrypt your resource pack and provide a key to the client to decrypt it.
 keywords: [pnx, documentation, introduction, doc, powernukkitx, resource, package, encryption, encrypt, key, manifest, mcpack, aes, symmetric, 32, 32-key, 32key]
 ---
-# resource package encryption
+# Resourcepack encryption
 
 The resource package encryption here only means that PowerNukkitX supports you to use the resource package encrypted by you. You only need to configure a 32-key for your resource package according to the following tutorial to enable the player client to load normally.
 
@@ -13,8 +12,8 @@ Please note that resource package encryption cannot completely prevent people wi
 Just 3 steps, keep up and get started!
 
 ## 1. Encrypt my resource pack
-
-In some sites not managed by PowerNukkitX ([encryptmypack](https://encryptmypack.com)), you can easily encrypt your resource package.
+Encrypt Tool:
+- [EncryptMyPack](https://github.com/AllayMC/EncryptMyPack)
 
 Some precautions:
 - Resource package ends with `.mcpack`

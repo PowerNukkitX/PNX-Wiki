@@ -17,17 +17,16 @@ const darkCodeTheme = themes.dracula;
 const config = {
     title: "PowerNukkitX Docs",
     tagline: "Official Docs for PowerNukkitX Server Software",
-    // favicon: "img/logo/PNX_LOGO_sm.png",
+    favicon: "img/logo/PNX_LOGO_sm.png",
     url: "https://docs.powernukkitx.com",
     baseUrl: "/",
-    onBrokenLinks: 'ignore',
-    onBrokenMarkdownLinks: 'throw',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
     organizationName: "PowerNukkitX",
     projectName: "Docs",
     trailingSlash: false,
     staticDirectories: ['static'],
     themes: ['@saucelabs/theme-github-codeblock'],
-
     i18n: {
         defaultLocale: "en",
         locales: ["en", "fr", "zh-CN"],
@@ -35,21 +34,17 @@ const config = {
             en: {
                 htmlLang: "en-US",
                 label: 'English',
-                direction: 'ltr'
             },
             fr: {
                 htmlLang: "fr-FR",
                 label: 'Français',
-                direction: 'ltr'
             },
             "zh-CN": {
                 htmlLang: "zh-CN",
                 label: '简体中文',
-                direction: 'ltr'
             },
         },
     },
-
     // Plugins
     plugins: [
         [
@@ -60,17 +55,10 @@ const config = {
         ],
         'docusaurus-plugin-sass',
     ],
-
-    scripts: [
-        {
-            src: "/js/wiki-version.js",
-        },
-    ],
-
     presets: [
+        /** @type {import('@docusaurus/preset-classic').Options} */
         [
             '@docusaurus/preset-classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
                     routeBasePath: '/docs',
@@ -78,6 +66,8 @@ const config = {
                     editUrl: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
+                    editLocalizedFiles: true,
+                    editCurrentVersion: true,
                     versions: {
                         current: {
                             label: 'v2',
@@ -112,10 +102,16 @@ const config = {
             theme: darkCodeTheme,
             darkTheme: darkCodeTheme,
             additionalLanguages: [
-                'bash',
-                'json',
-                'java',
-                'kotlin',
+                "batch",
+                "bash",
+                "git",
+                "java",
+                "javastacktrace",
+                "kotlin",
+                "groovy",
+                "log",
+                "toml",
+                "properties",
             ],
         },
     },
