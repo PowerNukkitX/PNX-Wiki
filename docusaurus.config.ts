@@ -17,14 +17,13 @@ const darkTheme = themes.jettwaveDark;
 const config = {
     title: "PowerNukkitX Docs",
     tagline: "Official Docs for PowerNukkitX Server Software",
-    favicon: "img/logo/PNX_LOGO_sm.png",
+    favicon: "img/icon/pnx_logo_001.png",
     url: "https://docs.powernukkitx.com",
     baseUrl: "/",
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     organizationName: "PowerNukkitX",
     projectName: "Docs",
-    trailingSlash: false,
     staticDirectories: ['static'],
     themes: [
         '@saucelabs/theme-github-codeblock',

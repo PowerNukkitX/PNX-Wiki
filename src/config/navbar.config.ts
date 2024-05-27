@@ -10,17 +10,17 @@
 * Github: https://github.com/PowerNukkitX
 *
 * 2024 © PowerNukkitX
-*/ 
+*/
 
 // @ts-ignore
-import type { Navbar } from "@docusaurus/theme-common";
+import type {Navbar} from "@docusaurus/theme-common";
 
 const navbar: Omit<Navbar, "style"> = {
     title: 'PowerNukkitX',
     logo: {
-      alt: 'PowerNukkitX Logo',
-      src: 'img/logo/PNX_LOGO_sm.png',
-      href: '/'
+        alt: 'PowerNukkitX Logo',
+        src: 'img/icon/pnx_logo_001.png',
+        href: '/'
     },
     items: [
         {
@@ -28,28 +28,32 @@ const navbar: Omit<Navbar, "style"> = {
             position: 'left',
             label: 'Docs',
         },
-        //right
+        {
+            to: '/blog',
+            position: 'left',
+            label: 'Blog'
+        },
         {
             type: 'docsVersionDropdown',
             position: 'right',
         },
         {
-        type: 'localeDropdown',
-        position: 'right',
-        dropdownItemsAfter: [
-          {
-            to: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/i18n',
-            label: '💖 Help us translate',
-          },
-        ],
-      },
-      {
-        href: 'https://github.com/PowerNukkitX/PNX-Wiki',
-        position: 'right',
-        className: 'header-github-link',
-        'aria-label': 'GitHub repository',
-      },
+            type: 'localeDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+                {
+                    to: 'https://github.com/PowerNukkitX/PNX-Wiki/tree/master/i18n',
+                    label: '💖 Help us translate',
+                },
+            ],
+        },
+        {
+            href: 'https://github.com/PowerNukkitX/PNX-Wiki',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+        },
     ],
-  };
+};
 
 export default navbar;
