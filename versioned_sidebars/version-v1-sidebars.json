@@ -1,7 +1,5 @@
 {
-  "someSidebar": {
-    "Docusaurus": [
-      "versions-v1-intro"
-    ]
-  }
+  "sidebars": [
+    "versions-v1-intro"
+  ]
 }

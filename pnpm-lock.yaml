@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@docusaurus/core':
-    specifier: 3.3.2
+    specifier: ^3.3.2
     version: 3.3.2(@docusaurus/types@3.3.2)(debug@4.3.4)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
   '@docusaurus/plugin-client-redirects':
     specifier: ^3.3.2
@@ -18,7 +18,7 @@ dependencies:
     specifier: ^3.3.2
     version: 3.3.2(prop-types@15.8.1)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
   '@docusaurus/preset-classic':
-    specifier: 3.3.2
+    specifier: ^3.3.2
     version: 3.3.2(@algolia/client-search@4.23.3)(@types/react@18.3.2)(react-dom@18.3.1)(react@18.3.1)(search-insights@2.13.0)(typescript@5.4.5)
   '@easyops-cn/docusaurus-search-local':
     specifier: ^0.41.0
@@ -4625,9 +4625,9 @@ packages:
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.38)
       postcss: 8.4.38
-      postcss-modules-extract-imports: 3.0.0(postcss@8.4.38)
-      postcss-modules-local-by-default: 4.0.4(postcss@8.4.38)
-      postcss-modules-scope: 3.1.1(postcss@8.4.38)
+      postcss-modules-extract-imports: 3.1.0(postcss@8.4.38)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.4.38)
+      postcss-modules-scope: 3.2.0(postcss@8.4.38)
       postcss-modules-values: 4.0.0(postcss@8.4.38)
       postcss-value-parser: 4.2.0
       semver: 7.6.0
@@ -8013,15 +8013,6 @@ packages:
       postcss-selector-parser: 6.0.16
     dev: false
 
-  /postcss-modules-extract-imports@3.0.0(postcss@8.4.38):
-    resolution: {integrity: sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.38
-    dev: false
-
   /postcss-modules-extract-imports@3.1.0(postcss@8.4.38):
     resolution: {integrity: sha512-k3kNe0aNFQDAZGbin48pL2VNidTF0w4/eASDsxlyspobzU3wZQLOGj7L9gfRe0Jo9/4uud09DsjFNH7winGv8Q==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -8029,18 +8020,6 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.38
-    dev: false
-
-  /postcss-modules-local-by-default@4.0.4(postcss@8.4.38):
-    resolution: {integrity: sha512-L4QzMnOdVwRm1Qb8m4x8jsZzKAaPAgrUF1r/hjDR2Xj7R+8Zsf97jAlSQzWtKx5YNiNGN8QxmPFIc/sh+RQl+Q==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.38)
-      postcss: 8.4.38
-      postcss-selector-parser: 6.0.16
-      postcss-value-parser: 4.2.0
     dev: false
 
   /postcss-modules-local-by-default@4.0.5(postcss@8.4.38):
@@ -8053,16 +8032,6 @@ packages:
       postcss: 8.4.38
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
-    dev: false
-
-  /postcss-modules-scope@3.1.1(postcss@8.4.38):
-    resolution: {integrity: sha512-uZgqzdTleelWjzJY+Fhti6F3C9iF1JR/dODLs/JDefozYcKTBCdD8BIl6nNPbTbcLnGrk56hzwZC2DaGNvYjzA==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: ^8.1.0
-    dependencies:
-      postcss: 8.4.38
-      postcss-selector-parser: 6.0.16
     dev: false
 
   /postcss-modules-scope@3.2.0(postcss@8.4.38):
