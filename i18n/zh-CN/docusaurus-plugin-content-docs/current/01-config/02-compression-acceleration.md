@@ -41,6 +41,5 @@ PNX适用于大型服务器，很多PNX服务端同时承载数十名甚至上�
 
 ```yaml
 network:
-  # ......
   zlib-provider: 3 
 ```

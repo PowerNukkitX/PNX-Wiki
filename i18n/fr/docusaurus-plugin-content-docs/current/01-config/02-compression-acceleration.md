@@ -42,6 +42,5 @@ Here is an example：
 
 ```yaml
 network:
- # ......
- zlib-provider: 3 
+  zlib-provider: 3 
 ```

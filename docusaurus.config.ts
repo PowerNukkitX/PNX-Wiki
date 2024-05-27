@@ -8,10 +8,10 @@
 import navbar from "./config/themes/navbar.config";
 import footer from "./config/themes/footer.config";
 import docs_config from "./config/themes/docs.config";
-
 import {themes} from "prism-react-renderer";
 
-const darkCodeTheme = themes.dracula;
+const theme = themes.vsDark;
+const darkTheme = themes.jettwaveDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -99,8 +99,8 @@ const config = {
         footer: footer,
         docs: docs_config,
         prism: {
-            theme: darkCodeTheme,
-            darkTheme: darkCodeTheme,
+            theme: theme,
+            darkTheme: darkTheme,
             additionalLanguages: [
                 "batch",
                 "bash",
@@ -111,6 +111,7 @@ const config = {
                 "groovy",
                 "log",
                 "toml",
+                "yaml",
                 "properties",
             ],
         },
