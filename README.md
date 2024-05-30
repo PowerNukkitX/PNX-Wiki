@@ -1,4 +1,4 @@
-![Header](/static/img/logo/PowerNukkitX.png)
+![Header](./static/img/icon/PowerNukkitX.png)
 
 <h1 align="center">📖 PowerNukkitX Docs</h1>
 
