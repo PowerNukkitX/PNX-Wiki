@@ -49,11 +49,15 @@ const config = {
     ],
     i18n: {
         defaultLocale: "en",
-        locales: ["en", "fr", "zh-CN"],
+        locales: ["en", "fr", "zh-CN", "de-DE"],
         localeConfigs: {
             en: {
                 htmlLang: "en-US",
                 label: 'English',
+            },
+            "de-DE": {
+                htmlLang: "de-DE",
+                label: 'Deutsch',
             },
             fr: {
                 htmlLang: "fr-FR",
@@ -62,7 +66,7 @@ const config = {
             "zh-CN": {
                 htmlLang: "zh-CN",
                 label: '简体中文',
-            },
+            }
         },
     },
     plugins: [
