@@ -10,7 +10,7 @@ Hardware Kompressionsbeschleunigung ist eine optionale Funktion von PNX, die die
 
 ## Why?
 
-PNX ist für große Server geeignet. Auf vielen PNX-Servern laufen Dutzende oder sogar Hunderte von Spielern gleichzeitig, was bedeutet, dass jeder Spieler eine große Menge an Daten erzeugt. Aufgrund der Anforderungen der Bedrock-Version müssen diese Daten komprimiert werden, bevor sie an die Spieler gesendet werden können.
+PNX ist für große Server geeignet. Auf vielen PNX-Servern spielen Dutzende oder sogar Hunderte von Spielern gleichzeitig, was bedeutet, dass jeder Spieler eine große Menge an Daten erzeugt. Aufgrund der Anforderungen der Bedrock-Version müssen diese Daten komprimiert werden, bevor sie an die Spieler gesendet werden können.
 Gleichzeitig müssen beim generieren von Welten durch den Spieler eine große Anzahl von Chunks erzeugt werden, die ebenfalls häufig komprimiert und dekomprimiert werden müssen.  
 Diese Daten, die komprimiert oder dekomprimiert werden müssen, verbrauchen eine Menge CPU-Ressourcen. Die Verwendung von Hardware-Komprimierung und Dekomprimierungsbeschleunigung kann die Leistung erheblich verbessern.
 

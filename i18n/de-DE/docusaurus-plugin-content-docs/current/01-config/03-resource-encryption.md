@@ -5,7 +5,7 @@ keywords: [pnx, documentation, introduction, doc, powernukkitx, resource, packag
 ---
 # Verschlüsselung von Ressourcenpaketen
 
-Die Verschlüsselung des Ressourcenpakets bedeutet hier nur, dass PowerNukkitX Sie dabei unterstützt, das von Ihnen verschlüsselte Ressourcenpaket zu verwenden. Sie müssen nur einen 32-Schlüssel für Ihr Ressourcenpaket gemäß der folgenden Anleitung konfigurieren, damit der Spieler-Client normal geladen werden kann.
+Die Verschlüsselung des Ressourcenpakets bedeutet hier nur, dass PowerNukkitX Sie dabei unterstützt, das von Ihnen verschlüsselte Ressourcenpaket zu verwenden. Sie müssen nur einen Schlüssel für Ihr Ressourcenpaket gemäß der folgenden Anleitung konfigurieren, damit der Spieler-Client normal geladen werden kann.
 
 Bitte beachten Sie, dass die Verschlüsselung von Ressourcenpaketen nicht vollständig verhindern kann, dass Personen mit Ihr Ressourcenpaket stehlen, da es sich um eine symmetrische `AES`-Schlüsselverschlüsselung handelt.
 
@@ -20,7 +20,7 @@ Bedingungen:
 - Das Stammverzeichnis der mcpack-Datei kann nicht mit Ordnern verschachtelt werden. Die Datei `manifest.json` muss im Stammverzeichnis des Ressourcenpakets sichtbar sein.
 
 :::caution[]
-PowerNukkitX selbst enthält keine Ver- und Entschlüsselungslogik, sondern sendet nur den Schlüssel an den Client entsprechend Ihrer Konfiguration
+PowerNukkitX selbst enthält keine Ver- und Entschlüsselungslogik, sondern sendet nur, entsprechend Ihrer Konfiguration, den Schlüssel an den Client!
 :::
 
 
@@ -37,4 +37,4 @@ Beispiel: Es gibt zwei Dateien im Ordner `resource_packs`.
 
 ## 3. Starten Sie den Server neu, um die Änderungen anzuwenden
 
-PowerNukkitX lädt die Dateien in `resource_packs` nur, wenn der Server startet.
+PowerNukkitX lädt die Dateien in `resource_packs` nur, wenn der Server startet. Somit ist für Änderungen an Ressourcenpaketen ein Neustart notwendig.
