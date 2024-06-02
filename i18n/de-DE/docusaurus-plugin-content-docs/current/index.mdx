@@ -1,0 +1,48 @@
+---
+slug: ./
+sidebar_position: 1
+---
+# Schnellstart
+## 📚CLI
+1. Stellen Sie sicher, dass Sie Java 21 (`JDK21`) installiert haben. Wenn nicht, [laden Sie sie hier herunter](https://www.graalvm.org/downloads).
+2. Herunterladen
+the [`PowerNukkitX-Run.zip`](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/nightly-build/powernukkitx-run.zip)
+3. Entpacke `PowerNukkitX-Run.zip` in einem Ordner Ihrer Wahl.
+4. Setzen Sie Java-Umgebungsvariablen oder entpacken Sie JDK in das gleiche Verzeichnis wie im vorherigen Schritt.
+```sh
+java -jar cli.jar
+```
+
+## 📚 Script Start
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::tip[]
+Diese Anleitung ist für diejenigen gedacht, die einen Server manuell einrichten wollen. Wenn Sie ein Kontrollpanel verwenden möchten, können Sie **Pterodactyl** verwenden.
+:::
+
+1. Laden Sie die neueste Version von PowerNukkitX von der [offiziellen Website](https://v2.powernukkitx.com/) herunter.
+2. Entpacken Sie die heruntergeladene Datei in einen Ordner auf Ihrem Computer.
+<Tabs>
+    <TabItem value="Windows">
+        3. Öffnen Sie den Ordner, in dem Sie die heruntergeladene Datei entpackt haben.
+        4. Laden Sie die Datei `start.cmd` 
+        [hier](https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.cmd) herunter und verschieben Sie sie in den selben Ordner.
+        5. Run the `start.cmd` file by double-clicking on it.
+    </TabItem>
+    <TabItem value="Linux">
+        3. Öffnen Sie den Ordner, in dem Sie die heruntergeladene Datei entpackt haben.
+        4. Laden Sie die Datei `start.sh` im selben Ordner herunter.
+        ```bash
+        wget https://raw.githubusercontent.com/PowerNukkitX/scripts/master/start.sh
+        ```
+        5. Die Start-Datei benötigt Berechtigungen, um ausgeführt zu werden.
+        ```bash
+        chmod +x start.sh
+        ```
+        6. Führen Sie die Datei `start.sh` aus.
+        ```bash
+        ./start.sh
+        ```
+    </TabItem>
+</Tabs>
