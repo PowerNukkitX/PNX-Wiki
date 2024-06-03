@@ -43,7 +43,7 @@
     "@docusaurus/plugin-client-redirects": "^3.3.2",
     "@docusaurus/plugin-content-docs": "^3.3.2",
     "@docusaurus/plugin-ideal-image": "^3.3.2",
-    "@docusaurus/preset-classic": "^3.3.2",
+    "@docusaurus/preset-classic": "^3.4.0",
     "@easyops-cn/docusaurus-search-local": "^0.41.0",
     "@saucelabs/theme-github-codeblock": "^0.2.3",
     "@emotion/react": "^11.11.4",
