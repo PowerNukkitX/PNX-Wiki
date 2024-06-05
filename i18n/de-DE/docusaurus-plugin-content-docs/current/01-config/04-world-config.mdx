@@ -1,10 +1,10 @@
-# World settings(config.json)
+# Welt Einstellungen (config.yml)
 
-PNX supports loading worlds from BDS, you just need to place them under worlds to load them. After loading the world, a config.json will be generated to control some world-related configs.
+PNX unterstützt das Laden von Welten, welche von Bedrock Dedicated Servern (kurz: BDS) generiert wurden. Sie müssen die Welten nur in den Ordner `worlds/` kopieren, um diese zu laden. Nachdem die Welt geladen wurde, wird eine `config.json` generiert, um einige weltenbezogene Konfigurationen zu steuern.
 
-## Example
-The following is a config example used to start the built-in Terra terrain generator in PNX and use its default config pack.  
-Remember to turn on use-terra=on in server.properties before using it.
+## Beispiel
+Das folgende Beispiel ist eine Konfiguration für die Verwendung des eingebauten Terrain-Generator von [Terra](https://terra.polydev.org/) und dessen Standardpaket.
+Denken Sie daran, dass Sie Terra in `server.properties` aktivieren müssen, um den Generator zu verwenden: `use-terra=on`
 ```json
 {
   "format": "leveldb",
@@ -32,11 +32,13 @@ Remember to turn on use-terra=on in server.properties before using it.
 }
 ```
 
-## Config items
-Here are explanations of some config items in the above example
+## Konfigurationsinhalt
+Hier sind Erklärungen für einige Variabeln im oberen Beispiel.
 
 ### `DimensionData`: <font color="1085c4">object</font>
-**OverWorld**
+Das Objekt `DimensionData` bestimmt, welche Dimension für die jeweilige Welt verwendet werden soll.
+
+**Overworld**
 ```
 {
     "dimensionName": "minecraft:overworld",
@@ -71,44 +73,47 @@ Here are explanations of some config items in the above example
 ```
 
 ### `enable`: <font color="1085c4">boolean</font>
-Value: `true` `false`
+Wert: `true` `false`
 
-Controls whether to load this world, default is true
+Steuert, ob diese Welt beim Start des Servers geladen werden soll. Standardmäßig ist dies aktiviert.
 
 ### `format`: <font color="1085c4">string</font>
-Value: `leveldb`
+Wert: `leveldb`
 
-Controls the loader for loading the world, currently only supports leveldb
+Steuert, welcher Loader zum Laden der Welt verwendet werden soll.
+Derzeit wird nur `leveldb` unterstützt.
 
 ### `generators`: object
-Key: <font color="1085c4">DimensionId</font> 代表加载的维度id [0,1,2]
-Value: <font color="1085c4">Generator</font>
+Key: <font color="1085c4">DimensionId</font> (Mögliche Dimensions-IDs: `[0,1,2]`)
+Stellt die Dimensions-ID dar.
 
-Controls the dimensions loaded for this world
+Wert: <font color="1085c4">Generator</font>
+
+Kontrolliert die Dimensionen, welche für diese Welt geladen werden.
 
 ### `Generator`: object
-- `name` Name of the generator, used to control the terrain generator used by this dimension, such as `terra`, specific values are determined by plugins and core
-- `seed` Seed used for random number generation
-- `enableAntiXray` Whether to enable anti Xray anti-cheat
-- `antiXrayMode` Anti Xray anti-cheat check level, effective only when enableAntiXray is enabled [`LOW` `MEDIUM` `HIGH`]
-- `preDeobfuscate` Whether to pre-deobfuscate blocks, which can optimize the experience of normal players, effective only when enableAntiXray is enabled [`true` `false`]
+- `name` Name des Generators, der zur Steuerung des von dieser Dimension verwendeten Terrain-Generators verwendet wird, beispielsweise `terra`. Spezifische Werte werden von Plugins und Core festgelegt.
+- `seed` Genutzter Seed für die zufällige Weltengeneration.
+- `enableAntiXray` Entscheidet, ob das eingebaute Anti-Xray Feature verwendet werden soll.
+- `antiXrayMode` Die Gewichtung vom Anti-Xray. Nur wirksam, wenn Anti-Xray aktiviert ist. [`LOW` `MEDIUM` `HIGH`]
+- `preDeobfuscate` Entscheidet, Blöcke vorher entschleiert werden sollen, was die Erfahrung von normalen Spielern optimieren kann. Nur wirksam, wenn Anti-Xray aktiviert ist. [`true` `false`]
 - `dimensionData`: [<font color="1085c4">DimensionData</font>](#dimensiondata-object)
-- `preset` An object whose values are passed to the generator, how to use them needs to be checked in the corresponding generator's documentation
+- `preset` Ein Objekt, dessen Werte an den Generator übergeben werden; wie sie zu verwenden sind, muss in der Dokumentation des entsprechenden Generators nachgelesen werden.
 
-## PNX Built-in Generators
+## In PNX integrierte Generatoren
 
 ### flat
-A flat generator, very similar to the vanilla
+Ein Generator für flache Welten. Sehr ähnlich zum Vanilla Generator für flache Welten.
 
 ### terra
-- Terra is an [open-source generator](https://github.com/PolyhedralDev/Terra), you can use terra in PNX to generate epic worlds.
-- Set `use-terra=on` in `server.properties` to enable the terra generator.
-- Terra controls terrain generation through config packs, and you can use different config packs for different experiences.
-- Terra supports loading config packs from zip or folder. To install a config pack, just place it in the `./terra/packs` folder and restart the server.
-- Some available config packs can be found here: [Community Packs](https://terra.polydev.org/config/community-packs.html).
+- Terra ist ein [Open Source Generator](https://github.com/PolyhedralDev/Terra). Sie können Terra in PNX verwenden, um epische Welten zu generieren.
+- Aktivieren Sie Terra in `server.properties`, um den Generator zu verwenden: `use-terra=on`.
+- Terra steuert die Terrainerzeugung über Konfigurationspakete, und Sie können verschiedene Konfigurationspakete für unterschiedliche Erfahrungen verwenden.
+- Terra unterstützt das Laden von Konfigurationspaketen aus ZIP-Dateien oder Ordnern. Um ein Konfigurationspaket zu installieren, legen Sie es einfach in den Ordner `./terra/packs` und starten Sie den Server neu.
+- Manche verfügbaren Konfigurationspakete können hier gefunden werden: [Community Pakete](https://terra.polydev.org/config/community-packs.html).
 
-Next, we will use the [ReimagEND](https://github.com/justaureus/ReimagEND) config pack as an example to describe how to use config packs.  
-Firstly create a world folder in the worlds directory, such as `end`, and create the following config file `config.json`
+Im folgenden werden wir das Konfigurationspaket [ReimagEND](https://github.com/justaureus/ReimagEND) als Beispiel nehmen, um die Verwendung von Konfigurationspaketen zu erklären.
+Erstellen Sie zunächst einen Weltordner im Weltenverzeichnis, zum Beispiel `end`, und erstellen Sie die folgende Konfigurationsdatei `config.json`
 ```json
 {
   "format": "leveldb",
@@ -135,19 +140,19 @@ Firstly create a world folder in the worlds directory, such as `end`, and create
   }
 }
 ```
-The `preset/pack` is the name of the config pack, you can find it in the `id` item of the `pack.yml` file in the config pack.  
-Then, restart the server. Type `world tp end Dim2` teleport to `end` world
+Die Variabel `preset/pack` ist der Name des Konfigurationspakets, Sie können ihn im `id` Element der `pack.yml` Datei im Konfigurationspaket finden.
+Starten Sie anschließend den Server neu. Nutzen Sie den Befehl `/world tp end Dim2`, um sich in die Welt `end` zu teleportieren.
 
-## Why Settings Do Not Take Effect
-- If your world was not previously using the terra generator, the settings will not take effect, you need to create a new world.
-- Please check if you have configured Terra correctly, otherwise it will not take effect.
+## Warum Einstellungen nicht angewendet werden
+- Wenn Ihre Welt vorher nicht den Terra-Generator benutzt hat, werden die Einstellungen nicht wirksam, Sie müssen eine neue Welt erstellen.
+- Bitte überprüfen Sie, ob Sie Terra richtig konfiguriert haben, sonst wird es nicht wirksam.
 
-## Too Much Memory Usage
-If you want to reduce memory usage, you can try modifying `./terra/config/yml`：
+## Zu hoher Arbeitsspeicherverbrauch
+Wenn Sie die Speichernutzung reduzieren wollen, können Sie versuchen, `./terra/config/yml` zu ändern:
 ```yaml
 cache:
-  structure: 0 # default 32
-  sampler: 0 # default 128
-  biome-provider: 0 # default 32
+  structure: 0 # standardmäßig 32
+  sampler: 0 # standardmäßig 128
+  biome-provider: 0 # standardmäßig 32
 ```
-This will reduce memory usage but will increase CPU load.
+Dies verringert die Speichernutzung, erhöht aber die CPU-Last.
